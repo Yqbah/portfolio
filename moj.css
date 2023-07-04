@@ -1,34 +1,33 @@
 .guzik-menu {
-    font-size: 15px;
-    background-color: transparent;
-    border: 2px solid #EEEEEE;
-    border-radius: 4px;
-    color: #eeeeee;
-    direction: ltr;
-    font-family: inherit;
-    font-weight: 700;
-    max-width: 100%;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    width: auto;
-    display: inline-block;
+  font-size: 15px;
+  background-color: transparent;
+  border: 2px solid #eeeeee;
+  border-radius: 4px;
+  color: #eeeeee;
+  direction: ltr;
+  font-family: inherit;
+  font-weight: 700;
+  max-width: 100%;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  width: auto;
+  display: inline-block;
 }
 
 .guzik-menu:hover {
-    background-color: #4b3599;
-    border: none;
-    border-radius: 4px;
-    color: #eeeeee;
-    display: inline-block;
+  border: none;
+  border-radius: 4px;
+  color: #eeeeee;
+  display: inline-block;
 }
 
 .menu {
-    max-width: 95%;
+  max-width: 95%;
 }
 
 .menu-text {
-    word-break: keep-all;
-    line-height: 200%;
+  word-break: keep-all;
+  line-height: 200%;
 }
