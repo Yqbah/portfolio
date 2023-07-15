@@ -205,7 +205,7 @@
       }
 
       .bee-row-3 .bee-col-2 .bee-block-1 {
-        padding: 15px 30px;
+        padding: 10px;
       }
 
       .bee-row-5 .bee-row-content,
@@ -235,20 +235,69 @@
         width: 100%;
       }
 
-      .bee-row-6 .bee-col-1,
-      .bee-row-9 .bee-col-1 {
+      .bee-row-6 .bee-col-1 {
         padding: 5px 35px;
         display: flex;
         flex-direction: column;
         justify-content: center;
       }
 
+      .bee-row-9 .bee-col-1 {
+			flex-direction: column;
+			justify-content: center;
+			padding: 10px; 
+			display: flex;
+		}
+
+		.bee-row-9 .bee-col-1 .bee-block-1 {
+			width: 100%;
+		}
+
+    .bee-row-9 .bee-col-2 {
+			flex-direction: column;
+			justify-content: center;
+			padding: 10px;
+			display: flex;
+		}
+
+    .bee-row-9 .bee-col-2 .bee-block-1 {
+			padding: 10px;
+		}
+
+		.bee-row-9 .bee-col-3 {
+			flex-direction: column;
+			justify-content: center;
+			padding: 10px;
+			display: flex;
+		}
+
+    .bee-row-9 .bee-col-3 .bee-block-1 {
+			width: 100%;
+		}
+
+    .bee-row-9 .bee-col-2 .bee-block-1 {
+			color: #eed9a0;
+			direction: ltr;
+			letter-spacing: 0;
+			text-align: justify;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 200%;
+		}
+
+		.bee-row-9 .bee-col-2 .bee-block-1 a {
+			color: #eed9a0;
+		}
+
+		.bee-row-9 .bee-col-2 .bee-block-1 p:not(:last-child) {
+			margin-bottom: 16px;
+		}
+
       .bee-row-12 .bee-col-1 .bee-block-2,
       .bee-row-6 .bee-col-1 .bee-block-1,
       .bee-row-6 .bee-col-1 .bee-block-2,
       .bee-row-6 .bee-col-1 .bee-block-3,
-      .bee-row-6 .bee-col-1 .bee-block-4,
-      .bee-row-9 .bee-col-1 .bee-block-1 {
+      .bee-row-6 .bee-col-1 .bee-block-4 {
         padding: 10px;
       }
 
@@ -269,8 +318,7 @@
       .bee-row-6 .bee-col-1 .bee-block-1,
       .bee-row-6 .bee-col-1 .bee-block-2,
       .bee-row-6 .bee-col-1 .bee-block-3,
-      .bee-row-6 .bee-col-1 .bee-block-4,
-      .bee-row-9 .bee-col-1 .bee-block-1 {
+      .bee-row-6 .bee-col-1 .bee-block-4 {
         color: #eed9a0;
         direction: ltr;
         font-size: 16px;
@@ -284,8 +332,7 @@
       .bee-row-6 .bee-col-1 .bee-block-1 a,
       .bee-row-6 .bee-col-1 .bee-block-2 a,
       .bee-row-6 .bee-col-1 .bee-block-3 a,
-      .bee-row-6 .bee-col-1 .bee-block-4 a,
-      .bee-row-9 .bee-col-1 .bee-block-1 a {
+      .bee-row-6 .bee-col-1 .bee-block-4 a {
         color: #eed9a0;
       }
 
@@ -293,8 +340,7 @@
       .bee-row-6 .bee-col-1 .bee-block-1 p:not(:last-child),
       .bee-row-6 .bee-col-1 .bee-block-2 p:not(:last-child),
       .bee-row-6 .bee-col-1 .bee-block-3 p:not(:last-child),
-      .bee-row-6 .bee-col-1 .bee-block-4 p:not(:last-child),
-      .bee-row-9 .bee-col-1 .bee-block-1 p:not(:last-child) {
+      .bee-row-6 .bee-col-1 .bee-block-4 p:not(:last-child) {
         margin-bottom: 16px;
       }
 
@@ -339,79 +385,145 @@
       .temat-bg:hover {
         background-color: #ce8200;
       }
+
+      .paragraf-o-mnie {
+        color: #9d9d9d;
+        font-family: inherit;
+        font-size: 15px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        text-align: center;
+      }
     </style>
     <link href="./moj.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <div class="bee-page-container">
-      <div class="bee-row bee-row-1">
-        <div class="bee-row-content menu">
-          <div class="bee-col bee-col-1 bee-col-w4">
-            <div class="bee-block bee-block-1 bee-image">
-              <a href="./strona_glowna.html" target="_self"
-                ><img
-                  alt="Joanna Grygiel"
-                  class="bee-center bee-fixedwidth"
-                  src="./grafiki/P_logo.png"
-                  style="max-width: 380px"
-              /></a>
-            </div>
+    <div class="bee-row bee-row-1" id="wiersz-menu">
+      <div class="bee-row-content menu">
+        <div class="bee-col bee-col-1 bee-col-w6">
+          <div class="bee-block bee-block-1 bee-image">
+            <a href="./strona_glowna.html" target="_self"
+              ><img
+                alt="Joanna Grygiel"
+                class="bee-center bee-fixedwidth"
+                src="./grafiki/logo_pom.png"
+                style="max-width: 380px"
+            /></a>
           </div>
-          <div class="bee-col bee-col-1 bee-col-w6"></div>
-          <div class="bee-col bee-col-2 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
+        </div>
+        <div class="bee-col bee-col-1 bee-col-w6"></div>
+        <div class="bee-col bee-col-2 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button" id="parent">
+            <!-- parent -->
+            <a
+              class="bee-button-content guzik-menu guzik-pomaranczowy rozwijane-menu"
+              href="./manga.html"
+              target="_self"
+              ><span class="menu-text">Manga</span></a
+            >
+            <div class="hidden-childs-container hidden-child">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./manga.html"
+                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
+                href="./Akumetsu.html"
                 target="_self"
-                ><span class="menu-text">Manga</span></a
+                ><span class="menu-text">Akumetsu</span></a
               >
-            </div>
-          </div>
-          <div class="bee-col bee-col-3 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./fotografia.html"
+                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
+                href="./Ansatsu_Kyoushitsu.html"
                 target="_self"
-                ><span class="menu-text">Zdjęcia</span></a
+                ><span class="menu-text">Ansatsu Kyoushitsu</span></a
               >
-            </div>
-          </div>
-          <div class="bee-col bee-col-4 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./grafika.html"
+                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
+                href="./Arata_Kangatari.html"
                 target="_self"
-                ><span class="menu-text">Grafika</span></a
+                ><span class="menu-text">Arata Kangatari</span></a
               >
-            </div>
-          </div>
-          <div class="bee-col bee-col-5 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./o_mnie.html"
+                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
+                href="./Gintama.html"
                 target="_self"
-                ><span class="menu-text">O mnie</span></a
+                ><span class="menu-text">Gintama</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
+                href="./Heroine_Shikkaku.html"
+                target="_self"
+                ><span class="menu-text">Heroine Shikkaku</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
+                href="./Himitsu_no_Ai-chan.html"
+                target="_self"
+                ><span class="menu-text">Himitsu no Ai-chan</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
+                href="./One_Piece.html"
+                target="_self"
+                ><span class="menu-text">One Piece</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
+                href="./One-Punch_Man.html"
+                target="_self"
+                ><span class="menu-text">One-Punch Man</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
+                href="./pozostale.html"
+                target="_self"
+                ><span class="menu-text">Pozostałe tytuły</span></a
               >
             </div>
           </div>
         </div>
+        <div class="bee-col bee-col-3 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button">
+            <a
+              class="bee-button-content guzik-menu guzik-pomaranczowy"
+              href="./fotografia.html"
+              target="_self"
+              ><span class="menu-text">Zdjęcia</span></a
+            >
+          </div>
+        </div>
+        <div class="bee-col bee-col-4 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button">
+            <a
+              class="bee-button-content guzik-menu guzik-pomaranczowy"
+              href="./grafika.html"
+              target="_self"
+              ><span class="menu-text">Grafika</span></a
+            >
+          </div>
+        </div>
+        <div class="bee-col bee-col-5 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button">
+            <a
+              class="bee-button-content guzik-menu guzik-pomaranczowy"
+              href="./o_mnie.html"
+              target="_self"
+              ><span class="menu-text">O mnie</span></a
+            >
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="bee-page-container">
       <div class="bee-row bee-row-2">
         <div class="bee-row-content">
           <div class="bee-col bee-col-1 bee-col-w12">
             <div class="bee-block bee-block-1 bee-spacer">
-              <div class="spacer" style="height: 20px"></div>
+              <div class="spacer" style="height: 30px"></div>
             </div>
           </div>
         </div>
       </div>
       <div class="bee-row bee-row-3">
-        <div class="bee-row-content">
+        <div class="bee-row-content" style="padding-left: 25px; padding-right: 25px;">
           <div class="bee-col bee-col-1 bee-col-w5">
             <div class="bee-block bee-block-1 bee-image">
               <img
@@ -423,16 +535,8 @@
             </div>
           </div>
           <div class="bee-col bee-col-2 bee-col-w7">
-            <div class="bee-block bee-block-1 bee-text">
-              <div
-                class="bee-text-content"
-                style="
-                  line-height: 150%;
-                  font-size: 12px;
-                  font-family: inherit;
-                  color: #eed9a0;
-                "
-              >
+            <div class="bee-block bee-block-1 bee-paragraph">
+              <div>
                 <p
                   style="
                     font-size: 16px;
@@ -441,21 +545,19 @@
                   "
                 >
                   <span style="font-size: 16px; line-height: 24px"
-                    ><span style="color: #eed9a0; line-height: 18px"
+                    ><span style="color: #eed9a0; line-height: 200%"
                       >Od najmłodszych lat interesuję się szeroko pojętą obróbką
-                      graficzną. W szczególności zafascynowana jestem światem
-                      mangi i anime oraz ich profesjonalnym tworzeniem i
-                      wydawaniem. Posiadam 5 lat doświadczenia na stanowisku
-                      edytora mang online w formie wolontariatu (Typesetter oraz
-                      Cleaner) oraz 3 lata pracy w branży e-commerce. Wolny czas
+                      graficzną. W szczególności zafascynowana jestem światem
+                      mangi i anime oraz ich profesjonalnym tworzeniem
+                      i wydawaniem. Posiadam 5 lat doświadczenia na stanowisku
+                      edytora mang online w formie wolontariatu (Typesetter oraz
+                      Cleaner) oraz 3 lata pracy w branży e-commerce. Wolny czas
                       lubię spędzać aktywnie jeżdżąc na rolkach, chodząc na
-                      grzyby czy też spacerując z psem. Aktywność ta sprzyja w
-                      rozwijaniu mojego innego hobby - fotografii. Szukam
-                      możliwości rozwoju osobistego jako edytor/grafik oraz
-                      ciągłego udoskonalania moich umiejętności.</span
-                    ><em style=""
-                      ><strong style=""><br style="" /></strong></em
-                  ></span>
+                      grzyby czy też spacerując z psem. Szukam możliwości
+                      rozwoju osobistego jako edytor/grafik oraz ciągłego
+                      udoskonalania moich umiejętności.</span
+                    ></span
+                  >
                 </p>
               </div>
             </div>
@@ -507,9 +609,6 @@
                 >
               </h1>
             </div>
-            <div class="bee-block bee-block-3 bee-spacer">
-              <div class="spacer" style="height: 20px"></div>
-            </div>
           </div>
         </div>
       </div>
@@ -555,10 +654,11 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Zrzut%20ekranu.png"
+                src="./grafiki/Szczątki Galle-la Company.png"
                 style="max-width: 1130px"
               />
             </div>
+            <div class="spacer" style="height: 30px"></div>
           </div>
         </div>
       </div>
@@ -594,41 +694,31 @@
               >
                 <span style="color: #838383"></span>
                 <span class="temat-fg"
-                  >Z<span style="color: #eed9a0">ABAWA</span>
-                  <span style="color: #eed9a0">Z</span></span
+                  >E<span style="color: #eed9a0">KSPERYMENTY</span> </span
                 ><span style="color: #838383"
                   ><span class="temat-fg">
-                    G<span style="color: #eed9a0">RAFIKĄ</span>:</span
+                    G<span style="color: #eed9a0">RAFICZNE</span>:</span
                   ></span
                 >
               </h1>
-            </div>
-            <div class="bee-block bee-block-3 bee-spacer">
-              <div class="spacer" style="height: 20px"></div>
             </div>
           </div>
         </div>
       </div>
       <div class="bee-row bee-row-9">
-        <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w12">
+        <div class="bee-row-content" style="padding-left: 25px; padding-right: 25px;">
+          <div class="bee-col bee-col-1 bee-col-w2">
+            <div class="bee-block bee-block-1 bee-image bee-mobile_hide"><img alt="" class="bee-center bee-autowidth" src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/szablon_1.png" style="max-width:180px; width: auto;" /></div>
+          </div>
+          <div class="bee-col bee-col-2 bee-col-w8">
             <div class="bee-block bee-block-1 bee-paragraph">
-              <p>1. Początek (przeróbki zdjęć na potrzeby własne)</p>
-              <p>
-                2. Tworzenie grafik w celach rekrutacji oraz creditsów (stron
-                zawierających listy osób zaangażowanych w powstanie rozdziałów
-                mang) dla grupy skanlacyjnej Galley-la Company.
-              </p>
-              <p>3. Rozszerzenie zakresu zainteresowań o retusz zdjęć.</p>
-              <p>
-                4. Obróbka miniaturek produktów wystawianych na Allegro oraz
-                sklep internetowy.
-              </p>
-              <p>
-                5. Nawiązanie do fotografii jako autorskiej podstawy do obróbek
-                graficznych.
-              </p>
+              <p>Na początku, gdy nie miałam jeszcze żadnego doświadczenia z programami do obróbki graficznej, moje pierwsze próby tworzenia grafik i retuszowania zdjęć były prawdziwymi eksperymentami. Był to etap, na którym poznawałam programy oraz zawarte w nich narzędzia. Uczyłam się kadrować, usuwać niedoskonałości ze zdjęć, wycinać obiekty, umieszczać je na innym tle, a także dopasowywać pod względem kolorystycznym. Dopiero po dołączeniu do grupy skanlacyjnej Galley-La Company zaczęłam sprawniej posługiwać się dostępnymi narzędziami i stworzyłam swoją pierwszą drobną grafikę służącą do rekrutacji oraz kilka creditsów zawierających spis osób zaangażowanych w powstanie danych rozdziałów mang.</p>
+              <p>Na mój rozwój równie mocno wpłynęła praca w branży e-commerce, gdzie z pomocą Beefree.io zaprojektowałam kilka szablonów e-mail informujących o wysłaniu zamówienia do klienta oraz zedytowałam ich kod HTML i CSS w programie Visual Studio Code. Zajmowałam się także edycją szablonów HTML stron informacyjnych i faktur oraz przygotowaniem zdjęć produktów na Allegro i stronę sklepu internetowego.</p>
+              <p>Niemniej jednak, to właśnie z edycji mang czerpię najwięcej przyjemności i wyraźnie tęsknię za tym zajęciem. Jestem pewna, iż praca w wydawnictwie sprawi, że poczuję się spełniona, a moje umiejętności korzystnie wpłyną na jakość i szybkość wydawania.</p>
             </div>
+          </div>
+          <div class="bee-col bee-col-3 bee-col-w2">
+            <div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/szablon_2.png" style="max-width:180px; width: auto;" /></div>
           </div>
         </div>
       </div>
@@ -689,11 +779,8 @@
                   margin-bottom: 0;
                 "
               >
-                <span class="tinyMce-placeholder"
-                  ><span class="temat-fg"
-                    >K<span style="color: #eed9a0">ontakt:</span></span
-                  ></span
-                >
+                <span class="tinyMce-placeholder"></span>
+                <span style="color: #eed9a0">Kontakt:</span>
               </h2>
             </div>
             <div class="bee-block bee-block-2 bee-paragraph">
@@ -747,7 +834,8 @@
                       href="https://www.designedwithbee.com/?utm_source=editor&amp;utm_medium=bee_pro&amp;utm_campaign=free_footer_link"
                       target="_blank"
                       title="Designed with BEE"
-                      >Designed with BEE</a
+                      >Designed with BEE (Edited by Joanna Grygiel & Szymon
+                      Scholz)</a
                     >
                   </div>
                 </div>

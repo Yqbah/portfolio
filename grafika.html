@@ -32,67 +32,142 @@
       .temat-bg:hover {
         background-color: #4b3599;
       }
+
+      .bee-row-4 .bee-col-1 .bee-block-1 {
+        color: #eee;
+        direction: ltr;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 200%;
+        text-align: justify;
+      }
+
     </style>
   </head>
 
   <body>
-    <div class="bee-page-container">
-      <div class="bee-row bee-row-1">
-        <div class="bee-row-content menu">
-          <div class="bee-col bee-col-1 bee-col-w4">
-            <div class="bee-block bee-block-1 bee-image">
-              <a href="./strona_glowna.html" target="_self"
-                ><img
-                  alt="Joanna Grygiel"
-                  class="bee-center bee-fixedwidth"
-                  src="./grafiki/f_logo.png"
-                  style="max-width: 380px"
-              /></a>
-            </div>
+    <div class="bee-row bee-row-1" id="wiersz-menu">
+      <div class="bee-row-content menu">
+        <div class="bee-col bee-col-1 bee-col-w6">
+          <div class="bee-block bee-block-1 bee-image">
+            <a href="./strona_glowna.html" target="_self"
+              ><img
+                alt="Joanna Grygiel"
+                class="bee-center bee-fixedwidth"
+                src="./grafiki/logo_fio.png"
+                style="max-width: 380px"
+            /></a>
           </div>
-          <div class="bee-col bee-col-1 bee-col-w6"></div>
-          <div class="bee-col bee-col-2 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
+        </div>
+        <div class="bee-col bee-col-1 bee-col-w6"></div>
+        <div class="bee-col bee-col-2 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button" id="parent">
+            <!-- parent -->
+            <a
+              class="bee-button-content guzik-menu guzik-fioletowy rozwijane-menu"
+              href="./manga.html"
+              target="_self"
+              ><span class="menu-text">Manga</span></a
+            >
+            <div class="hidden-childs-container hidden-child">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./manga.html"
+                class="bee-button-content guzik-dziecko guzik-fioletowy guzik-dziecko-fiolet hidden-child"
+                href="./Akumetsu.html"
                 target="_self"
-                ><span class="menu-text">Manga</span></a
+                ><span class="menu-text">Akumetsu</span></a
               >
-            </div>
-          </div>
-          <div class="bee-col bee-col-3 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./fotografia.html"
+                class="bee-button-content guzik-dziecko guzik-fioletowy guzik-dziecko-fiolet hidden-child"
+                href="./Ansatsu_Kyoushitsu.html"
                 target="_self"
-                ><span class="menu-text">Zdjęcia</span></a
+                ><span class="menu-text">Ansatsu Kyoushitsu</span></a
               >
-            </div>
-          </div>
-          <div class="bee-col bee-col-4 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./grafika.html"
+                class="bee-button-content guzik-dziecko guzik-fioletowy guzik-dziecko-fiolet hidden-child"
+                href="./Arata_Kangatari.html"
                 target="_self"
-                ><span class="menu-text">Grafika</span></a
+                ><span class="menu-text">Arata Kangatari</span></a
               >
-            </div>
-          </div>
-          <div class="bee-col bee-col-5 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./o_mnie.html"
+                class="bee-button-content guzik-dziecko guzik-fioletowy guzik-dziecko-fiolet hidden-child"
+                href="./Gintama.html"
                 target="_self"
-                ><span class="menu-text">O mnie</span></a
+                ><span class="menu-text">Gintama</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-fioletowy guzik-dziecko-fiolet hidden-child"
+                ukryte
+                href="./Heroine_Shikkaku.html"
+                target="_self"
+                ><span class="menu-text">Heroine Shikkaku</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-fioletowy guzik-dziecko-fiolet hidden-child"
+                ukryte
+                href="./Himitsu_no_Ai-chan.html"
+                target="_self"
+                ><span class="menu-text">Himitsu no Ai-chan</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-fioletowy guzik-dziecko-fiolet hidden-child"
+                ukryte
+                href="./One_Piece.html"
+                target="_self"
+                ><span class="menu-text">One Piece</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-fioletowy guzik-dziecko-fiolet hidden-child"
+                --
+                ukryte
+                href="./One-Punch_Man.html"
+                target="_self"
+                ><span class="menu-text">One-Punch Man</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-fioletowy guzik-dziecko-fiolet hidden-child"
+                --
+                ukryte
+                href="./pozostale.html"
+                target="_self"
+                ><span class="menu-text">Pozostałe tytuły</span></a
               >
             </div>
           </div>
         </div>
+        <div class="bee-col bee-col-3 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button">
+            <a
+              class="bee-button-content guzik-menu guzik-fioletowy"
+              href="./fotografia.html"
+              target="_self"
+              ><span class="menu-text">Zdjęcia</span></a
+            >
+          </div>
+        </div>
+        <div class="bee-col bee-col-4 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button">
+            <a
+              class="bee-button-content guzik-menu guzik-fioletowy"
+              href="./grafika.html"
+              target="_self"
+              ><span class="menu-text">Grafika</span></a
+            >
+          </div>
+        </div>
+        <div class="bee-col bee-col-5 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button">
+            <a
+              class="bee-button-content guzik-menu guzik-fioletowy"
+              href="./o_mnie.html"
+              target="_self"
+              ><span class="menu-text">O mnie</span></a
+            >
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="bee-page-container">
       <div class="bee-row bee-row-2">
         <div class="bee-row-content">
           <div class="bee-col bee-col-1 bee-col-w12">
@@ -106,7 +181,7 @@
         <div class="bee-row-content">
           <div class="bee-col bee-col-1 bee-col-w12">
             <div class="bee-block bee-block-1 bee-spacer">
-              <div class="spacer" style="height: 10px"></div>
+              <div class="spacer" style="height: 20px"></div>
             </div>
             <div class="bee-block bee-block-2 bee-heading">
               <h1
@@ -139,9 +214,6 @@
                 </span>
               </h1>
             </div>
-            <div class="bee-block bee-block-3 bee-spacer">
-              <div class="spacer" style="height: 10px"></div>
-            </div>
           </div>
         </div>
       </div>
@@ -150,9 +222,23 @@
           <div class="bee-col bee-col-1 bee-col-w12">
             <div class="bee-block bee-block-1 bee-paragraph">
               <p>
+                Poza najbardziej podstawowymi narzędziami (jak kadrowanie,
+                obracanie, rozmiar obrazu itp.) zupełnie swobodnie posługuję się
+                m.in. stemplem i pędzlem korygującym. Nie stanowi dla mnie
+                problemu zmiana obszaru roboczego czy prostowanie obrazów
+                za pomocą miarki, dlatego usuwanie niedoskonałości czy niechcianych
+                obiektów zazwyczaj nie jest dla mnie żadnym wyzwaniem.
+                Z zaznaczaniem i wycinaniem elementów również radzę sobie
+                całkiem nieźle, tym bardziej, że lubię umieszczać je na innym
+                tle. W tym celu zaprzyjaźniłam się także z poziomami, balansem
+                kolorów, jasnością i kontrastem. Bardzo często korzystam też
+                z narzędzia tekstu poziomego w programie Photoshop i stosuję
+                opcję zawijania. Pojęcia takie jak warstwy, gradient, obrys,
+                cień czy płaskorzeźba również nie są mi obce.
+              </p>
+              <p>
                 Wszystkie prace znajdujące się na tej stronie wykonałam przy
-                użyciu programu Photoshop oraz rozszerzeń - Topaz Labs.
-                Wszystkie oryginały zdjęć są mojego autorstwa.
+                użyciu programu Photoshop oraz jego rozszerzeń - Topaz Labs.
               </p>
             </div>
           </div>
@@ -165,7 +251,7 @@
               <img
                 alt="Ratusz w Reydt, dzielnicy miasta Mönchengladbach przed retuszem"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/2eb22f3e-4bbe-44df-a123-1b26f2e841b8.jpg"
+                src="./GRAFIKA/Ratusz w Reydt, dzielnicy miasta Mönchengladbach, Niemcy.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -175,7 +261,7 @@
               <img
                 alt="Ratusz w Reydt, dzielnicy miasta Mönchengladbach po retuszu"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Ratusz-w-Reydt%2C-dzielnicy-miasta-M%C3%B6nchengladbach%2C-Niemcy.jpg"
+                src="./GRAFIKA/Ratusz-w-Reydt,-dzielnicy-miasta-Mönchengladbach,-Niemcy.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -189,7 +275,7 @@
               <p>
                 <span style="color: #ffffff"
                   >Retusz zdjęcia Ratusza w Mönchengladbach z usunięciem
-                  niechcianych obieków.<br
+                  niechcianych obiektów.<br
                 /></span>
               </p>
             </div>
@@ -212,7 +298,7 @@
               <img
                 alt="Róża przed retuszem"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/5dfbe7e4-2b95-49cd-b6bf-a2c4650c4c05.jpg"
+                src="./GRAFIKA/rozao.jpg"
                 style="max-width: 380px"
               />
             </div>
@@ -222,7 +308,7 @@
               <img
                 alt="Róża po retuszu"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/rozax.jpg"
+                src="./GRAFIKA/rozax.jpg"
                 style="max-width: 380px"
               />
             </div>
@@ -232,7 +318,7 @@
               <img
                 alt="Róża neonowa"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/roza_neo.jpg"
+                src="./GRAFIKA/roza_neo.jpg"
                 style="max-width: 380px"
               />
             </div>
@@ -268,7 +354,7 @@
               <img
                 alt="Paprocie przed retuszem"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/20230618_164438.jpg"
+                src="./GRAFIKA/liście paproci oryginał.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -278,7 +364,7 @@
               <img
                 alt="Paprocie po retuszu"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Li%C5%9Bcie-paproci.jpg"
+                src="./GRAFIKA/Liście-paproci.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -314,7 +400,7 @@
               <img
                 alt="Zdjęcie chmur kłębiastych nad polem przed retuszem"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Chmury%20k%C5%82%C4%99biaste%20nad%20polem%20w%20okolicy%20Bia%C5%82ej%2C%20%28woj.%20opolskie%29.jpg"
+                src="./GRAFIKA/Chmury kłębiaste nad polem w okolicy Białej, (woj. opolskie).jpg"
                 style="max-width: 1180px"
               />
             </div>
@@ -329,7 +415,7 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Chmury-k%C5%82%C4%99biaste-nad-polem-%28Bia%C5%82a%2C-woj.-opolskie%29.jpg"
+                src="./GRAFIKA/Chmury-kłębiaste-nad-polem-(Biała,-woj.-opolskie).jpg"
                 style="max-width: 1180px"
               />
             </div>
@@ -358,7 +444,7 @@
               <img
                 alt="Oblaczek granatek"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Oblaczek%20granatek.jpg"
+                src="./GRAFIKA/Oblaczek granatek.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -368,7 +454,7 @@
               <img
                 alt="Oblaczek granatek czaro biały"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/02e42ead-c2f3-46d0-9850-8e1e128f564f.png"
+                src="./GRAFIKA/Oblaczek granatek szary.png"
                 style="max-width: 580px"
               />
             </div>
@@ -381,7 +467,7 @@
             <div class="bee-block bee-block-1 bee-paragraph">
               <p>
                 <span style="color: #ffffff"
-                  >Oblaczek granatek w kolorach szarości.<br
+                  >Oblaczek granatek przed i po nałożenieniu efektu szarości.<br
                 /></span>
               </p>
             </div>
@@ -404,7 +490,7 @@
               <img
                 alt="Kościół katolicki w Münster przed kadrowaniem"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/ce14341a-2942-412a-afa9-5aa7a5423156.jpg"
+                src="./GRAFIKA/Kościół katolicki w Münster, Niemcy.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -414,7 +500,7 @@
               <img
                 alt="Kościół katolicki w Münster po kadrowaniu"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Ko%C5%9Bci%C3%B3%C5%82-katolicki-w-M%C3%BCnster%2C-Niemcy.jpg"
+                src="./GRAFIKA/Kościół-katolicki-w-Münster,-Niemcy.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -450,7 +536,7 @@
               <img
                 alt="One Piece rozdział 837 (Skany Ishuhui)"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/167f0ae0-1058-447b-8ea5-3c66e0ccd1e2.jpg"
+                src="./GRAFIKA/pajak_oryginal.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -460,7 +546,7 @@
               <img
                 alt="One Piece rozdział 841 (Skany Ishuhui)"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/pajak_wyostrzony.jpg"
+                src="./GRAFIKA/pajak_wyostrzony.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -495,9 +581,9 @@
           <div class="bee-col bee-col-1 bee-col-w12">
             <div class="bee-block bee-block-1 bee-image">
               <img
-                alt="One Piece rozdział 839 (Skany Ishuhui)"
+                alt="Wycięcie obiektu oraz dostosowanie go do nowego tła"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/11222987_869679003117241_3197940072964626106_o.jpg"
+                src="./GRAFIKA/11222987_869679003117241_3197940072964626106_o.jpg"
                 style="max-width: 1180px"
               />
             </div>
@@ -578,7 +664,7 @@
               <img
                 alt="Arata Kangatari przykładowa strona przed obróbką"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Arata%20Kangatari_074%20raw%20przed%20obr%C3%B3bk%C4%85.jpg"
+                src="./GRAFIKA/Arata Kangatari_074 przed obróbką.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -588,7 +674,7 @@
               <img
                 alt="Arata Kangatari przykładowa strona po obróbce"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Arata%20Kangatari_074%20raw%20po%20obr%C3%B3bce.png"
+                src="./GRAFIKA/Arata Kangatari_074 po obróbce.png"
                 style="max-width: 580px"
               />
             </div>
@@ -621,9 +707,9 @@
           <div class="bee-col bee-col-1 bee-col-w6">
             <div class="bee-block bee-block-1 bee-image">
               <img
-                alt="Arata Kangatari rawy strony łączonej przed obróbką"
+                alt="Arata Kangatari strony łączonej przed obróbką"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Arata%20Kangatari%20135-136%20raw%20przed%20obr%C3%B3bk%C4%85.jpg"
+                src="./GRAFIKA/Arata Kangatari 135-136 przed obróbką.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -631,9 +717,9 @@
           <div class="bee-col bee-col-2 bee-col-w6">
             <div class="bee-block bee-block-1 bee-image">
               <img
-                alt="Arata Kangatari rawy strony łączonej po obróbce"
+                alt="Arata Kangatari strony łączonej po obróbce"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Arata%20Kangatari%20135-136%20raw%20po%20obr%C3%B3bce.png"
+                src="./GRAFIKA/Arata Kangatari 135-136 po obróbce.png"
                 style="max-width: 580px"
               />
             </div>
@@ -645,7 +731,7 @@
           <div class="bee-col bee-col-1 bee-col-w12">
             <div class="bee-block bee-block-1 bee-paragraph">
               <p>
-                Arata Kangatari - rawy strony łączonej przed oraz po łączeniu,
+                Arata Kangatari - strona łączona przed oraz po łączeniu,
                 czyszczeniu i naniesieniu polskiego tłumaczenia.
               </p>
             </div>
@@ -666,9 +752,9 @@
           <div class="bee-col bee-col-1 bee-col-w6">
             <div class="bee-block bee-block-1 bee-image">
               <img
-                alt="Arata Kangatari raw przed obróbką"
+                alt="Arata Kangatari strona przed obróbką"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Arata%20Kangatari%20020%20raw%20przed%20obr%C3%B3bk%C4%85.jpg"
+                src="./GRAFIKA/Arata Kangatari 020 przed obróbką.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -676,9 +762,9 @@
           <div class="bee-col bee-col-2 bee-col-w6">
             <div class="bee-block bee-block-1 bee-image">
               <img
-                alt="Arata Kangatari raw po obróbce"
+                alt="Arata Kangatari strona po obróbce"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Arata-Kangatari-020-raw-po-obr%C3%B3bce.png"
+                src="./GRAFIKA/Arata-Kangatari-020-po-obróbce.png"
                 style="max-width: 580px"
               />
             </div>
@@ -711,9 +797,9 @@
           <div class="bee-col bee-col-1 bee-col-w6">
             <div class="bee-block bee-block-1 bee-image">
               <img
-                alt="Akumetsu_v11_040 raw przed obróbką"
+                alt="Akumetsu_v11_040 strona przed obróbką"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Akumetsu_v11_040%20raw%20przed%20obr%C3%B3bk%C4%85.jpg"
+                src="./GRAFIKA/Akumetsu_v11_040 przed obróbką.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -721,9 +807,9 @@
           <div class="bee-col bee-col-2 bee-col-w6">
             <div class="bee-block bee-block-1 bee-image">
               <img
-                alt="Akumetsu_v11_040 raw po obróbce"
+                alt="Akumetsu_v11_040 strona po obróbce"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Akumetsu_v11_040%20raw%20po%20obr%C3%B3bce.png"
+                src="./GRAFIKA/Akumetsu_v11_040 po obróbce.png"
                 style="max-width: 580px"
               />
             </div>
@@ -756,9 +842,9 @@
           <div class="bee-col bee-col-1 bee-col-w6">
             <div class="bee-block bee-block-1 bee-image">
               <img
-                alt="Akumetsu_v11_009 raw przed obróbką"
+                alt="Akumetsu_v11_009 strona przed obróbką"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Akumetsu_v11_009%20raw%20przed%20obr%C3%B3bk%C4%85.jpg"
+                src="./GRAFIKA/Akumetsu_v11_009 przed obróbką.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -766,9 +852,9 @@
           <div class="bee-col bee-col-2 bee-col-w6">
             <div class="bee-block bee-block-1 bee-image">
               <img
-                alt="Akumetsu_v11_009 raw po obróbce"
+                alt="Akumetsu_v11_009 strona po obróbce"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Akumetsu_v11_009%20raw%20po%20obr%C3%B3bce.png"
+                src="./GRAFIKA/Akumetsu_v11_009 po obróbce.png"
                 style="max-width: 580px"
               />
             </div>
@@ -801,9 +887,9 @@
           <div class="bee-col bee-col-1 bee-col-w6">
             <div class="bee-block bee-block-1 bee-image">
               <img
-                alt="Akumetsu_v11_046 raw przed obróbką"
+                alt="Akumetsu_v11_046 strona przed obróbką"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Akumetsu_v11_046%20raw%20przed%20obr%C3%B3bk%C4%85.jpg"
+                src="./GRAFIKA/Akumetsu_v11_046 przed obróbką.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -811,9 +897,9 @@
           <div class="bee-col bee-col-2 bee-col-w6">
             <div class="bee-block bee-block-1 bee-image">
               <img
-                alt="Akumetsu_v11_045 raw przed obróbką"
+                alt="Akumetsu_v11_045 strona przed obróbką"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Akumetsu_v11_045%20raw%20przed%20obr%C3%B3bk%C4%85.jpg"
+                src="./GRAFIKA/Akumetsu_v11_045 przed obróbką.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -825,7 +911,7 @@
           <div class="bee-col bee-col-1 bee-col-w12">
             <div class="bee-block bee-block-1 bee-paragraph">
               <p>
-                Rawy Akumetsu - przed łączeniem, czyszczeniem i nanoszeniem
+                Akumetsu - przed łączeniem, czyszczeniem i nanoszeniem
                 polskiego tłumaczenia.
               </p>
             </div>
@@ -837,9 +923,9 @@
           <div class="bee-col bee-col-1 bee-col-w12">
             <div class="bee-block bee-block-1 bee-image">
               <img
-                alt="Akumetsu_v11_045-046 raw po obóbce"
+                alt="Akumetsu_v11_045-046 strona łączona po obóbce"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Akumetsu_v11_045-046%20raw%20po%20ob%C3%B3bce.png"
+                src="./GRAFIKA/Akumetsu_v11_045-046 po obóbce.png"
                 style="max-width: 1180px"
               />
             </div>
@@ -851,7 +937,7 @@
           <div class="bee-col bee-col-1 bee-col-w12">
             <div class="bee-block bee-block-1 bee-paragraph">
               <p>
-                Rawy Akumetsu - po połączeniu, czyszczeniu i nanoszeniu
+                Akumetsu - po połączeniu, czyszczeniu i nanoszeniu
                 polskiego tłumaczenia.
               </p>
             </div>
@@ -915,11 +1001,8 @@
                   margin-bottom: 0;
                 "
               >
-                <span class="tinyMce-placeholder" style="color: #d7c9e7"
-                  ><span class="temat-fg">K</span>ontakt<span
-                    style="color: #4b3564"
-                    ><span style="color: #d7c9e7">:</span><br /></span
-                ></span>
+                <span class="tinyMce-placeholder"></span
+                ><span style="color: #d7c9e7">Kontakt:</span>
               </h2>
             </div>
             <div class="bee-block bee-block-2 bee-paragraph">
@@ -973,7 +1056,8 @@
                       href="https://www.designedwithbee.com/?utm_source=editor&amp;utm_medium=bee_pro&amp;utm_campaign=free_footer_link"
                       target="_blank"
                       title="Designed with BEE"
-                      >Designed with BEE</a
+                      >Designed with BEE (Edited by Joanna Grygiel & Szymon
+                      Scholz)</a
                     >
                   </div>
                 </div>

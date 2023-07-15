@@ -279,7 +279,7 @@
       }
 
       .bee-row-3 .bee-col-2 .bee-block-2 {
-        padding: 10px 40px;
+        padding: 10px 40px 10px 30px;
       }
 
       .bee-row-17 .bee-col-1 .bee-block-2 {
@@ -306,7 +306,7 @@
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0;
-        line-height: 150%;
+        line-height: 200%;
         text-align: justify;
       }
 
@@ -358,68 +358,125 @@
   </head>
 
   <body>
-    <div class="bee-page-container">
-      <div class="bee-row bee-row-1">
-        <div class="bee-row-content menu">
-          <div class="bee-col bee-col-1 bee-col-w4">
-            <div class="bee-block bee-block-1 bee-image">
-              <a href="./strona_glowna.html" target="_self"
-                ><img
-                  alt="Joanna Grygiel"
-                  class="bee-center bee-fixedwidth"
-                  src="./grafiki/N_logo.png"
-                  style="max-width: 380px"
-              /></a>
-            </div>
+    <div class="bee-row bee-row-1" id="wiersz-menu">
+      <div class="bee-row-content menu">
+        <div class="bee-col bee-col-1 bee-col-w6">
+          <div class="bee-block bee-block-1 bee-image">
+            <a href="./strona_glowna.html" target="_self"
+              ><img
+                alt="Joanna Grygiel"
+                class="bee-center bee-fixedwidth"
+                src="./grafiki/logo_nieb.png"
+                style="max-width: 380px"
+            /></a>
           </div>
-          <div class="bee-col bee-col-1 bee-col-w6"></div>
-          <div class="bee-col bee-col-2 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
+        </div>
+        <div class="bee-col bee-col-1 bee-col-w6"></div>
+        <div class="bee-col bee-col-2 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button" id="parent">
+            <!-- parent -->
+            <a
+              class="bee-button-content guzik-menu guzik-niebieski rozwijane-menu"
+              href="./manga.html"
+              target="_self"
+              ><span class="menu-text">Manga</span></a
+            >
+            <div class="hidden-childs-container hidden-child">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./manga.html"
+                class="bee-button-content guzik-dziecko guzik-niebieski guzik-dziecko-niebieski hidden-child"
+                href="./Akumetsu.html"
                 target="_self"
-                ><span class="menu-text">Manga</span></a
+                ><span class="menu-text">Akumetsu</span></a
               >
-            </div>
-          </div>
-          <div class="bee-col bee-col-3 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./fotografia.html"
+                class="bee-button-content guzik-dziecko guzik-niebieski guzik-dziecko-niebieski hidden-child"
+                href="./Ansatsu_Kyoushitsu.html"
                 target="_self"
-                ><span class="menu-text">Zdjęcia</span></a
+                ><span class="menu-text">Ansatsu Kyoushitsu</span></a
               >
-            </div>
-          </div>
-          <div class="bee-col bee-col-4 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./grafika.html"
+                class="bee-button-content guzik-dziecko guzik-niebieski guzik-dziecko-niebieski hidden-child"
+                href="./Arata_Kangatari.html"
                 target="_self"
-                ><span class="menu-text">Grafika</span></a
+                ><span class="menu-text">Arata Kangatari</span></a
               >
-            </div>
-          </div>
-          <div class="bee-col bee-col-5 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./o_mnie.html"
+                class="bee-button-content guzik-dziecko guzik-niebieski guzik-dziecko-niebieski hidden-child"
+                href="./Gintama.html"
                 target="_self"
-                ><span class="menu-text">O mnie</span></a
+                ><span class="menu-text">Gintama</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-niebieski guzik-dziecko-niebieski hidden-child"
+                href="./Heroine_Shikkaku.html"
+                target="_self"
+                ><span class="menu-text">Heroine Shikkaku</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-niebieski guzik-dziecko-niebieski hidden-child"
+                href="./Himitsu_no_Ai-chan.html"
+                target="_self"
+                ><span class="menu-text">Himitsu no Ai-chan</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-niebieski guzik-dziecko-niebieski hidden-child"
+                href="./One_Piece.html"
+                target="_self"
+                ><span class="menu-text">One Piece</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-niebieski guzik-dziecko-niebieski hidden-child"
+                href="./One-Punch_Man.html"
+                target="_self"
+                ><span class="menu-text">One-Punch Man</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-niebieski guzik-dziecko-niebieski hidden-child"
+                href="./pozostale.html"
+                target="_self"
+                ><span class="menu-text">Pozostałe tytuły</span></a
               >
             </div>
           </div>
         </div>
+        <div class="bee-col bee-col-3 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button">
+            <a
+              class="bee-button-content guzik-menu guzik-niebieski"
+              href="./fotografia.html"
+              target="_self"
+              ><span class="menu-text">Zdjęcia</span></a
+            >
+          </div>
+        </div>
+        <div class="bee-col bee-col-4 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button">
+            <a
+              class="bee-button-content guzik-menu guzik-niebieski"
+              href="./grafika.html"
+              target="_self"
+              ><span class="menu-text">Grafika</span></a
+            >
+          </div>
+        </div>
+        <div class="bee-col bee-col-5 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button">
+            <a
+              class="bee-button-content guzik-menu guzik-niebieski"
+              href="./o_mnie.html"
+              target="_self"
+              ><span class="menu-text">O mnie</span></a
+            >
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="bee-page-container">
       <div class="bee-row bee-row-2">
         <div class="bee-row-content">
           <div class="bee-col bee-col-1 bee-col-w12">
             <div class="bee-block bee-block-1 bee-spacer">
-              <div class="spacer" style="height: 20px"></div>
+              <div class="spacer" style="height: 30px"></div>
             </div>
           </div>
         </div>
@@ -431,19 +488,19 @@
               <img
                 alt="Staw położony głęboko w lesie (Prudnik, woj. opolskie)"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/zdj%C4%99cia%20natura/Staw-po%C5%82o%C5%BCony-g%C5%82%C4%99boko-w-lesie-%28Prudnik%2C-woj.-opolskie%29.jpg"
+                src="./Fotografia/widoki/Staw położony głęboko w lesie (Prudnik, woj. opolskie).jpg"
                 style="max-width: 580px"
               />
             </div>
           </div>
           <div class="bee-col bee-col-2 bee-col-w6">
-            <div class="bee-block bee-block-1 bee-heading">
+            <div class="bee-block bee-block-1 bee-heading" style="padding: 20px 40px 20px 30px;">
               <h2
                 style="
                   color: #547cbc;
                   direction: ltr;
                   font-family: Verdana, Geneva, sans-serif;
-                  font-size: 28px;
+                  font-size: 32px;
                   font-weight: 700;
                   letter-spacing: normal;
                   line-height: 120%;
@@ -464,12 +521,14 @@
             </div>
             <div class="bee-block bee-block-2 bee-paragraph">
               <p>
-                Fotografia to moje drugie hobby. Zdjęcia najczęściej wykonuję w
-                przypadkowo odwiedzanych przeze mnie miejscach, gdy coś w
-                zasięgu wzroku zwróci na siebie moją uwagę. Nie są to tyko
+                Fotografia to moje drugie hobby. Zdjęcia najczęściej wykonuję
+                w przypadkowo odwiedzanych przeze mnie miejscach, gdy coś
+                w zasięgu wzroku zwróci na siebie moją uwagę. Nie są to tyko
                 zwykłe fotografie, gdyż przede wszystkim kryją za sobą
-                wspomnienia z ujmujących spotkań, przebytych kilometrów, 
-                podjętych wyzwań czy chwil spędzonych z rodziną.
+                wspomnienia z ujmujących spotkań, przebytych kilometrów,
+                podjętych wyzwań czy chwil spędzonych z rodziną. Stanowią też
+                doskonały, autorski podkład służący do trenowania umiejętności
+                graficznych oraz inspirują i motywują do tworzenia nowych prac.
               </p>
             </div>
           </div>
@@ -482,8 +541,8 @@
               <img
                 alt="Pole rzepaku"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/zdj%C4%99cia%20natura/Pole-rzepaku-%28Prudnik%2C-woj.-opolskie%29.jpg"
-                style="max-width: 380px"
+                src="./Fotografia/widoki/Pole rzepaku (Prudnik, woj. opolskie).jpg"
+                style="max-width: 380px; width: auto"
               />
             </div>
           </div>
@@ -492,8 +551,8 @@
               <img
                 alt="Staw przy szlaku turystycznym (Prudnik, woj. opolskie)"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/zdj%C4%99cia%20natura/Staw-przy-szlaku-turystycznym-%28Prudnik%2C-woj.jpg"
-                style="max-width: 380px"
+                src="./Fotografia/widoki/Staw przy szlaku turystycznym (Prudnik, woj. opolskie).jpg"
+                style="max-width: 380px; width: auto"
               />
             </div>
           </div>
@@ -502,8 +561,8 @@
               <img
                 alt="Las iglasty (Smolarnia, woj. opolskie)"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/zdj%C4%99cia%20natura/Las-iglasty-%28Smolarnia%2C-woj.-opolskie%29.jpg"
-                style="max-width: 380px"
+                src="./Fotografia/widoki/Las iglasty (Smolarnia, woj. opolskie).jpg"
+                style="max-width: 380px; width: auto"
               />
             </div>
           </div>
@@ -516,7 +575,7 @@
               <img
                 alt="Fosa otaczająca pałac w Münster, Niemcy"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/zdj%C4%99cia%20natura/Fosa%20otaczaj%C4%85ca%20pa%C5%82ac%20w%20M%C3%BCnster%2C%20Niemcy.jpg"
+                src="./Fotografia/widoki/Fosa otaczająca pałac w Münster, Niemcy.jpg"
                 style="max-width: 280px"
               />
             </div>
@@ -526,7 +585,7 @@
               <img
                 alt="Pole pszenicy (woj. opolskie)"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/zdj%C4%99cia%20natura/Pole-pszenicy-%28Prudnik%2C-woj.-opolskie%29.jpg"
+                src="./Fotografia/widoki/Pole pszenicy (Prudnik, woj. opolskie).jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -536,7 +595,7 @@
               <img
                 alt="Grzyb uformowany ze ściętego drzewa w środku lasu (Dębowiec, woj. opolskie)"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/ro%C5%9Bliny/Grzyb-uformowany-ze-%C5%9Bci%C4%99tego-drzewa-w-%C5%9Brodku-lasu-%28D%C4%99bowiec%2C-woj.-opolskie%29.jpg"
+                src="./Fotografia/roślinność/Grzyb uformowany ze ściętego drzewa w środku lasu (Dębowiec, woj. opolskie).jpg"
                 style="max-width: 280px"
               />
             </div>
@@ -550,7 +609,7 @@
               <img
                 alt="Żółta róża"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/ro%C5%9Bliny/R%C3%B3%C5%BCa-%C5%BC%C3%B3%C5%82ta-%28Bia%C5%82a%2C-woj.-opolskie%29.jpg"
+                src="./Fotografia/roślinność/Róża żółta (Biała, woj. opolskie).jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -560,7 +619,7 @@
               <img
                 alt="Liście mięty"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/ro%C5%9Bliny/Li%C5%9Bcie-mi%C4%99ty-%28Bia%C5%82a%2C-woj.-opolskie%29.jpg"
+                src="./Fotografia/roślinność/Liście mięty.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -574,7 +633,7 @@
               <img
                 alt="Muchomor twardawy (Las w Dębowcu, woj. opolskie)"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/ro%C5%9Bliny/Muchomor-twardawy-%28Las-w-D%C4%99bowcu%2C-woj.-opolskie%29.jpg"
+                src="./Fotografia/roślinność/Muchomor twardawy (Las w Dębowcu, woj. opolskie).jpg"
                 style="max-width: 280px"
               />
             </div>
@@ -584,7 +643,7 @@
               <img
                 alt="Rojnik"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/ro%C5%9Bliny/Rojnik-%28Prudnik%2C-woj.-opolskie%29.jpg"
+                src="./Fotografia/roślinność/Rojnik (Prudnik, woj. opolskie).jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -594,7 +653,7 @@
               <img
                 alt="Zefirant"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/ro%C5%9Bliny/Zefirant-%28Prudnik%2C-woj.jpg"
+                src="./Fotografia/roślinność/Zefirant (Prudnik, woj. opolskie).jpg"
                 style="max-width: 280px"
               />
             </div>
@@ -608,7 +667,7 @@
               <img
                 alt="Kwiatostany tawuły japońskiej (Spiraea japonica)"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/ro%C5%9Bliny/Tawu%C5%82a%20japo%C5%84ska%20%28Spiraea%20japonica%29.jpg"
+                src="./Fotografia/roślinność/Tawuła japońska (Spiraea japonica).jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -618,7 +677,7 @@
               <img
                 alt="Liliowiec rdzawy"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/ro%C5%9Bliny/Liliowiec%20rdzawy.jpg"
+                src="./Fotografia/roślinność/Liliowiec rdzawy.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -632,7 +691,7 @@
               <img
                 alt="Hoja i jej piękne kwiatostany"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/ro%C5%9Bliny/Hoja%20i%20jej%20pi%C4%99kne%20kwiatostany.jpg"
+                src="./Fotografia/roślinność/Hoja i jej piękne kwiatostany.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -642,7 +701,7 @@
               <img
                 alt="Maleńki nietoperz"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/zdj%C4%99cia%20zwierz%C4%99ta/Ma%C5%82y%20nietoperz%20%28Prudnik%20woj.opolskie%29.jpg"
+                src="./Fotografia/zwierzęta/Mały nietoperz (Prudnik woj.opolskie).jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -656,8 +715,8 @@
               <img
                 alt="Jaszczurka na Koziej Górze (woj. opolskie)"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/zdj%C4%99cia%20zwierz%C4%99ta/Jaszczurka%20%28Kozia%20G%C3%B3ra%2C%20Prudnik%20woj%2C%20opolskie%29.jpg"
-                style="max-width: 380px"
+                src="./Fotografia/zwierzęta/Jaszczurka (Kozia Góra, Prudnik woj, opolskie).jpg"
+                style="max-width: 380px; width: auto"
               />
             </div>
           </div>
@@ -666,8 +725,8 @@
               <img
                 alt="Yuna na Koziej Górze (woj. opolskie)"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/zdj%C4%99cia%20zwierz%C4%99ta/Yuna%20%28Kozia%20G%C3%B3ra%2C%20Prudnik%20woj.%20opolskie%29.jpg"
-                style="max-width: 380px"
+                src="./Fotografia/zwierzęta/Yuna (Kozia Góra, Prudnik woj. opolskie).jpg"
+                style="max-width: 380px; width: auto"
               />
             </div>
           </div>
@@ -676,8 +735,8 @@
               <img
                 alt="Wędrówka nietoperza"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/zdj%C4%99cia%20zwierz%C4%99ta/W%C4%99dr%C3%B3wka%20nietoperza%20%28Prudnik%20woj.%20opolskie%29.jpg"
-                style="max-width: 380px"
+                src="./Fotografia/zwierzęta/Wędrówka nietoperza (Prudnik woj. opolskie).jpg"
+                style="max-width: 380px; width: auto"
               />
             </div>
           </div>
@@ -690,7 +749,7 @@
               <img
                 alt="Beller Park Mönchengladbach, Niemcy"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/zdj%C4%99cia%20natura/Beller-park-M%C3%B6nchengladbach%2C-Niemcy.jpg"
+                src="./Fotografia/widoki/Beller park Mönchengladbach, Niemcy.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -700,7 +759,7 @@
               <img
                 alt="Beller Park Mönchengladbach, Niemcy"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/zdj%C4%99cia%20natura/Beller-park-w-M%C3%B6nchengladbach%2C-Niemcy.jpg"
+                src="./Fotografia/widoki/Beller park w Mönchengladbach, Niemcy.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -714,7 +773,7 @@
               <img
                 alt="Kościół pod wezwaniem Najświętszej Marii Panny w Münster, Niemcy"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/architektura/Ko%C5%9Bci%C3%B3%C5%82-pod-wezwaniem-Naj%C5%9Bwi%C4%99tszej-Marii-Panny-w-M%C3%BCnster%2C-Niemcy.jpg"
+                src="./Fotografia/budynki/Kościół pod wezwaniem Najświętszej Marii Panny w Münster, Niemcy.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -724,7 +783,7 @@
               <img
                 alt="Kościół Świętego Lamberta w Münster, Niemcy"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/architektura/Ko%C5%9Bci%C3%B3%C5%82-%C5%9Awi%C4%99tego-Lamberta-w-M%C3%BCnster%2C-Niemcy.jpg"
+                src="./Fotografia/budynki/Kościół Świętego Lamberta w Münster, Niemcy.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -738,8 +797,8 @@
               <img
                 alt="Kościół protestancki w Mönchengladbach, Niemcy"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Grafika/Ko%C5%9Bci%C3%B3%C5%82%20protestancki%20w%20M%C3%B6nchengladbach%2C%20Niemcy.jpg"
-                style="max-width: 380px"
+                src="./Fotografia/budynki/Kościół protestancki w Mönchengladbach, Niemcy.jpg"
+                style="max-width: 380px; width: auto"
               />
             </div>
           </div>
@@ -748,8 +807,8 @@
               <img
                 alt="Stare Miasto w Monschau, Niemcy"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/architektura/Stare-Miasto-Monschau%2C-Niemcy.jpg"
-                style="max-width: 380px"
+                src="./Fotografia/budynki/Stare Miasto Monschau, Niemcy.jpg"
+                style="max-width: 380px; width: auto"
               />
             </div>
           </div>
@@ -758,8 +817,8 @@
               <img
                 alt="Bazar kupców otoczony kamienicami i arkadami w centrum Münster, Niemcy"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/architektura/Bazar-kupc%C3%B3w-otoczony-kamienicami-i-arkadami-w-centrum-M%C3%BCnster%2C-Niemcy.jpg"
-                style="max-width: 380px"
+                src="./Fotografia/budynki/Bazar kupców otoczony kamienicami i arkadami w centrum Münster, Niemcy.jpg"
+                style="max-width: 380px; width: auto"
               />
             </div>
           </div>
@@ -772,7 +831,7 @@
               <img
                 alt="Pałac w Münster, Niemcy (dziś używany przez uniwersytet)"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/architektura/Pa%C5%82ac%20w%20M%C3%BCnster%2C%20Niemcy%20%28dzi%C5%9B%20u%C5%BCywany%20przez%20uniwersytet%29.jpg"
+                src="./Fotografia/budynki/Pałac w Münster, Niemcy (dziś używany przez uniwersytet).jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -782,7 +841,7 @@
               <img
                 alt="Towarzystwo budowlane w Münster, Niemcy"
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/architektura/Towarzystwo%20budowlane%20w%20M%C3%BCnster%2C%20Niemcy.jpg"
+                src="./Fotografia/budynki/Towarzystwo budowlane w Münster, Niemcy.jpg"
                 style="max-width: 580px"
               />
             </div>
@@ -902,7 +961,8 @@
                       href="https://www.designedwithbee.com/?utm_source=editor&amp;utm_medium=bee_pro&amp;utm_campaign=free_footer_link"
                       target="_blank"
                       title="Designed with BEE"
-                      >Designed with BEE</a
+                      >Designed with BEE (Edited by Joanna Grygiel & Szymon
+                      Scholz)</a
                     >
                   </div>
                 </div>

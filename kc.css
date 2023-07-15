@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: transparent;
+  background-image: transparent;
   color: #000;
   font-family: Verdana, Geneva, sans-serif;
 }
@@ -137,6 +137,10 @@ p {
     display: block;
   }
 }
+
+.bee-mobile_hide {
+    display: none;
+  }
 
 .bee-row-1,
 .bee-row-49,

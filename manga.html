@@ -23,11 +23,6 @@
       type="text/css"
     />
     <style>
-      .bee-row,
-      .bee-row-content {
-        position: relative;
-      }
-
       .bee-row-1,
       .bee-row-23,
       .bee-row-24,
@@ -37,13 +32,12 @@
       }
 
       body {
-        background-color: transparent;
         color: #000;
         font-family: Verdana, Geneva, sans-serif;
       }
 
       .bee-page-container {
-        background-image: url("./grafiki/sand_background_b.png");
+        background-image: url(./grafiki/sand_background_b.png);
         background-position: top left;
       }
 
@@ -346,16 +340,12 @@
       }
 
       .bee-row-6 .bee-col-1 {
-        padding-bottom: 10px;
-        padding-top: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
       }
 
       .bee-row-7 .bee-col-1 {
-        padding-bottom: 20px;
-        padding-top: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -471,64 +461,130 @@
   </head>
 
   <body>
-    <div class="bee-page-container">
-      <div class="bee-row bee-row-1">
-        <div class="bee-row-content menu">
-          <div class="bee-col bee-col-1 bee-col-w4">
-            <div class="bee-block bee-block-1 bee-image">
-              <a href="./strona_glowna.html" target="_self"
-                ><img
-                  alt="Joanna Grygiel"
-                  class="bee-center bee-fixedwidth"
-                  src="./grafiki/sz_logo.png"
-                  style="max-width: 380px"
-              /></a>
-            </div>
+    <div class="bee-row bee-row-1" id="wiersz-menu">
+      <div class="bee-row-content menu">
+        <div class="bee-col bee-col-1 bee-col-w6">
+          <div class="bee-block bee-block-1 bee-image">
+            <a href="./strona_glowna.html" target="_self"
+              ><img
+                alt="Joanna Grygiel"
+                class="bee-center bee-fixedwidth"
+                src="./grafiki/logo.png"
+                style="max-width: 380px"
+            /></a>
           </div>
-          <div class="bee-col bee-col-1 bee-col-w6"></div>
-          <div class="bee-col bee-col-2 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
+        </div>
+        <div class="bee-col bee-col-1 bee-col-w6"></div>
+        <div class="bee-col bee-col-2 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button" id="parent">
+            <!-- parent -->
+            <a
+              class="bee-button-content guzik-menu guzik-szary rozwijane-menu"
+              href="./manga.html"
+              target="_self"
+              ><span class="menu-text">Manga</span></a
+            >
+            <div class="hidden-childs-container hidden-child">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./manga.html"
+                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
+                href="./Akumetsu.html"
                 target="_self"
-                ><span class="menu-text">Manga</span></a
+                ><span class="menu-text">Akumetsu</span></a
               >
-            </div>
-          </div>
-          <div class="bee-col bee-col-3 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./fotografia.html"
+                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
+                href="./Ansatsu_Kyoushitsu.html"
                 target="_self"
-                ><span class="menu-text">Zdjęcia</span></a
+                ><span class="menu-text">Ansatsu Kyoushitsu</span></a
               >
-            </div>
-          </div>
-          <div class="bee-col bee-col-4 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./grafika.html"
+                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
+                href="./Arata_Kangatari.html"
                 target="_self"
-                ><span class="menu-text">Grafika</span></a
+                ><span class="menu-text">Arata Kangatari</span></a
               >
-            </div>
-          </div>
-          <div class="bee-col bee-col-5 bee-col-w2">
-            <div class="bee-block bee-block-1 bee-button">
               <a
-                class="bee-button-content guzik-menu temat-bg"
-                href="./o_mnie.html"
+                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
+                href="./Gintama.html"
                 target="_self"
-                ><span class="menu-text">O mnie</span></a
+                ><span class="menu-text">Gintama</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
+                --
+                ukryte
+                href="./Heroine_Shikkaku.html"
+                target="_self"
+                ><span class="menu-text">Heroine Shikkaku</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
+                --
+                ukryte
+                href="./Himitsu_no_Ai-chan.html"
+                target="_self"
+                ><span class="menu-text">Himitsu no Ai-chan</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
+                --
+                ukryte
+                href="./One_Piece.html"
+                target="_self"
+                ><span class="menu-text">One Piece</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
+                --
+                ukryte
+                href="./One-Punch_Man.html"
+                target="_self"
+                ><span class="menu-text">One-Punch Man</span></a
+              >
+              <a
+                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
+                --
+                ukryte
+                href="./pozostale.html"
+                target="_self"
+                ><span class="menu-text">Pozostałe tytuły</span></a
               >
             </div>
           </div>
         </div>
+        <div class="bee-col bee-col-3 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button">
+            <a
+              class="bee-button-content guzik-menu guzik-szary"
+              href="./fotografia.html"
+              target="_self"
+              ><span class="menu-text">Zdjęcia</span></a
+            >
+          </div>
+        </div>
+        <div class="bee-col bee-col-4 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button">
+            <a
+              class="bee-button-content guzik-menu guzik-szary"
+              href="./grafika.html"
+              target="_self"
+              ><span class="menu-text">Grafika</span></a
+            >
+          </div>
+        </div>
+        <div class="bee-col bee-col-5 bee-col-w2">
+          <div class="bee-block bee-block-1 bee-button">
+            <a
+              class="bee-button-content guzik-menu guzik-szary"
+              href="./o_mnie.html"
+              target="_self"
+              ><span class="menu-text">O mnie</span></a
+            >
+          </div>
+        </div>
       </div>
-
+    </div>
+    <div class="bee-page-container">
       <div class="bee-row bee-row-2">
         <div class="bee-row-content">
           <div class="bee-col bee-col-1 bee-col-w12">
@@ -572,19 +628,19 @@
               </h2>
             </div>
             <div class="bee-block bee-block-3 bee-spacer">
-              <div class="spacer" style="height: 20px"></div>
+              <div class="spacer" style="height: 10px"></div>
             </div>
           </div>
         </div>
       </div>
       <div class="bee-row bee-row-4">
-        <div class="bee-row-content">
+        <div class="bee-row-content" style="padding: 10px">
           <div class="bee-col bee-col-1 bee-col-w3">
             <div class="bee-block bee-block-1 bee-image">
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/654ad024-00b9-4d61-a482-b3fd26ead294.png"
+                src="./grafiki/tytuly.png"
                 style="max-width: 280px"
               />
             </div>
@@ -594,7 +650,7 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/b8692964-b178-497e-9824-b404680cc4f1.png"
+                src="./grafiki/tomy.png"
                 style="max-width: 280px"
               />
             </div>
@@ -604,7 +660,7 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/bdb2f246-e4a9-4ccb-aabd-9c8f706d37c0.png"
+                src="./grafiki/rozdzialy.png"
                 style="max-width: 280px"
               />
             </div>
@@ -614,30 +670,65 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/7ef0a19f-bf4d-4540-8566-edb8811f4eec.png"
+                src="./grafiki/strony.png"
                 style="max-width: 280px"
               />
             </div>
           </div>
         </div>
       </div>
-      <div class="bee-row bee-row-5">
+      <div class="bee-block bee-block-1 bee-spacer">
+        <div class="spacer" style="height: 30px"></div>
+      </div>
+      <div class="bee-row bee-row-3">
         <div class="bee-row-content">
           <div class="bee-col bee-col-1 bee-col-w12">
             <div class="bee-block bee-block-1 bee-spacer">
-              <div class="spacer" style="height: 30px"></div>
+              <div class="spacer" style="height: 20px"></div>
+            </div>
+            <div class="bee-block bee-block-2 bee-heading">
+              <h2
+                style="
+                  color: #eeeeee;
+                  direction: ltr;
+                  font-family: Verdana, Geneva, sans-serif;
+                  font-size: 28px;
+                  font-weight: 700;
+                  letter-spacing: normal;
+                  line-height: 120%;
+                  text-align: center;
+                  margin-top: 0;
+                  margin-bottom: 0;
+                "
+              >
+                <span class="tinyMce-placeholder"
+                  ><span class="temat-fg"
+                    >P<span style="color: #eeeeee"
+                      >RZEBIEG <span class="temat-fg">P</span>RACY</span
+                    ></span
+                  ><span class="temat-fg"
+                    >:</span
+                  ></span
+                >
+              </h2>
+            </div>
+            <div class="bee-block bee-block-3 bee-spacer">
+              <div class="spacer" style="height: 10px"></div>
             </div>
           </div>
         </div>
       </div>
       <div class="bee-row bee-row-6">
-        <div class="bee-row-content">
+        <div
+          class="bee-row-content"
+          style="padding: 5px; background-color: #000"
+        >
           <div class="bee-col bee-col-1 bee-col-w12">
             <div class="bee-block bee-block-1 bee-image">
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/proces.png"
+                src="./grafiki/proces.png"
                 style="max-width: 1200px"
               />
             </div>
@@ -645,7 +736,16 @@
         </div>
       </div>
       <div class="bee-row bee-row-7">
-        <div class="bee-row-content">
+        <div
+          class="bee-row-content"
+          style="
+            background-color: #000;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 0px;
+            padding-bottom: 20px;
+          "
+        >
           <div class="bee-col bee-col-1 bee-col-w12">
             <div class="bee-block bee-block-1 bee-paragraph">
               <p>
@@ -657,12 +757,14 @@
                 przygody z Galley-La Company. Do ich obróbki użyłam programu
                 Photoshop oraz na niektórych stronach mang i zdjęć
                 eksperymentowałam z pakietem Topaz Labs (efekty można zobaczyć
-                również w galerii "Grafika"). Jestem także otwarta na naukę
-                obsługi innych programów do obróbki graficznej.
+                również w galerii "Grafika").
               </p>
             </div>
           </div>
         </div>
+      </div>
+      <div class="bee-block bee-block-1 bee-spacer">
+        <div class="spacer" style="height: 20px"></div>
       </div>
       <div class="bee-row bee-row-8">
         <div class="bee-row-content">
@@ -696,16 +798,7 @@
               </h2>
             </div>
             <div class="bee-block bee-block-3 bee-spacer">
-              <div class="spacer" style="height: 20px"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bee-row bee-row-9">
-        <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w12">
-            <div class="bee-block bee-block-1 bee-spacer">
-              <div class="spacer" style="height: 30px"></div>
+              <div class="spacer" style="height: 10px"></div>
             </div>
           </div>
         </div>
@@ -713,130 +806,52 @@
       <div class="bee-row bee-row-10">
         <div class="bee-row-content">
           <div class="bee-col bee-col-1 bee-col-w6">
-            <div class="bee-block bee-block-1 bee-heading">
-              <h3
-                style="
-                  color: #eeeeee;
-                  direction: ltr;
-                  font-family: Verdana, Geneva, sans-serif;
-                  font-size: 24px;
-                  font-weight: 700;
-                  letter-spacing: normal;
-                  line-height: 120%;
-                  text-align: center;
-                  margin-top: 0;
-                  margin-bottom: 0;
-                "
-              >
-                <span class="tinyMce-placeholder" style="color: #eeeeee"
-                  >One-Punch Man</span
-                >
-              </h3>
-            </div>
             <div class="bee-block bee-block-2 bee-image">
-              <img
-                alt=""
-                class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/One-Punch-Man-rozdzia%C5%82-34.png"
-                style="max-width: 580px"
-              />
+              <a href="./One-Punch_Man.html">
+                <img
+                  alt=""
+                  class="bee-center bee-autowidth"
+                  src="./grafiki_manga/One-Punch-Man-rozdział-34.png"
+                  style="max-width: 580px"
+                />
+              </a>
             </div>
-            <div class="bee-block bee-block-3 bee-button">
-              <div
-                class="bee-button-content"
-                style="
-                  font-size: 16px;
-                  background-color: transparent;
-                  border-bottom: 2px solid #ffffff;
-                  border-left: 2px solid #ffffff;
-                  border-radius: 4px;
-                  border-right: 2px solid #ffffff;
-                  border-top: 2px solid #ffffff;
-                  color: #ffffff;
-                  direction: ltr;
-                  font-family: inherit;
-                  font-weight: 700;
-                  max-width: 100%;
-                  padding-bottom: 5px;
-                  padding-left: 20px;
-                  padding-right: 20px;
-                  padding-top: 5px;
-                  width: auto;
-                  display: inline-block;
-                "
-              >
-                <span
-                  style="
-                    word-break: break-word;
-                    font-size: 16px;
-                    line-height: 200%;
-                  "
-                  >Zobacz więcej stron tej mangi ⏭</span
+            <div class="spacer" style="height: 10px"></div>
+            <div class="bee-button guzik-tytul">
+              <div class="bee-button-content">
+                <a
+                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  href="./One-Punch_Man.html"
                 >
+                  <span style="font-size: 16px; line-height: 200%"
+                    >Zobacz więcej stron mangi One-Punch Man ⏭</span
+                  >
+                </a>
               </div>
             </div>
           </div>
           <div class="bee-col bee-col-2 bee-col-w6">
-            <div class="bee-block bee-block-1 bee-heading">
-              <h3
-                style="
-                  color: #eeeeee;
-                  direction: ltr;
-                  font-family: Verdana, Geneva, sans-serif;
-                  font-size: 24px;
-                  font-weight: 700;
-                  letter-spacing: normal;
-                  line-height: 120%;
-                  text-align: center;
-                  margin-top: 0;
-                  margin-bottom: 0;
-                "
-              >
-                <span class="tinyMce-placeholder" style="color: #eeeeee"
-                  >Gintama</span
-                >
-              </h3>
-            </div>
             <div class="bee-block bee-block-2 bee-image">
-              <img
-                alt=""
-                class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/06.png"
-                style="max-width: 580px"
-              />
+              <a href="./Gintama.html">
+                <img
+                  alt=""
+                  class="bee-center bee-autowidth"
+                  src="./grafiki_manga/06.png"
+                  style="max-width: 580px"
+                />
+              </a>
             </div>
-            <div class="bee-block bee-block-3 bee-button">
-              <div
-                class="bee-button-content"
-                style="
-                  font-size: 16px;
-                  background-color: transparent;
-                  border-bottom: 2px solid #ffffff;
-                  border-left: 2px solid #ffffff;
-                  border-radius: 4px;
-                  border-right: 2px solid #ffffff;
-                  border-top: 2px solid #ffffff;
-                  color: #ffffff;
-                  direction: ltr;
-                  font-family: inherit;
-                  font-weight: 700;
-                  max-width: 100%;
-                  padding-bottom: 5px;
-                  padding-left: 20px;
-                  padding-right: 20px;
-                  padding-top: 5px;
-                  width: auto;
-                  display: inline-block;
-                "
-              >
-                <span
-                  style="
-                    word-break: break-word;
-                    font-size: 16px;
-                    line-height: 200%;
-                  "
-                  >Zobacz więcej stron tej mangi ⏭</span
+            <div class="spacer" style="height: 10px"></div>
+            <div class="bee-button guzik-tytul">
+              <div class="bee-button-content">
+                <a
+                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  href="./Gintama.html"
                 >
+                  <span style="font-size: 16px; line-height: 200%"
+                    >Zobacz więcej stron mangi Gintama ⏭</span
+                  >
+                </a>
               </div>
             </div>
           </div>
@@ -854,128 +869,52 @@
       <div class="bee-row bee-row-12">
         <div class="bee-row-content">
           <div class="bee-col bee-col-1 bee-col-w6">
-            <div class="bee-block bee-block-1 bee-heading">
-              <h3
-                style="
-                  color: #ffffff;
-                  direction: ltr;
-                  font-family: Verdana, Geneva, sans-serif;
-                  font-size: 24px;
-                  font-weight: 700;
-                  letter-spacing: normal;
-                  line-height: 120%;
-                  text-align: center;
-                  margin-top: 0;
-                  margin-bottom: 0;
-                "
-              >
-                <span style="color: #ffffff">One Piece</span>
-              </h3>
-            </div>
             <div class="bee-block bee-block-2 bee-image">
-              <img
-                alt=""
-                class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/One-Piece-rozdzia%C5%82-841-strona-16-%28Skany-Ishuhui%29.png"
-                style="max-width: 580px"
-              />
+              <a href="./One_Piece.html">
+                <img
+                  alt=""
+                  class="bee-center bee-autowidth"
+                  src="./grafiki_manga/One-Piece-rozdział-841-strona-16-(Skany-Ishuhui).png"
+                  style="max-width: 580px"
+                />
+              </a>
             </div>
-            <div class="bee-block bee-block-3 bee-button">
-              <div
-                class="bee-button-content"
-                style="
-                  font-size: 16px;
-                  background-color: transparent;
-                  border-bottom: 2px solid #ffffff;
-                  border-left: 2px solid #ffffff;
-                  border-radius: 4px;
-                  border-right: 2px solid #ffffff;
-                  border-top: 2px solid #ffffff;
-                  color: #ffffff;
-                  direction: ltr;
-                  font-family: inherit;
-                  font-weight: 700;
-                  max-width: 100%;
-                  padding-bottom: 5px;
-                  padding-left: 20px;
-                  padding-right: 20px;
-                  padding-top: 5px;
-                  width: auto;
-                  display: inline-block;
-                "
-              >
-                <span
-                  style="
-                    word-break: break-word;
-                    font-size: 16px;
-                    line-height: 200%;
-                  "
-                  >Zobacz więcej stron tej mangi ⏭</span
+            <div class="spacer" style="height: 10px"></div>
+            <div class="bee-button guzik-tytul">
+              <div class="bee-button-content">
+                <a
+                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  href="./One_Piece.html"
                 >
+                  <span style="font-size: 16px; line-height: 200%"
+                    >Zobacz więcej stron mangi One Piece ⏭</span
+                  >
+                </a>
               </div>
             </div>
           </div>
-          <div class="bee-col bee-col-2 bee-col-w6">
-            <div class="bee-block bee-block-1 bee-heading">
-              <h3
-                style="
-                  color: #ffffff;
-                  direction: ltr;
-                  font-family: Verdana, Geneva, sans-serif;
-                  font-size: 24px;
-                  font-weight: 700;
-                  letter-spacing: normal;
-                  line-height: 120%;
-                  text-align: center;
-                  margin-top: 0;
-                  margin-bottom: 0;
-                "
-              >
-                <span class="tinyMce-placeholder" style="color: #ffffff"
-                  >Akumetsu</span
-                >
-              </h3>
+          <div class="bee-col bee-col-1 bee-col-w6">
+            <div class="bee-block bee-image">
+              <a href="./Akumetsu.html">
+                <img
+                  alt=""
+                  class="bee-center bee-autowidth"
+                  src="./grafiki_manga/Akumetsu-rozdział-119.png"
+                  style="max-width: 580px"
+                />
+              </a>
             </div>
-            <div class="bee-block bee-block-2 bee-image">
-              <img
-                alt=""
-                class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Akumetsu-rozdzia%C5%82-119.png"
-                style="max-width: 570px"
-              />
-            </div>
-            <div class="bee-block bee-block-3 bee-button">
-              <div
-                class="bee-button-content"
-                style="
-                  font-size: 16px;
-                  background-color: transparent;
-                  border-bottom: 2px solid #ffffff;
-                  border-left: 2px solid #ffffff;
-                  border-radius: 4px;
-                  border-right: 2px solid #ffffff;
-                  border-top: 2px solid #ffffff;
-                  color: #ffffff;
-                  direction: ltr;
-                  font-family: inherit;
-                  font-weight: 700;
-                  max-width: 100%;
-                  padding-bottom: 5px;
-                  padding-left: 20px;
-                  padding-right: 20px;
-                  padding-top: 5px;
-                  width: auto;
-                  display: inline-block;
-                "
-              >
-                <span
-                  style="
-                    word-break: break-word;
-                    font-size: 16px;
-                    line-height: 200%;
-                  "
-                  >Zobacz więcej stron tej mangi ⏭</span
+            <div class="spacer" style="height: 10px"></div>
+            <div class="bee-button guzik-tytul">
+              <div class="bee-button-content">
+                <a
+                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  href="./Akumetsu.html"
                 >
+                  <span style="font-size: 16px; line-height: 200%"
+                    >Zobacz więcej stron mangi Akumetsu ⏭</span
+                  >
+                </a>
               </div>
             </div>
           </div>
@@ -993,130 +932,52 @@
       <div class="bee-row bee-row-14">
         <div class="bee-row-content">
           <div class="bee-col bee-col-1 bee-col-w6">
-            <div class="bee-block bee-block-1 bee-heading">
-              <h3
-                style="
-                  color: #eeeeee;
-                  direction: ltr;
-                  font-family: Verdana, Geneva, sans-serif;
-                  font-size: 24px;
-                  font-weight: 700;
-                  letter-spacing: normal;
-                  line-height: 120%;
-                  text-align: center;
-                  margin-top: 0;
-                  margin-bottom: 0;
-                "
-              >
-                <span class="tinyMce-placeholder" style="color: #ffffff"
-                  >Arata Kangatari</span
-                >
-              </h3>
-            </div>
             <div class="bee-block bee-block-2 bee-image">
-              <img
-                alt=""
-                class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Arata-Kangatari-rozdzia%C5%82-1-strona-11.png"
-                style="max-width: 580px"
-              />
+              <a href="./Arata_Kangatari.html">
+                <img
+                  alt=""
+                  class="bee-center bee-autowidth"
+                  src="./grafiki_manga/Arata-Kangatari-rozdział-1-strona-11.png"
+                  style="max-width: 580px"
+                />
+              </a>
             </div>
-            <div class="bee-block bee-block-3 bee-button">
-              <div
-                class="bee-button-content"
-                style="
-                  font-size: 16px;
-                  background-color: transparent;
-                  border-bottom: 2px solid #ffffff;
-                  border-left: 2px solid #ffffff;
-                  border-radius: 4px;
-                  border-right: 2px solid #ffffff;
-                  border-top: 2px solid #ffffff;
-                  color: #ffffff;
-                  direction: ltr;
-                  font-family: inherit;
-                  font-weight: 700;
-                  max-width: 100%;
-                  padding-bottom: 5px;
-                  padding-left: 20px;
-                  padding-right: 20px;
-                  padding-top: 5px;
-                  width: auto;
-                  display: inline-block;
-                "
-              >
-                <span
-                  style="
-                    word-break: break-word;
-                    font-size: 16px;
-                    line-height: 200%;
-                  "
-                  >Zobacz więcej stron tej mangi ⏭</span
+            <div class="spacer" style="height: 10px"></div>
+            <div class="bee-button guzik-tytul">
+              <div class="bee-button-content">
+                <a
+                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  href="./Arata_Kangatari.html"
                 >
+                  <span style="font-size: 16px; line-height: 200%"
+                    >Zobacz więcej stron mangi Arata Kangatari ⏭</span
+                  >
+                </a>
               </div>
             </div>
           </div>
           <div class="bee-col bee-col-2 bee-col-w6">
-            <div class="bee-block bee-block-1 bee-heading">
-              <h3
-                style="
-                  color: #eeeeee;
-                  direction: ltr;
-                  font-family: Verdana, Geneva, sans-serif;
-                  font-size: 24px;
-                  font-weight: 700;
-                  letter-spacing: normal;
-                  line-height: 120%;
-                  text-align: center;
-                  margin-top: 0;
-                  margin-bottom: 0;
-                "
-              >
-                <span class="tinyMce-placeholder" style="color: #ffffff"
-                  >Ansatsu Kyoushitsu</span
-                >
-              </h3>
-            </div>
             <div class="bee-block bee-block-2 bee-image">
-              <img
-                alt=""
-                class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Ansatsu-Kyoushitsu-rozdzia%C5%82-5.png"
-                style="max-width: 580px"
-              />
+              <a href="./Ansatsu_Kyoushitsu.html">
+                <img
+                  alt=""
+                  class="bee-center bee-autowidth"
+                  src="./grafiki_manga/Ansatsu-Kyoushitsu-rozdział-5.png"
+                  style="max-width: 580px"
+                />
+              </a>
             </div>
-            <div class="bee-block bee-block-3 bee-button">
-              <div
-                class="bee-button-content"
-                style="
-                  font-size: 16px;
-                  background-color: transparent;
-                  border-bottom: 2px solid #ffffff;
-                  border-left: 2px solid #ffffff;
-                  border-radius: 4px;
-                  border-right: 2px solid #ffffff;
-                  border-top: 2px solid #ffffff;
-                  color: #ffffff;
-                  direction: ltr;
-                  font-family: inherit;
-                  font-weight: 700;
-                  max-width: 100%;
-                  padding-bottom: 5px;
-                  padding-left: 20px;
-                  padding-right: 20px;
-                  padding-top: 5px;
-                  width: auto;
-                  display: inline-block;
-                "
-              >
-                <span
-                  style="
-                    word-break: break-word;
-                    font-size: 16px;
-                    line-height: 200%;
-                  "
-                  >Zobacz więcej stron tej mangi ⏭</span
+            <div class="spacer" style="height: 10px"></div>
+            <div class="bee-button guzik-tytul">
+              <div class="bee-button-content">
+                <a
+                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  href="./Ansatsu_Kyoushitsu.html"
                 >
+                  <span style="font-size: 16px; line-height: 200%"
+                    >Zobacz więcej stron Ansatsu Kyoushitsu ⏭</span
+                  >
+                </a>
               </div>
             </div>
           </div>
@@ -1134,130 +995,52 @@
       <div class="bee-row bee-row-16">
         <div class="bee-row-content">
           <div class="bee-col bee-col-1 bee-col-w6">
-            <div class="bee-block bee-block-1 bee-heading">
-              <h3
-                style="
-                  color: #eeeeee;
-                  direction: ltr;
-                  font-family: Verdana, Geneva, sans-serif;
-                  font-size: 24px;
-                  font-weight: 700;
-                  letter-spacing: normal;
-                  line-height: 120%;
-                  text-align: center;
-                  margin-top: 0;
-                  margin-bottom: 0;
-                "
-              >
-                <span class="tinyMce-placeholder" style="color: #ffffff"
-                  >Himitsu no Ai-chan</span
-                >
-              </h3>
-            </div>
             <div class="bee-block bee-block-2 bee-image">
-              <img
-                alt=""
-                class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Himitsu-no-Ai-chan-rozdzia%C5%82-11-str-24.png"
-                style="max-width: 580px"
-              />
+              <a href="./Himitsu_no_Ai-chan.html">
+                <img
+                  alt=""
+                  class="bee-center bee-autowidth"
+                  src="./grafiki_manga/Himitsu-no-Ai-chan-rozdział-11-str-24.png"
+                  style="max-width: 580px"
+                />
+              </a>
             </div>
-            <div class="bee-block bee-block-3 bee-button">
-              <div
-                class="bee-button-content"
-                style="
-                  font-size: 16px;
-                  background-color: transparent;
-                  border-bottom: 2px solid #ffffff;
-                  border-left: 2px solid #ffffff;
-                  border-radius: 4px;
-                  border-right: 2px solid #ffffff;
-                  border-top: 2px solid #ffffff;
-                  color: #ffffff;
-                  direction: ltr;
-                  font-family: inherit;
-                  font-weight: 700;
-                  max-width: 100%;
-                  padding-bottom: 5px;
-                  padding-left: 20px;
-                  padding-right: 20px;
-                  padding-top: 5px;
-                  width: auto;
-                  display: inline-block;
-                "
-              >
-                <span
-                  style="
-                    word-break: break-word;
-                    font-size: 16px;
-                    line-height: 200%;
-                  "
-                  >Zobacz więcej stron tej mangi ⏭</span
+            <div class="spacer" style="height: 10px"></div>
+            <div class="bee-button guzik-tytul">
+              <div class="bee-button-content">
+                <a
+                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  href="./Himitsu_no_Ai-chan.html"
                 >
+                  <span style="font-size: 16px; line-height: 200%"
+                    >Zobacz więcej stron Himitsu no Ai-chan ⏭</span
+                  >
+                </a>
               </div>
             </div>
           </div>
           <div class="bee-col bee-col-2 bee-col-w6">
-            <div class="bee-block bee-block-1 bee-heading">
-              <h3
-                style="
-                  color: #eeeeee;
-                  direction: ltr;
-                  font-family: Verdana, Geneva, sans-serif;
-                  font-size: 24px;
-                  font-weight: 700;
-                  letter-spacing: normal;
-                  line-height: 120%;
-                  text-align: center;
-                  margin-top: 0;
-                  margin-bottom: 0;
-                "
-              >
-                <span class="tinyMce-placeholder" style="color: #ffffff"
-                  >Heroine Shikkaku</span
-                >
-              </h3>
-            </div>
             <div class="bee-block bee-block-2 bee-image">
-              <img
-                alt=""
-                class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Heroine-Shikkaku-rozdzia%C5%82-17-str-39.png"
-                style="max-width: 580px"
-              />
+              <a href="./Heroine_Shikkaku.html">
+                <img
+                  alt=""
+                  class="bee-center bee-autowidth"
+                  src="./grafiki_manga/Heroine-Shikkaku-rozdział-17-str-39.png"
+                  style="max-width: 580px"
+                />
+              </a>
             </div>
-            <div class="bee-block bee-block-3 bee-button">
-              <div
-                class="bee-button-content"
-                style="
-                  font-size: 16px;
-                  background-color: transparent;
-                  border-bottom: 2px solid #ffffff;
-                  border-left: 2px solid #ffffff;
-                  border-radius: 4px;
-                  border-right: 2px solid #ffffff;
-                  border-top: 2px solid #ffffff;
-                  color: #ffffff;
-                  direction: ltr;
-                  font-family: inherit;
-                  font-weight: 700;
-                  max-width: 100%;
-                  padding-bottom: 5px;
-                  padding-left: 20px;
-                  padding-right: 20px;
-                  padding-top: 5px;
-                  width: auto;
-                  display: inline-block;
-                "
-              >
-                <span
-                  style="
-                    word-break: break-word;
-                    font-size: 16px;
-                    line-height: 200%;
-                  "
-                  >Zobacz więcej stron tej mangi ⏭</span
+            <div class="spacer" style="height: 10px"></div>
+            <div class="bee-button guzik-tytul">
+              <div class="bee-button-content">
+                <a
+                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  href="./Heroine_Shikkaku.html"
                 >
+                  <span style="font-size: 16px; line-height: 200%"
+                    >Zobacz więcej stron mangi Heroine Shikkaku ⏭</span
+                  >
+                </a>
               </div>
             </div>
           </div>
@@ -1301,14 +1084,11 @@
                 >
               </h2>
             </div>
-            <div class="bee-block bee-block-3 bee-spacer">
-              <div class="spacer" style="height: 20px"></div>
-            </div>
           </div>
         </div>
       </div>
       <div class="bee-row bee-row-19">
-        <div class="bee-row-content">
+        <div class="bee-row-content" style="background-color: #000">
           <div class="bee-col bee-col-1 bee-col-w3">
             <div class="bee-block bee-block-1 bee-heading">
               <h3
@@ -1334,7 +1114,7 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Let%27s%20Lagoon/Let%27s%20Lagoon%20rozdzia%C5%82%2025%20strona%2018.png"
+                src="./grafiki_manga_pozostałe/Let's-Lagoon-rozdział-25-strona-18.png"
                 style="max-width: 280px"
               />
             </div>
@@ -1364,7 +1144,7 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/8c44e058-0bb2-4a75-94e8-ec0b1ab3033c.png"
+                src="./grafiki_manga_pozostałe/Tegami-Bachi-rozdział-12.png"
                 style="max-width: 280px"
               />
             </div>
@@ -1394,7 +1174,7 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/ebaa7f85-26d3-479f-a499-3755207f7b63.png"
+                src="./grafiki_manga_pozostałe/Gigantomachia-rozdział-3-strona-10.png"
                 style="max-width: 280px"
               />
             </div>
@@ -1424,7 +1204,7 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/67ffa893-65cb-4a33-8d04-4464bb6c7596.jpg"
+                src="./grafiki_manga_pozostałe/Taboo-Tattoo-rozdział-11-(Skany---Simple-Scans).png"
                 style="max-width: 280px"
               />
             </div>
@@ -1432,7 +1212,7 @@
         </div>
       </div>
       <div class="bee-row bee-row-20">
-        <div class="bee-row-content">
+        <div class="bee-row-content" style="background-color: #000">
           <div class="bee-col bee-col-1 bee-col-w3">
             <div class="bee-block bee-block-1 bee-heading">
               <h3
@@ -1458,7 +1238,7 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Gamble%20Fish/Gamble%20Fish%20rozdzia%C5%82%2090%20strona%2007.png"
+                src="./grafiki_manga_pozostałe/Gamble-Fish-rozdział-90-strona-07.png"
                 style="max-width: 280px"
               />
             </div>
@@ -1488,7 +1268,7 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Magi%20-%20Labyrinth%20of%20Magic/Magi%20-%20Labyrinth%20of%20Magic%20rozdzia%C5%82%2064.png"
+                src="./grafiki_manga_pozostałe/Magi---Labyrinth-of-Magic-rozdział-64.png"
                 style="max-width: 580px"
               />
             </div>
@@ -1518,7 +1298,7 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Arslan%20Senki/Arslan%20Senki%20rozdzia%C5%82%2030.png"
+                src="./grafiki_manga_pozostałe/Arslan-Senki-rozdział-30.png"
                 style="max-width: 280px"
               />
             </div>
@@ -1526,7 +1306,7 @@
         </div>
       </div>
       <div class="bee-row bee-row-21">
-        <div class="bee-row-content">
+        <div class="bee-row-content" style="background-color: #000">
           <div class="bee-col bee-col-1 bee-col-w3">
             <div class="bee-block bee-block-1 bee-heading">
               <h3
@@ -1552,7 +1332,7 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/6532c513-683d-4c47-913f-2d73d92d5e76.png"
+                src="./grafiki_manga_pozostałe/Mx0-rozdział-61.png"
                 style="max-width: 280px"
               />
             </div>
@@ -1582,7 +1362,7 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Baby%20Steps/Baby%20Steps%20rozdzia%C5%82%208%20strona%2003.png"
+                src="./grafiki_manga_pozostałe/Baby-Steps-strona-z-rozdziału-8-03.png"
                 style="max-width: 280px"
               />
             </div>
@@ -1612,7 +1392,7 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/Gun%20Frontier/Gun%20Frontier%20rozdzia%C5%82%2017.png"
+                src="./grafiki_manga_pozostałe/Gun-Frontier-rozdział-17.png"
                 style="max-width: 280px"
               />
             </div>
@@ -1642,7 +1422,7 @@
               <img
                 alt=""
                 class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/4fca97f0-3dd2-4b7d-b3e2-b46d6673108b.png"
+                src="./grafiki_manga_pozostałe/Over-Drive-rozdział-25.png"
                 style="max-width: 280px"
               />
             </div>
@@ -1650,52 +1430,28 @@
         </div>
       </div>
       <div class="bee-row bee-row-22">
-        <div class="bee-row-content">
+        <div class="bee-row-content" style="background-color: #000">
           <div class="bee-col bee-col-1 bee-col-w12">
-            <div class="bee-block bee-block-1 bee-spacer">
-              <div class="spacer" style="height: 20px"></div>
-            </div>
-            <div class="bee-block bee-block-2 bee-button">
-              <div
-                class="bee-button-content"
-                style="
-                  font-size: 18px;
-                  background-color: transparent;
-                  border-bottom: 2px solid #ffffff;
-                  border-left: 2px solid #ffffff;
-                  border-radius: 4px;
-                  border-right: 2px solid #ffffff;
-                  border-top: 2px solid #ffffff;
-                  color: #ffffff;
-                  direction: ltr;
-                  font-family: inherit;
-                  font-weight: 700;
-                  letter-spacing: 0px;
-                  max-width: 100%;
-                  padding-bottom: 10px;
-                  padding-left: 30px;
-                  padding-right: 30px;
-                  padding-top: 10px;
-                  width: auto;
-                  display: inline-block;
-                "
-              >
-                <span
-                  style="
-                    word-break: break-word;
-                    font-size: 18px;
-                    line-height: 200%;
-                    letter-spacing: normal;
-                  "
-                  >Zobacz więcej ⏭</span
+            <div class="bee-block-2 bee-button guzik-tytul">
+              <div class="bee-button-content">
+                <a
+                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-szeroki"
+                  href="./pozostale.html"
                 >
+                  <span style="font-size: 16px; line-height: 200%"
+                    >Zobacz więcej ⏭</span
+                  >
+                </a>
               </div>
             </div>
             <div class="bee-block bee-block-3 bee-spacer">
-              <div class="spacer" style="height: 20px"></div>
+              <div class="spacer" style="height: 10px"></div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="bee-block bee-block-1 bee-spacer">
+        <div class="spacer" style="height: 20px"></div>
       </div>
       <div class="bee-row bee-row-23">
         <div class="bee-row-content">
@@ -1730,7 +1486,7 @@
         <div class="bee-row-content">
           <div class="bee-col bee-col-1 bee-col-w12">
             <div class="bee-block bee-block-1 bee-heading">
-              <h1
+              <h2
                 style="
                   color: #eeeeee;
                   direction: ltr;
@@ -1744,10 +1500,9 @@
                   margin-bottom: 0;
                 "
               >
-                <span class="tinyMce-placeholder"
-                  ><span style="color: #777777">K</span>ontakt:</span
-                >
-              </h1>
+                <span class="tinyMce-placeholder"></span
+                ><span style="color: #eeeeee">Kontakt:</span>
+              </h2>
             </div>
             <div class="bee-block bee-block-2 bee-paragraph">
               <p>Joanna Grygiel</p>
@@ -1800,7 +1555,8 @@
                       href="https://www.designedwithbee.com/?utm_source=editor&amp;utm_medium=bee_pro&amp;utm_campaign=free_footer_link"
                       target="_blank"
                       title="Designed with BEE"
-                      >Designed with BEE</a
+                      >Designed with BEE (Edited by Joanna Grygiel & Szymon
+                      Scholz)</a
                     >
                   </div>
                 </div>

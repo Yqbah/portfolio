@@ -1,33 +1,224 @@
-.guzik-menu {
-  font-size: 15px;
-  background-color: transparent;
-  border: 2px solid #eeeeee;
-  border-radius: 4px;
-  color: #eeeeee;
-  direction: ltr;
-  font-family: inherit;
-  font-weight: 700;
-  max-width: 100%;
-  padding-bottom: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  width: auto;
-  display: inline-block;
-}
-
-.guzik-menu:hover {
-  border: none;
-  border-radius: 4px;
-  color: #eeeeee;
-  display: inline-block;
-}
-
 .menu {
   max-width: 95%;
+  height: 6.6rem;
 }
 
 .menu-text {
+  /* CSS dla tekstów w guzikach wszystkich menu  */
+  font-weight: 700;
   word-break: keep-all;
   line-height: 200%;
+}
+
+.guzik-tytul {
+  /* CSS dla ustalenia marginesów wewnętrznych nagłówków */
+  padding: 10px 0;
+}
+
+.guzik-szeroki {
+  /* CSS ustawiający szerokość guzika w miejscach gdzie jest zbyt wąski */
+  width: 50%;
+}
+
+.guzik-wypełnij {
+    width: 100%;
+}
+
+.guzik-menu {
+  padding: 10px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.pozostale-guziki {
+    padding: 10px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+.guzik-dziecko {
+  padding: 10px 10px;
+  text-align: left;
+  text-transform: none;
+  max-width: none;
+  display: block;
+  font-size: x-small;
+  width: 157px;
+}
+
+.cieniowanie {
+  /* CSS dodający cień */
+  box-shadow: inset 1px 1px 9px #828282;
+  border-radius: 4px;
+}
+
+.guzik-szary {
+  /* CSS dla guzików na stronach "manga" i wszystkich jej podstronach z tytułami */
+  background-image: linear-gradient(
+    to right,
+    #222222 0%,
+    #434343 51%,
+    #191919 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-position: right;
+  color: white;
+}
+
+.guzik-szary:hover {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.guzik-dziecko-szary {
+  /* CSS dla pozycji na liście rozwijanej po kliknięciu przycisku "menu" */
+  background-image: linear-gradient( to right, #222222 0%, #434343 51%, #191919 100%
+  );
+  color: #fff;
+  background-position: left center;
+  background-size: 200% auto;
+}
+
+.guzik-dziecko-szary:hover {
+  background-image: linear-gradient(to right, #202020 0%, #343434 51%, #1e1e1e 100%
+  );
+  background-position: left center;
+}
+
+.guzik-fioletowy {
+  /* CSS dla guzików na stronie "grafika" */
+  background-image: linear-gradient(to right,#4b3599 0%,#7675d7 51%,#4b3599 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-position: right;
+  color: white;
+}
+
+.guzik-menu:hover {
+    background-position: center left;
+  }
+
+#parent:hover .guzik-menu {
+  background-position: center left;
+}
+
+.guzik-dziecko-fiolet {
+  background-image: linear-gradient(
+    to right,
+    #4b3599 0%,
+    #7675d7 51%,
+    #4b3599 100%
+  );
+  background-position: left center;
+}
+
+.guzik-dziecko-fiolet:hover {
+  background-image: linear-gradient(
+    to right,
+    #392874 0%,
+    #5f5eac 51%,
+    #3a2751 100%
+  );
+  background-position: left center;
+}
+
+.guzik-niebieski {
+    /* CSS dla guzików na stronie "grafika" */
+    background-image: linear-gradient(
+        to right,
+        #3a5581 0%,
+        #7e9ae8 51%,
+        #3a5581 100%
+    );
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-position: right;
+    color: white;
+  }
+
+  .guzik-dziecko-niebieski {
+    background-image: linear-gradient(
+        to right,
+        #3a5581 0%,
+        #7e9ae8 51%,
+        #3a5581 100%
+    );
+    background-position: left center;
+  }
+  
+  .guzik-dziecko-niebieski:hover {
+    background-image: linear-gradient(
+        to right,
+        #2a3d5c 0%,
+        rgb(105, 128, 192) 51%,
+        #2b3f5f 100%
+    );
+    background-position: left center;
+  }
+
+  .guzik-pomaranczowy {
+    /* CSS dla guzików na stronie "grafika" */
+    background-image: linear-gradient(
+        to right,
+        #d0520e 0%,
+        #d17f0b 51%,
+        #d0520e 100%
+      );
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-position: right;
+    color: white;
+  }
+
+  .guzik-dziecko-pomaranczowy {
+    background-image: linear-gradient(
+        to right,
+        #d0520e 0%,
+        #d17f0b 51%,
+        #d0520e 100%
+      );
+    background-position: left center;
+  }
+  
+  .guzik-dziecko-pomaranczowy:hover {
+    background-image: linear-gradient(
+        to right,
+        #b6480d 0%,
+        #b76f0a 51%,
+        #b9490d 100%
+      );
+    background-position: left center;
+  }
+
+#wiersz-menu {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+#parent {
+  background-color: transparent;
+  display: inline-block;
+}
+
+#parent .hidden-child {
+  visibility: hidden;
+}
+
+#parent:hover .hidden-child {
+  visibility: visible;
+}
+
+#parent:hover .rozwijane-menu {
+  border-radius: 4px 4px 0 0;
+}
+
+.hidden-childs-container {
+  position: absolute;
 }
