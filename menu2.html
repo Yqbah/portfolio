@@ -108,10 +108,96 @@
                 border-bottom-left-radius: 4px;
                 border-bottom-right-radius: 4px;
             }
+
+            .menu-button-container {
+                display: none;
+            }
+
+            #menu-toggle {
+                display: none;
+            }
         }
 
         @media (max-width: 1280px) {
+            /* Hidden mobile menu button */
+            .menu-button-container {
+                display: none;
+                height: 100%;
+                width: 30px;
+                cursor: pointer;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem 3rem;
+            }
 
+            #menu-toggle {
+                display: none;
+            }
+
+            .menu-button,
+            .menu-button::before,
+            .menu-button::after {
+                display: block;
+                background-color: #fff;
+                position: absolute;
+                height: 4px;
+                width: 30px;
+                transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+                border-radius: 2px;
+            }
+
+            .menu-button::before {
+                content: "";
+                margin-top: -8px;
+            }
+
+            .menu-button::after {
+                content: "";
+                margin-top: 8px;
+            }
+
+            #menu-toggle:checked + .menu-button-container .menu-button::before {
+                margin-top: 0;
+                transform: rotate(405deg);
+            }
+
+            #menu-toggle:checked + .menu-button-container .menu-button {
+                background: rgba(255, 255, 255, 0);
+            }
+
+            #menu-toggle:checked + .menu-button-container .menu-button::after {
+                margin-top: 0;
+                transform: rotate(-405deg);
+            }
+
+            #menu-toggle ~ .menu li {
+                display: none;
+                transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
+
+            #menu-toggle:checked ~ .menu li {
+                display: inline-table;
+                height: 2.5em;
+                transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
+
+            .menu-button-container {
+                display: flex;
+            }
+
+            /* end of button */
+            nav {
+                height: 5rem;
+            }
+
+            .menu {
+                display: block;
+                position: fixed;
+                top: 5rem;
+                right: 0;
+                float: right;
+            }
         }
 
         .guzik-fioletowy {
@@ -130,6 +216,10 @@
     <a class="logo" href="./index.html" target="_self">
         <img alt="Joanna Grygiel" src="./grafiki_na_stronę/logo_fio.png"/>
     </a>
+    <input id="menu-toggle" type="checkbox"/>
+    <label class="menu-button-container" for="menu-toggle">
+        <span class="menu-button"></span>
+    </label>
     <div class="menu">
         <ul>
             <li class="dropdown">
