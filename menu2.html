@@ -20,8 +20,8 @@
             top: 0;
             right: 0;
             left: 0;
-            height: 6.6rem;
-            max-height: 6.6rem;
+            height: 6rem;
+            max-height: 6rem;
             justify-content: space-between;
             background: linear-gradient(to left, #000000, #141414);
         }
@@ -35,7 +35,7 @@
         }
 
         .menu {
-            height: 100%;
+            height: fit-content;
             display: contents;
         }
 
@@ -50,7 +50,7 @@
             display: block;
             text-decoration: none;
             text-transform: uppercase;
-            padding: 1em;
+            padding: 1rem 2rem;
         }
 
         .menu > ul {
@@ -70,7 +70,37 @@
             position: relative;
         }
 
-        .menu > ul > li > ul {
+        #menu-toggle {
+            display: none;
+        }
+
+
+        .menu-button-container {
+            display: none;
+        }
+
+        .menu > ul > li > a{
+            border-radius: 4px;
+        }
+
+        .menu > ul > li:hover > ul > li > a {
+            padding: 10px 10px;
+            text-align: left;
+            text-transform: none;
+            display: block;
+            font-size: 0.7em;
+        }
+
+        .dropdown-container:hover > a {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .dropdown-container:hover > ul {
+            display: block;
+        }
+
+        .dropdown-container ul {
             position: absolute;
             top: 100%;
             left: 0;
@@ -78,50 +108,16 @@
             display: none;
         }
 
-        .menu > ul > li:hover > ul {
-            display: block;
+        .dropdown-container:hover li:last-child a {
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
         }
 
-        @media (min-width: 1281px) {
-            .menu > ul > li > a {
-                padding: 10px 45px;
-                text-align: center;
-                text-transform: uppercase;
-                border-radius: 4px;
-                display: inline-block;
-            }
 
-            .menu > ul > li:hover > ul > li > a {
-                padding: 10px 10px;
-                text-align: left;
-                text-transform: none;
-                display: block;
-                font-size: x-small;
-            }
-
-            .dropdown:hover > a {
-                border-bottom-left-radius: 0;
-                border-bottom-right-radius: 0;
-            }
-
-            .dropdown:hover li:last-child a {
-                border-bottom-left-radius: 4px;
-                border-bottom-right-radius: 4px;
-            }
-
-            .menu-button-container {
-                display: none;
-            }
-
-            #menu-toggle {
-                display: none;
-            }
-        }
-
-        @media (max-width: 1280px) {
+        @media (max-width: 1200px) {
             /* Hidden mobile menu button */
             .menu-button-container {
-                display: none;
+                display: flex;
                 height: 100%;
                 width: 30px;
                 cursor: pointer;
@@ -182,11 +178,8 @@
                 transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
             }
 
-            .menu-button-container {
-                display: flex;
-            }
+            /* end of menu button */
 
-            /* end of button */
             nav {
                 height: 5rem;
             }
@@ -196,7 +189,44 @@
                 position: fixed;
                 top: 5rem;
                 right: 0;
+                width: 25rem;
                 float: right;
+                background-color: gray;
+                max-height: calc(100% - 5rem);
+                overflow: auto;
+            }
+
+            .menu > ul {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 0;
+            }
+
+            .menu > ul > li {
+                width: 100%;
+
+            }
+
+            .dropdown-container ul {
+                display: none;
+            }
+            .dropdown-container:hover > ul {
+                width: 100%;
+                display: flex;
+                position: initial;
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 500px) {
+            nav {
+                height: 4rem;
+            }
+
+            .menu {
+                top: 4rem;
+                max-width: 100vw;
             }
         }
 
@@ -222,7 +252,7 @@
     </label>
     <div class="menu">
         <ul>
-            <li class="dropdown">
+            <li class="dropdown-container">
                 <a
                         class="guzik-fioletowy"
                         href="./manga.html"
