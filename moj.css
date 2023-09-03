@@ -10,6 +10,13 @@
   line-height: 200%;
 }
 
+.bee-page-container {
+  background-image: url("./grafiki_na_stronę/sand_background_b.jpg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+
 .guzik-tytul {
   /* CSS dla ustalenia marginesów wewnętrznych nagłówków */
   padding: 10px 0;
@@ -48,12 +55,6 @@
   display: block;
   font-size: x-small;
   width: 157px;
-}
-
-.cieniowanie {
-  /* CSS dodający cień */
-  box-shadow: inset 1px 1px 9px #828282;
-  border-radius: 4px;
 }
 
 .guzik-szary {
