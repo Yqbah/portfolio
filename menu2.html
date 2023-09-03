@@ -74,6 +74,9 @@
             display: none;
         }
 
+        #sub-menu-toggle {
+            display: none;
+        }
 
         .menu-button-container {
             display: none;
@@ -88,7 +91,7 @@
             height: 100%;
         }
 
-        .dropdown-container:hover > ul {
+         .dropdown-container:hover > ul {
             display: block;
         }
 
@@ -114,7 +117,7 @@
             width: 100%;
         }
 
-        .guzik-menu > button {
+        .sub-menu-button {
             background: transparent;
             border: none;
             float: right;
@@ -124,13 +127,14 @@
             padding: 0;
         }
 
-        .guzik-menu > button:hover {
+        #sub-menu-toggle:checked + .dropdown-container .sub-menu-button {
             transform: rotate(180deg);
         }
 
-        .guzik-menu > button > p {
-            position: relative;
-            top: -0.2em;
+        .sub-menu-button {
+            display: inline-grid;
+            text-align: center;
+            cursor: pointer;
             margin: 0;
         }
 
@@ -149,7 +153,7 @@
                 border-bottom-right-radius: 4px;
             }
 
-            .guzik-menu > button {
+            .sub-menu-button {
                 display: none;
             }
         }
@@ -248,10 +252,10 @@
                 height: 100%;
             }
 
-            .dropdown-container ul {
+            #sub-menu-toggle:checked ~ .dropdown-container ul {
                 display: none;
             }
-            .dropdown-container:hover > ul {
+            #sub-menu-toggle:checked ~ .dropdown-container > ul {
                 width: 100%;
                 display: flex;
                 position: initial;
@@ -296,6 +300,7 @@
     </label>
     <div class="menu">
         <ul>
+            <input id="sub-menu-toggle" type="checkbox"/>
             <li class="dropdown-container">
                 <div class="guzik-menu guzik-kolor">
                     <a
@@ -303,7 +308,7 @@
                             target="_self">
                         <span>Manga</span>
                     </a>
-                    <button><p>⌄</p></button>
+                    <label class="sub-menu-button" for="sub-menu-toggle">⌄</label>
                 </div>
                 <ul>
                     <li>
