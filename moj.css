@@ -1,13 +1,9 @@
-.menu {
-  max-width: 95%;
-  height: 6.6rem;
-}
-
-.menu-text {
-  /* CSS dla tekstów w guzikach wszystkich menu  */
-  font-weight: 700;
-  word-break: keep-all;
-  line-height: 200%;
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+    src: url("./misc/PermamentMarker.woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 .bee-page-container {
@@ -15,6 +11,7 @@
   background-position: top;
   background-size: contain;
   background-repeat: repeat-y;
+    margin-top: 4rem;
 }
 
 .guzik-tytul {
@@ -31,7 +28,7 @@
     width: 100%;
 }
 
-.guzik-menu {
+.guzik-niewiem {
   padding: 10px 45px;
   text-align: center;
   text-transform: uppercase;
@@ -46,16 +43,6 @@
     border-radius: 4px;
     display: inline-block;
   }
-
-.guzik-dziecko {
-  padding: 10px 10px;
-  text-align: left;
-  text-transform: none;
-  max-width: none;
-  display: block;
-  font-size: x-small;
-  width: 157px;
-}
 
 .guzik-szary {
   /* CSS dla guzików na stronach "manga" i wszystkich jej podstronach z tytułami */
@@ -72,8 +59,8 @@
 }
 
 .guzik-szary:hover {
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .guzik-dziecko-szary {
@@ -101,13 +88,9 @@
   color: white;
 }
 
-.guzik-menu:hover {
+.guzik-niewiem:hover {
     background-position: center left;
   }
-
-#parent:hover .guzik-menu {
-  background-position: center left;
-}
 
 .guzik-dziecko-fiolet {
   background-image: linear-gradient(
@@ -152,7 +135,7 @@
     );
     background-position: left center;
   }
-  
+
   .guzik-dziecko-niebieski:hover {
     background-image: linear-gradient(
         to right,
@@ -186,7 +169,7 @@
       );
     background-position: left center;
   }
-  
+
   .guzik-dziecko-pomaranczowy:hover {
     background-image: linear-gradient(
         to right,
@@ -196,30 +179,3 @@
       );
     background-position: left center;
   }
-
-#wiersz-menu {
-  position: sticky;
-  top: 0px;
-  z-index: 1;
-}
-
-#parent {
-  background-color: transparent;
-  display: inline-block;
-}
-
-#parent .hidden-child {
-  visibility: hidden;
-}
-
-#parent:hover .hidden-child {
-  visibility: visible;
-}
-
-#parent:hover .rozwijane-menu {
-  border-radius: 4px 4px 0 0;
-}
-
-.hidden-childs-container {
-  position: absolute;
-}
