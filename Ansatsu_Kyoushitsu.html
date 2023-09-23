@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pl">
   <head>
     <title></title>
     <meta content="summary_large_image" name="twitter:card" />
@@ -17,18 +17,12 @@
     <meta content="" name="description" />
     <meta charset="utf-8" />
     <meta content="width=device-width" name="viewport" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Permanent+Marker:wght@100;200;300;400;500;600;700;800;900"
-      rel="stylesheet"
-      type="text/css"
-    />
     <style>
       .bee-row,
       .bee-row-content {
         position: relative;
       }
 
-      .bee-row-1,
       .bee-row-3 .bee-row-content,
       .bee-row-8,
       .bee-row-9 {
@@ -59,13 +53,15 @@
       }
 
       .bee-row-content {
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
         display: flex;
+        flex-wrap: wrap;
       }
 
-      .bee-row-content .bee-col-w2 {
-        flex-basis: 17%;
+      .bee-row-content *{
+
+        flex-wrap: wrap;
       }
 
       .bee-row-content .bee-col-w4 {
@@ -78,10 +74,6 @@
 
       .bee-row-content .bee-col-w12 {
         flex-basis: 100%;
-      }
-
-      .bee-button .content {
-        text-align: center;
       }
 
       .bee-button a,
@@ -132,12 +124,6 @@
         overflow-wrap: anywhere;
       }
 
-      @media (max-width: 768px) {
-        .bee-row-content:not(.no_stack) {
-          display: block;
-        }
-      }
-
       .bee-row-1 .bee-row-content,
       .bee-row-2 .bee-row-content,
       .bee-row-7 .bee-row-content,
@@ -151,8 +137,6 @@
       .bee-row-1 .bee-col-1,
       .bee-row-1 .bee-col-2,
       .bee-row-1 .bee-col-3,
-      .bee-row-1 .bee-col-4,
-      .bee-row-1 .bee-col-5,
       .bee-row-3 .bee-col-1,
       .bee-row-4 .bee-col-1,
       .bee-row-4 .bee-col-2,
@@ -312,144 +296,143 @@
       .bee-row-10 .bee-col-1 .bee-block-1 .bee-icon-image {
         padding: 5px 6px 5px 5px;
       }
-
     </style>
     <style>
-      .temat-fg {
-        color: #838383;
-      }
-
-      .temat-bg:hover {
-        background-color: #838383;
+      .guzik-kolor {
+        background-image: linear-gradient(
+          to right,
+          #7675d7 0%,
+          #4b3599 51%,
+          #7675d7 100%
+        );
       }
     </style>
     <link href="./moj.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="menu.css" />
   </head>
 
   <body>
-    <div class="bee-row bee-row-1" id="wiersz-menu">
-      <div class="bee-row-content menu">
-        <div class="bee-col bee-col-1 bee-col-w4">
-          <div class="bee-block bee-block-1 bee-image">
-            <a href="./index.html" target="_self"
-              ><img
-                alt="Joanna Grygiel"
-                class="bee-center bee-fixedwidth"
-                src="./grafiki_na_stronę/logo.png"
-                style="max-width: 380px"
-            /></a>
-          </div>
-        </div>
-        <div class="bee-col bee-col-1 bee-col-w6"></div>
-        <div class="bee-col bee-col-2 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button" id="parent">
-            <!-- parent -->
-            <a
-              class="bee-button-content guzik-menu guzik-szary rozwijane-menu"
-              href="./manga.html"
-              target="_self"
-              ><span class="menu-text">Manga</span></a
-            >
-            <div class="hidden-childs-container hidden-child">
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                href="./Akumetsu.html"
-                target="_self"
-                ><span class="menu-text">Akumetsu</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                href="./Ansatsu_Kyoushitsu.html"
-                target="_self"
-                ><span class="menu-text">Ansatsu Kyoushitsu</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                href="./Arata_Kangatari.html"
-                target="_self"
-                ><span class="menu-text">Arata Kangatari</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                href="./Gintama.html"
-                target="_self"
-                ><span class="menu-text">Gintama</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./Heroine_Shikkaku.html"
-                target="_self"
-                ><span class="menu-text">Heroine Shikkaku</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./Himitsu_no_Ai-chan.html"
-                target="_self"
-                ><span class="menu-text">Himitsu no Ai-chan</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./One_Piece.html"
-                target="_self"
-                ><span class="menu-text">One Piece</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./One-Punch_Man.html"
-                target="_self"
-                ><span class="menu-text">One-Punch Man</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./pozostale.html"
-                target="_self"
-                ><span class="menu-text">Pozostałe tytuły</span></a
-              >
+    <nav>
+      <a class="logo" href="./index.html" target="_self">
+        <img alt="Joanna Grygiel" src="./grafiki_na_stronę/logo_fio.png" />
+      </a>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <span class="menu-button"></span>
+      </label>
+      <div class="menu">
+        <ul>
+          <input id="sub-menu-toggle" type="checkbox" />
+          <li class="dropdown-container">
+            <div class="guzik-menu guzik-kolor">
+              <a href="./manga.html" target="_self">
+                <span>Manga</span>
+              </a>
+              <label class="sub-menu-button" for="sub-menu-toggle">⌄</label>
             </div>
-          </div>
-        </div>
-        <div class="bee-col bee-col-3 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button">
+            <ul>
+              <li>
+                <a
+                  class="guzik-menu guzik-kolor"
+                  href="./Akumetsu.html"
+                  target="_self"
+                  ><span class="menu-text">Akumetsu</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="guzik-menu guzik-kolor"
+                  href="./Ansatsu_Kyoushitsu.html"
+                  target="_self"
+                  ><span class="menu-text">Ansatsu Kyoushitsu</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="guzik-menu guzik-kolor"
+                  href="./Arata_Kangatari.html"
+                  target="_self"
+                  ><span class="menu-text">Arata Kangatari</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="guzik-menu guzik-kolor"
+                  href="./Gintama.html"
+                  target="_self"
+                  ><span class="menu-text">Gintama</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="guzik-menu guzik-kolor"
+                  href="./Heroine_Shikkaku.html"
+                  target="_self"
+                  ><span class="menu-text">Heroine Shikkaku</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="guzik-menu guzik-kolor"
+                  href="./Himitsu_no_Ai-chan.html"
+                  target="_self"
+                  ><span class="menu-text">Himitsu no Ai-chan</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="guzik-menu guzik-kolor"
+                  href="./One_Piece.html"
+                  target="_self"
+                  ><span class="menu-text">One Piece</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="guzik-menu guzik-kolor"
+                  href="./One-Punch_Man.html"
+                  target="_self"
+                  ><span class="menu-text">One-Punch Man</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="guzik-menu guzik-kolor"
+                  href="./pozostale.html"
+                  target="_self"
+                  ><span class="menu-text">Pozostałe tytuły</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
             <a
-              class="bee-button-content guzik-menu guzik-szary"
+              class="guzik-menu guzik-kolor"
               href="./fotografia.html"
               target="_self"
               ><span class="menu-text">Zdjęcia</span></a
             >
-          </div>
-        </div>
-        <div class="bee-col bee-col-4 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button">
+          </li>
+
+          <li>
             <a
-              class="bee-button-content guzik-menu guzik-szary"
+              class="guzik-menu guzik-kolor"
               href="./grafika.html"
               target="_self"
               ><span class="menu-text">Grafika</span></a
             >
-          </div>
-        </div>
-        <div class="bee-col bee-col-5 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button">
+          </li>
+          <li>
             <a
-              class="bee-button-content guzik-menu guzik-szary"
+              class="guzik-menu guzik-kolor"
               href="./o_mnie.html"
               target="_self"
               ><span class="menu-text">O mnie</span></a
             >
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
     <div class="bee-page-container">
       <div class="bee-row bee-row-2">
         <div class="bee-row-content">
@@ -498,7 +481,7 @@
                 alt="Ansatsu Kyoushitsu strona z rozdziału 60"
                 class="bee-center bee-autowidth"
                 src="./Mangi/Ansatsu Kyoushitsu na portfolio/Ansatsu-Kyoushitsu-rozdział-60.png"
-                style="max-width: 380px; width: auto;"
+                style="max-width: 380px; width: auto"
               />
             </div>
             <div class="bee-block bee-block-2 bee-paragraph">
@@ -511,7 +494,7 @@
                 alt="Ansatsu Kyoushitsu strona z rozdziału 62"
                 class="bee-center bee-autowidth"
                 src="./Mangi/Ansatsu Kyoushitsu na portfolio/Ansatsu-Kyoushitsu-rozdział-62.png"
-                style="max-width: 380px; width: auto;"
+                style="max-width: 380px; width: auto"
               />
             </div>
             <div class="bee-block bee-block-2 bee-paragraph">
@@ -524,7 +507,7 @@
                 alt="Ansatsu Kyoushitsu strona z rozdziału 54"
                 class="bee-center bee-autowidth"
                 src="./Mangi/Ansatsu Kyoushitsu na portfolio/Ansatsu-Kyoushitsu-rozdział-54.png"
-                style="max-width: 380px; width: auto;"
+                style="max-width: 380px; width: auto"
               />
             </div>
             <div class="bee-block bee-block-2 bee-paragraph">
@@ -577,7 +560,7 @@
                 alt="Ansatsu Kyoushitsu strona z rozdziału 5"
                 class="bee-center bee-autowidth"
                 src="./Mangi/Ansatsu Kyoushitsu na portfolio/Ansatsu-Kyoushitsu-rozdział-5.png"
-                style="max-width: 380px; width: auto;"
+                style="max-width: 380px; width: auto"
               />
             </div>
             <div class="bee-block bee-block-2 bee-paragraph">
@@ -590,7 +573,7 @@
                 alt="Ansatsu Kyoushitsu strona z rozdziału 39 (Skany - Alto Scanlations)"
                 class="bee-center bee-autowidth"
                 src="./Mangi/Ansatsu Kyoushitsu na portfolio/Ansatsu-Kyoushitsu-rozdział-39--(Alto-Scanlations).png"
-                style="max-width: 380px; width: auto;"
+                style="max-width: 380px; width: auto"
               />
             </div>
             <div class="bee-block bee-block-2 bee-paragraph">
@@ -606,7 +589,7 @@
                 alt="Ansatsu Kyoushitsu strona z rozdziału 6"
                 class="bee-center bee-autowidth"
                 src="./Mangi/Ansatsu Kyoushitsu na portfolio/Ansatsu-Kyoushitsu-rozdział-6.png"
-                style="max-width: 380px; width: auto;"
+                style="max-width: 380px; width: auto"
               />
             </div>
             <div class="bee-block bee-block-2 bee-paragraph">
@@ -624,7 +607,7 @@
             <div class="bee-block bee-block-2 bee-button">
               <a href="./manga.html">
                 <div
-                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-szeroki"
+                  class="bee-button-content guzik-dziecko-szary guzik-niewiem guzik-szeroki"
                 >
                   <span
                     style="
@@ -654,7 +637,7 @@
                 style="
                   color: #777777;
                   direction: ltr;
-                  font-family: 'Permanent Marker', Impact, Charcoal, sans-serif;
+                  font-family: Impact, Charcoal, sans-serif;
                   font-size: 36px;
                   font-weight: 400;
                   letter-spacing: normal;

@@ -9,7 +9,7 @@
 .bee-page-container {
   background-image: url("./grafiki_na_stronę/sand_background_b.jpg");
   background-position: top;
-  background-size: contain;
+  background-size: auto;
   background-repeat: repeat-y;
     margin-top: 4rem;
 }
