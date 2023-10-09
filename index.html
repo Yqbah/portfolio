@@ -43,6 +43,8 @@
 
       a {
         color: #eee;
+        text-shadow: #131313 2px 2px 5px;
+        text-decoration: none;
       }
 
       * {
@@ -61,6 +63,7 @@
         max-width: 100%;
         margin: 0 auto;
         display: flex;
+        justify-content: center;
       }
 
       .bee-row-content .bee-col-w12 {
@@ -81,12 +84,13 @@
       }
 
       .bee-row-1 {
-        background-image: url("./grafiki_na_stronę/foto_gl_sz.jpg");
+        background: url("./grafiki_na_stronę/foto_gl_sz.jpg") center center no-repeat;
         background-size: cover;
+        width: 100%;
       }
 
       .bee-row-1 .bee-col-1 {
-        padding-bottom: 50px;
+        padding-bottom: 60px;
         padding-top: 60px;
         display: flex;
         flex-direction: column;
@@ -107,7 +111,7 @@
       }
 
       .bee-row-1 .bee-col-1 .bee-block-3 {
-        padding: 30px 60px;
+        padding: 0.5em 3em;
       }
 
       .bee-row-1 .bee-col-1 .bee-block-4 {
@@ -127,7 +131,7 @@
       .bee-row-3 .bee-col-1 .bee-block-1,
       .bee-row-3 .bee-col-2 .bee-block-1,
       .bee-row-3 .bee-col-3 .bee-block-1 {
-        padding: 10px 20px;
+        padding: 0px 20px;
         text-align: center;
       }
 
@@ -158,11 +162,12 @@
 
       .wyglad-div:hover {
         filter: saturate(100%);
+        transition-duration: 2s;
       }
 
-      .guzik-o-mnie {
+      .guzik-o-mnie{
         padding: 15px 30px 15px 30px;
-        margin-right: 50px;
+        margin-right: 2em;
         font-size: 18px;
         background-color: #9d9d9d00;
         border-radius: 4px;
@@ -172,10 +177,10 @@
         line-height: 200%;
       }
 
-      .guzik-o-mnie:hover {
-        background-color: #ddd;
-        border: #bbb solid 2px;
-        color: #000;
+      .guzik-o-mnie:hover{
+        background-color: #4c4c4c;
+        border: #4c4c4c solid 2px;
+        color: #ffffff;
         transition-duration: 2s;
       }
 
@@ -214,8 +219,8 @@
                   "
                 >
                   <span>
-                    Od najmłodszych lat interesuję się szeroko pojętą obróbką
-                    graficzną. W szczególności zafascynowana jestem światem
+                    Od najmłodszych lat interesuję się szeroko pojętą
+                      obróbką graficzną. W szczególności zafascynowana jestem światem
                     mangi i anime oraz ich profesjonalnym tworzeniem
                     i wydawaniem. Posiadam 5 lat doświadczenia na stanowisku
                     edytora mang online w formie wolontariatu (Typesetter oraz
