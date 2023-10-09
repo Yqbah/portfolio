@@ -43,6 +43,8 @@
 
       a {
         color: #eee;
+        text-shadow: #131313 2px 2px 5px;
+        text-decoration: none;
       }
 
       * {
@@ -61,6 +63,7 @@
         max-width: 100%;
         margin: 0 auto;
         display: flex;
+        justify-content: center;
       }
 
       .bee-row-content .bee-col-w4 {
@@ -97,12 +100,13 @@
       }
 
       .bee-row-1 {
-        background-image: url("./grafiki_na_stronę/foto_gl_sz.jpg");
+        background: url("./grafiki_na_stronę/foto_gl_sz.jpg") center center no-repeat;
         background-size: cover;
+        width: 100%;
       }
 
       .bee-row-1 .bee-col-1 {
-        padding-bottom: 50px;
+        padding-bottom: 60px;
         padding-top: 60px;
         display: flex;
         flex-direction: column;
@@ -123,7 +127,7 @@
       }
 
       .bee-row-1 .bee-col-1 .bee-block-3 {
-        padding: 30px 60px;
+        padding: 0.5em 3em;
       }
 
       .bee-row-1 .bee-col-1 .bee-block-4 {
@@ -143,40 +147,34 @@
       .bee-row-3 .bee-col-1 .bee-block-1,
       .bee-row-3 .bee-col-2 .bee-block-1,
       .bee-row-3 .bee-col-3 .bee-block-1 {
-        padding: 10px 20px;
+        padding: 0px 20px;
         text-align: center;
       }
 
 		  .wyglad-guzikow{
-        background-color: #000000;
+        background-color: #00000058;
 			  border-radius: 4px;
         font-weight: 900;
-        color: #eee;
-
-		  }
-
-		  .wyglad-guzikow :hover{
-        background-color: transparent;
-			  border-radius: none;
-        transition-duration: 2s;
+        padding: 15px 0px;
 		  }
 
       .wyglad-div {
         background-size: cover;
-        margin: 25px;
         min-height: 450px;
+        min-width: 450px;
         border-radius: 4px;
         border: #2a2a2a solid 1px;
         filter: saturate(0%);
       }
 
-      .wyglad-div :hover {
+      .wyglad-div:hover {
         filter: saturate(100%);
+        transition-duration: 2s;
       }
 
       .guzik-o-mnie{
         padding: 15px 30px 15px 30px; 
-        margin-right: 50px; 			
+        margin-right: 2em; 			
         font-size: 18px;
         background-color: #9d9d9d00;
         border-radius: 4px;
@@ -186,30 +184,11 @@
         line-height: 200%;
       }
 
-      .guzik-o-mnie :hover{
-        background-color: #ddd;
-        border: #bbb solid 2px;
-        color: #000;
+      .guzik-o-mnie:hover{
+        background-color: #4c4c4c;
+        border: #4c4c4c solid 2px;
+        color: #ffffff;
         transition-duration: 2s;
-      }
-
-      .zoom-zdjecia{
-        overflow: hidden;
-        padding: 0;
-        width: 300px;
-        height: 300px;
-        border:1px solid #000;
-      }
-      .zoom-zdjecia img {
-        transition-duration: 2s;
-        margin: 0 auto;
-        display: block;
-      }
-      .zoom-zdjecia img:hover {
-        transform: scale(1.2);
-       -webkit-transform: scale(1.2);
-       -moz-transform: scale(1.2);
-        z-index: 0;
       }
 
     </style>
@@ -269,34 +248,34 @@
                   </h2>
                 </div>
                 <div class="bee-block bee-block-3 bee-spacer">
-                  <div class="spacer" style="height: 10px"></div>
+                  <div class="spacer" style="height: 30px"></div>
                 </div>
               </div>
             </div>
           </div>
           <div class="bee-row bee-row-3">
-            <div class="bee-row-content">
-              <div class="bee-col bee-col-1 bee-col-w4 wyglad-div" style="background-image: url(./grafiki_na_stronę/mini-manga.jpg);">
-                <div class="bee-block bee-block-1 bee-button wyglad-guzikow">
-                  <a href="./manga.html" target="_self">
-                    <span style=" word-break: break-word; font-size: 32px; line-height: 200%;">MANGA</span>
-                  </a>
+            <div class="bee-row-content" style="gap: 50px; flex-wrap: wrap;">
+              <a href="./manga.html" target="_self">
+                <div class="bee-col-1 wyglad-div" style="background-image: url(./grafiki_na_stronę/mini-manga.jpg); width: 100%;">
+                  <div class="wyglad-guzikow">
+                      <span style=" word-break: keep-all; font-size: 36px;">MANGA</span>
+                  </div>
                 </div>
-              </div>
-              <div class="bee-col bee-col-2 bee-col-w4 wyglad-div" style="background-image: url(./grafiki_na_stronę/mini-grafika.jpg);">
-                <div class="bee-block bee-block-1 bee-button wyglad-guzikow">
-                  <a href="./grafika.html" target="_self" >
-                    <span style=" word-break: break-word; font-size: 32px; line-height: 200%;">GRAFIKA</span>
-                  </a>
+              </a>
+              <a href="./grafika.html" target="_self">
+                <div class="bee-col-2 wyglad-div" style="background-image: url(./grafiki_na_stronę/mini-grafika.jpg); width: 100%;">
+                  <div class="wyglad-guzikow">
+                      <span style=" word-break: keep-all; font-size: 36px;">GRAFIKA</span>
+                  </div>
                 </div>
-              </div>
-              <div class="bee-col bee-col-3 bee-col-w4 wyglad-div" style="background-image: url(./grafiki_na_stronę/mini-foto.jpg);">
-                <div class="bee-block bee-block-1 bee-button wyglad-guzikow">
-                  <a href="./fotografia.html" target="_self">
-                    <span style=" word-break: break-word; font-size: 32px; line-height: 200%;">FOTOGRAFIA</span>
-                  </a>
+              </a>
+              <a href="./fotografia.html" target="_self">
+                <div class="bee-col-3 wyglad-div" style="background-image: url(./grafiki_na_stronę/mini-foto.jpg); width: 100%;">
+                  <div class="wyglad-guzikow">
+                      <span style=" word-break: keep-all; font-size: 36px;">FOTOGRAFIA</span>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
           <div class="bee-row bee-row-4">
