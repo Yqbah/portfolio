@@ -10,7 +10,7 @@
 }
 
 body {
-  background-image: transparent;
+  background-color: transparent;
   color: #000;
   font-family: Verdana, Geneva, sans-serif;
 }
@@ -506,18 +506,10 @@ p {
   padding: 5px 6px 5px 5px;
 }
 
-.bee-row-51
-  .bee-col-1
-  .bee-block-1
-  .bee-icon:not(.bee-icon-first)
-  .bee-content {
+.bee-row-51 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
   margin-left: 0;
 }
 
-.bee-row-51
-  .bee-col-1
-  .bee-block-1
-  .bee-icon::not(.bee-icon-last)
-  .bee-content {
+.bee-row-51 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-last) .bee-content {
   margin-right: 0;
 }
