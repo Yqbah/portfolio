@@ -23,7 +23,6 @@
       type="text/css"
     />
     <style>
-      .bee-row-1,
       .bee-row-23,
       .bee-row-24,
       .bee-row-4 .bee-row-content {
@@ -60,16 +59,8 @@
         display: flex;
       }
 
-      .bee-row-content .bee-col-w2 {
-        flex-basis: 17%;
-      }
-
       .bee-row-content .bee-col-w3 {
         flex-basis: 25%;
-      }
-
-      .bee-row-content .bee-col-w4 {
-        flex-basis: 33%;
       }
 
       .bee-row-content .bee-col-w6 {
@@ -78,10 +69,6 @@
 
       .bee-row-content .bee-col-w12 {
         flex-basis: 100%;
-      }
-
-      .bee-button .content {
-        text-align: center;
       }
 
       .bee-button a,
@@ -148,9 +135,6 @@
       }
 
       @media (max-width: 768px) {
-        .bee-row-content:not(.no_stack) {
-          display: block;
-        }
       }
 
       .bee-row-1 .bee-row-content,
@@ -174,27 +158,6 @@
         color: #000;
       }
 
-      .bee-row-1 .bee-col-1,
-      .bee-row-1 .bee-col-2,
-      .bee-row-1 .bee-col-3,
-      .bee-row-1 .bee-col-4,
-      .bee-row-1 .bee-col-5,
-      .bee-row-10 .bee-col-1,
-      .bee-row-10 .bee-col-2,
-      .bee-row-14 .bee-col-1,
-      .bee-row-14 .bee-col-2,
-      .bee-row-16 .bee-col-1,
-      .bee-row-16 .bee-col-2,
-      .bee-row-20 .bee-col-1,
-      .bee-row-20 .bee-col-2,
-      .bee-row-20 .bee-col-3,
-      .bee-row-24 .bee-col-1 {
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
       .bee-row-1 .bee-col-2 .bee-block-1,
       .bee-row-1 .bee-col-3 .bee-block-1,
       .bee-row-1 .bee-col-4 .bee-block-1,
@@ -211,31 +174,6 @@
       .bee-row-24 .bee-col-1 .bee-block-3 {
         padding: 10px;
         text-align: center;
-      }
-
-      .bee-row-10,
-      .bee-row-11,
-      .bee-row-12,
-      .bee-row-13,
-      .bee-row-14,
-      .bee-row-15,
-      .bee-row-16,
-      .bee-row-17,
-      .bee-row-18,
-      .bee-row-19,
-      .bee-row-2,
-      .bee-row-20,
-      .bee-row-21,
-      .bee-row-22,
-      .bee-row-25,
-      .bee-row-3,
-      .bee-row-4,
-      .bee-row-5,
-      .bee-row-6,
-      .bee-row-7,
-      .bee-row-8,
-      .bee-row-9 {
-        background-repeat: no-repeat;
       }
 
       .bee-row-11 .bee-col-1,
@@ -363,7 +301,7 @@
         background-color: #000;
         border-bottom: 0 solid #eee;
         border-left: 0 solid #eee;
-        border-right: 0px solid #eee;
+        border-right: 0 solid #eee;
         border-top: 0 solid #eee;
         padding: 10px;
         display: flex;
@@ -429,141 +367,141 @@
 
     </style>
     <style>
-      .temat-fg {
-        color: #838383;
-      }
-
-      .temat-bg:hover {
-        background-color: #838383;
+      .guzik-kolor {
+        background-image: linear-gradient(
+                to right,
+                #7675d7 0%,
+                #4b3599 51%,
+                #7675d7 100%
+        );
       }
     </style>
     <link href="./moj.css" rel="stylesheet" type="text/css" />
+    <link href="menu.css" rel="stylesheet"/>
   </head>
 
   <body>
-    <div class="bee-row bee-row-1" id="wiersz-menu">
-      <div class="bee-row-content menu">
-        <div class="bee-col bee-col-1 bee-col-w6">
-          <div class="bee-block bee-block-1 bee-image">
-            <a href="./index.html" target="_self"
-              ><img
-                alt="Joanna Grygiel"
-                class="bee-center bee-fixedwidth"
-                src="./grafiki_na_stronę/logo.png"
-                style="max-width: 380px"
-            /></a>
+  <nav>
+    <a class="logo" href="./index.html" target="_self">
+      <img alt="Joanna Grygiel" src="./grafiki_na_stronę/logo_fio.png"/>
+    </a>
+    <input id="menu-toggle" type="checkbox"/>
+    <label class="menu-button-container" for="menu-toggle">
+      <span class="menu-button"></span>
+    </label>
+    <div class="menu">
+      <ul>
+        <input id="sub-menu-toggle" type="checkbox"/>
+        <li class="dropdown-container">
+          <div class="guzik-menu guzik-kolor">
+            <a href="./manga.html" target="_self">
+              <span>Manga</span>
+            </a>
+            <label class="sub-menu-button" for="sub-menu-toggle">⌄</label>
           </div>
-        </div>
-        <div class="bee-col bee-col-1 bee-col-w6"></div>
-        <div class="bee-col bee-col-2 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button" id="parent">
-            <!-- parent -->
-            <a
-              class="bee-button-content guzik-menu guzik-szary rozwijane-menu"
-              href="./manga.html"
-              target="_self"
-              ><span class="menu-text">Manga</span></a
-            >
-            <div class="hidden-childs-container hidden-child">
+          <ul>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                href="./Akumetsu.html"
-                target="_self"
-                ><span class="menu-text">Akumetsu</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./Akumetsu.html"
+                      target="_self"
+              ><span class="menu-text">Akumetsu</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                href="./Ansatsu_Kyoushitsu.html"
-                target="_self"
-                ><span class="menu-text">Ansatsu Kyoushitsu</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./Ansatsu_Kyoushitsu.html"
+                      target="_self"
+              ><span class="menu-text">Ansatsu Kyoushitsu</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                href="./Arata_Kangatari.html"
-                target="_self"
-                ><span class="menu-text">Arata Kangatari</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./Arata_Kangatari.html"
+                      target="_self"
+              ><span class="menu-text">Arata Kangatari</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                href="./Gintama.html"
-                target="_self"
-                ><span class="menu-text">Gintama</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./Gintama.html"
+                      target="_self"
+              ><span class="menu-text">Gintama</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./Heroine_Shikkaku.html"
-                target="_self"
-                ><span class="menu-text">Heroine Shikkaku</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./Heroine_Shikkaku.html"
+                      target="_self"
+              ><span class="menu-text">Heroine Shikkaku</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./Himitsu_no_Ai-chan.html"
-                target="_self"
-                ><span class="menu-text">Himitsu no Ai-chan</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./Himitsu_no_Ai-chan.html"
+                      target="_self"
+              ><span class="menu-text">Himitsu no Ai-chan</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./One_Piece.html"
-                target="_self"
-                ><span class="menu-text">One Piece</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./One_Piece.html"
+                      target="_self"
+              ><span class="menu-text">One Piece</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./One-Punch_Man.html"
-                target="_self"
-                ><span class="menu-text">One-Punch Man</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./One-Punch_Man.html"
+                      target="_self"
+              ><span class="menu-text">One-Punch Man</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./pozostale.html"
-                target="_self"
-                ><span class="menu-text">Pozostałe tytuły</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./pozostale.html"
+                      target="_self"
+              ><span class="menu-text">Pozostałe tytuły</span></a
               >
-            </div>
-          </div>
-        </div>
-        <div class="bee-col bee-col-3 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button">
-            <a
-              class="bee-button-content guzik-menu guzik-szary"
-              href="./fotografia.html"
-              target="_self"
-              ><span class="menu-text">Zdjęcia</span></a
-            >
-          </div>
-        </div>
-        <div class="bee-col bee-col-4 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button">
-            <a
-              class="bee-button-content guzik-menu guzik-szary"
-              href="./grafika.html"
-              target="_self"
-              ><span class="menu-text">Grafika</span></a
-            >
-          </div>
-        </div>
-        <div class="bee-col bee-col-5 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button">
-            <a
-              class="bee-button-content guzik-menu guzik-szary"
-              href="./o_mnie.html"
-              target="_self"
-              ><span class="menu-text">O mnie</span></a
-            >
-          </div>
-        </div>
-      </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+                  class="guzik-menu guzik-kolor"
+                  href="./fotografia.html"
+                  target="_self"
+          ><span class="menu-text">Zdjęcia</span></a
+          >
+        </li>
+
+        <li>
+          <a
+                  class="guzik-menu guzik-kolor"
+                  href="./grafika.html"
+                  target="_self"
+          ><span class="menu-text">Grafika</span></a
+          >
+        </li>
+        <li>
+          <a
+                  class="guzik-menu guzik-kolor"
+                  href="./o_mnie.html"
+                  target="_self"
+          ><span class="menu-text">O mnie</span></a
+          >
+        </li>
+      </ul>
     </div>
+  </nav>
     <div class="bee-page-container">
       <div class="bee-row bee-row-2">
         <div class="bee-row-content">
@@ -596,13 +534,12 @@
                 "
               >
                 <span class="tinyMce-placeholder"
-                  ><span class="temat-fg"
+                  ><span
                     >E<span style="color: #eeeeee"
-                      >DYCJA <span class="temat-fg">M</span>ANG</span
+                      >DYCJA <span>M</span>ANG</span
                     ></span
                   >
-                  W <span class="temat-fg">L</span>ICZBACH<span class="temat-fg"
-                    >:</span
+                  W <span>L</span>ICZBACH<span>:</span
                   ></span
                 >
               </h2>
@@ -682,12 +619,10 @@
                 "
               >
                 <span class="tinyMce-placeholder"
-                  ><span class="temat-fg"
-                    >P<span style="color: #eeeeee"
-                      >RZEBIEG <span class="temat-fg">P</span>RACY</span
+                  ><span>P<span style="color: #eeeeee"
+                      >RZEBIEG <span>P</span>RACY</span
                     ></span
-                  ><span class="temat-fg"
-                    >:</span
+                  ><span>:</span
                   ></span
                 >
               </h2>
@@ -720,10 +655,7 @@
           class="bee-row-content"
           style="
             background-color: #000;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 0px;
-            padding-bottom: 20px;
+            padding: 0 20px 20px;
           "
         >
           <div class="bee-col bee-col-1 bee-col-w12">
@@ -768,11 +700,8 @@
                 "
               >
                 <span class="tinyMce-placeholder"
-                  ><span class="temat-fg"
-                    >M<span style="color: #eeeeee">OJE</span> U</span
-                  >LUBIONE <span class="temat-fg">T</span>YTUŁY<span
-                    class="temat-fg"
-                    >:</span
+                  ><span>M<span style="color: #eeeeee">OJE</span> U</span
+                  >LUBIONE <span>T</span>YTUŁY<span>:</span
                   ></span
                 >
               </h2>
@@ -800,7 +729,7 @@
             <div class="bee-button guzik-tytul">
               <div class="bee-button-content">
                 <a
-                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  class="bee-button-content guzik-dziecko-szary  guzik-niewiem guzik-tytul"
                   href="./One-Punch_Man.html"
                 >
                   <span style="font-size: 16px; line-height: 200%"
@@ -825,7 +754,7 @@
             <div class="bee-button guzik-tytul">
               <div class="bee-button-content">
                 <a
-                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  class="bee-button-content guzik-dziecko-szary  guzik-niewiem"
                   href="./Gintama.html"
                 >
                   <span style="font-size: 16px; line-height: 200%"
@@ -863,7 +792,7 @@
             <div class="bee-button guzik-tytul">
               <div class="bee-button-content">
                 <a
-                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  class="bee-button-content guzik-dziecko-szary   guzik-niewiem"
                   href="./One_Piece.html"
                 >
                   <span style="font-size: 16px; line-height: 200%"
@@ -888,7 +817,7 @@
             <div class="bee-button guzik-tytul">
               <div class="bee-button-content">
                 <a
-                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  class="bee-button-content guzik-dziecko-szary   guzik-niewiem"
                   href="./Akumetsu.html"
                 >
                   <span style="font-size: 16px; line-height: 200%"
@@ -926,7 +855,7 @@
             <div class="bee-button guzik-tytul">
               <div class="bee-button-content">
                 <a
-                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  class="bee-button-content guzik-dziecko-szary   guzik-niewiem"
                   href="./Arata_Kangatari.html"
                 >
                   <span style="font-size: 16px; line-height: 200%"
@@ -951,7 +880,7 @@
             <div class="bee-button guzik-tytul">
               <div class="bee-button-content">
                 <a
-                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  class="bee-button-content guzik-dziecko-szary   guzik-niewiem"
                   href="./Ansatsu_Kyoushitsu.html"
                 >
                   <span style="font-size: 16px; line-height: 200%"
@@ -989,7 +918,7 @@
             <div class="bee-button guzik-tytul">
               <div class="bee-button-content">
                 <a
-                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  class="bee-button-content guzik-dziecko-szary   guzik-niewiem"
                   href="./Himitsu_no_Ai-chan.html"
                 >
                   <span style="font-size: 16px; line-height: 200%"
@@ -1014,7 +943,7 @@
             <div class="bee-button guzik-tytul">
               <div class="bee-button-content">
                 <a
-                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-wypełnij"
+                  class="bee-button-content guzik-dziecko-szary   guzik-niewiem"
                   href="./Heroine_Shikkaku.html"
                 >
                   <span style="font-size: 16px; line-height: 200%"
@@ -1057,9 +986,8 @@
                 "
               >
                 <span class="tinyMce-placeholder"
-                  ><span class="temat-fg">P</span>OZOSTAŁE
-                  <span class="temat-fg">T</span>YTUŁY<span class="temat-fg"
-                    >:</span
+                  ><span>P</span>OZOSTAŁE
+                  <span>T</span>YTUŁY<span>:</span
                   ></span
                 >
               </h2>
@@ -1413,9 +1341,9 @@
         <div class="bee-row-content" style="background-color: #000">
           <div class="bee-col bee-col-1 bee-col-w12">
             <div class="bee-block-2 bee-button guzik-tytul">
-              <div class="bee-button-content">
+              <div class="bee-button-content" style="display: flex; align-items: center; flex-direction: column;">
                 <a
-                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-szeroki"
+                  class="bee-button-content guzik-dziecko-szary guzik-niewiem guzik-szeroki" style="justify-content: center"
                   href="./pozostale.html"
                 >
                   <span style="font-size: 16px; line-height: 200%"

@@ -356,142 +356,143 @@
       .bee-row-content .bee-col-w6 {
         flex-basis: 50%;
       }
-
-      .temat-fg {
-        color: #ce8200;
+    </style>
+    <style>
+      .guzik-kolor {
+        background-image: linear-gradient(
+                to right,
+                #7675d7 0%,
+                #4b3599 51%,
+                #7675d7 100%
+        );
       }
-
-      .temat-bg:hover {
-        background-color: #ce8200;
-      }
-
-      .paragraf-o-mnie {
-        color: #9d9d9d;
-        font-family: inherit;
-        font-size: 15px;
-        padding-bottom: 5px;
-        padding-top: 5px;
-        text-align: center;
-      }
-
     </style>
     <link href="./moj.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="menu.css" />
   </head>
 
   <body>
-    <div class="bee-row bee-row-1" id="wiersz-menu">
-      <div class="bee-row-content menu">
-        <div class="bee-col bee-col-1 bee-col-w6">
-          <div class="bee-block bee-block-1 bee-image">
-            <a href="./index.html" target="_self"
-              ><img
-                alt="Joanna Grygiel"
-                class="bee-center bee-fixedwidth"
-                src="./grafiki_na_stronę/logo_pom.png"
-                style="max-width: 380px"
-            /></a>
+  <nav>
+    <a class="logo" href="./index.html" target="_self">
+      <img alt="Joanna Grygiel" src="./grafiki_na_stronę/logo_fio.png" />
+    </a>
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-button-container" for="menu-toggle">
+      <span class="menu-button"></span>
+    </label>
+    <div class="menu">
+      <ul>
+        <input id="sub-menu-toggle" type="checkbox" />
+        <li class="dropdown-container">
+          <div class="guzik-menu guzik-kolor">
+            <a href="./manga.html" target="_self">
+              <span>Manga</span>
+            </a>
+            <label class="sub-menu-button" for="sub-menu-toggle">⌄</label>
           </div>
-        </div>
-        <div class="bee-col bee-col-1 bee-col-w6"></div>
-        <div class="bee-col bee-col-2 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button" id="parent">
-            <!-- parent -->
-            <a
-              class="bee-button-content guzik-menu guzik-pomaranczowy rozwijane-menu"
-              href="./manga.html"
-              target="_self"
-              ><span class="menu-text">Manga</span></a
-            >
-            <div class="hidden-childs-container hidden-child">
+          <ul>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
-                href="./Akumetsu.html"
-                target="_self"
-                ><span class="menu-text">Akumetsu</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./Akumetsu.html"
+                      target="_self"
+              ><span class="menu-text">Akumetsu</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
-                href="./Ansatsu_Kyoushitsu.html"
-                target="_self"
-                ><span class="menu-text">Ansatsu Kyoushitsu</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./Ansatsu_Kyoushitsu.html"
+                      target="_self"
+              ><span class="menu-text">Ansatsu Kyoushitsu</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
-                href="./Arata_Kangatari.html"
-                target="_self"
-                ><span class="menu-text">Arata Kangatari</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./Arata_Kangatari.html"
+                      target="_self"
+              ><span class="menu-text">Arata Kangatari</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
-                href="./Gintama.html"
-                target="_self"
-                ><span class="menu-text">Gintama</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./Gintama.html"
+                      target="_self"
+              ><span class="menu-text">Gintama</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
-                href="./Heroine_Shikkaku.html"
-                target="_self"
-                ><span class="menu-text">Heroine Shikkaku</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./Heroine_Shikkaku.html"
+                      target="_self"
+              ><span class="menu-text">Heroine Shikkaku</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
-                href="./Himitsu_no_Ai-chan.html"
-                target="_self"
-                ><span class="menu-text">Himitsu no Ai-chan</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./Himitsu_no_Ai-chan.html"
+                      target="_self"
+              ><span class="menu-text">Himitsu no Ai-chan</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
-                href="./One_Piece.html"
-                target="_self"
-                ><span class="menu-text">One Piece</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./One_Piece.html"
+                      target="_self"
+              ><span class="menu-text">One Piece</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
-                href="./One-Punch_Man.html"
-                target="_self"
-                ><span class="menu-text">One-Punch Man</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./One-Punch_Man.html"
+                      target="_self"
+              ><span class="menu-text">One-Punch Man</span></a
               >
+            </li>
+            <li>
               <a
-                class="bee-button-content guzik-dziecko guzik-pomaranczowy guzik-dziecko-pomaranczowy hidden-child"
-                href="./pozostale.html"
-                target="_self"
-                ><span class="menu-text">Pozostałe tytuły</span></a
+                      class="guzik-menu guzik-kolor"
+                      href="./pozostale.html"
+                      target="_self"
+              ><span class="menu-text">Pozostałe tytuły</span></a
               >
-            </div>
-          </div>
-        </div>
-        <div class="bee-col bee-col-3 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button">
-            <a
-              class="bee-button-content guzik-menu guzik-pomaranczowy"
-              href="./fotografia.html"
-              target="_self"
-              ><span class="menu-text">Zdjęcia</span></a
-            >
-          </div>
-        </div>
-        <div class="bee-col bee-col-4 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button">
-            <a
-              class="bee-button-content guzik-menu guzik-pomaranczowy"
-              href="./grafika.html"
-              target="_self"
-              ><span class="menu-text">Grafika</span></a
-            >
-          </div>
-        </div>
-        <div class="bee-col bee-col-5 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button">
-            <a
-              class="bee-button-content guzik-menu guzik-pomaranczowy"
-              href="./o_mnie.html"
-              target="_self"
-              ><span class="menu-text">O mnie</span></a
-            >
-          </div>
-        </div>
-      </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+                  class="guzik-menu guzik-kolor"
+                  href="./fotografia.html"
+                  target="_self"
+          ><span class="menu-text">Zdjęcia</span></a
+          >
+        </li>
+
+        <li>
+          <a
+                  class="guzik-menu guzik-kolor"
+                  href="./grafika.html"
+                  target="_self"
+          ><span class="menu-text">Grafika</span></a
+          >
+        </li>
+        <li>
+          <a
+                  class="guzik-menu guzik-kolor"
+                  href="./o_mnie.html"
+                  target="_self"
+          ><span class="menu-text">O mnie</span></a
+          >
+        </li>
+      </ul>
     </div>
+  </nav>
     <div class="bee-page-container">
       <div class="bee-row bee-row-2">
         <div class="bee-row-content">
