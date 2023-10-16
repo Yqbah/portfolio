@@ -194,3 +194,7 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.half-width {
+  width: 50%;
+}
