@@ -2,7 +2,7 @@
   font-family: 'Permanent Marker';
   font-style: normal;
   font-weight: 400;
-  src: url("./misc/PermamentMarker.woff2");
+  src: url('misc/PermamentMarker.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -180,4 +180,17 @@
           #b9490d 100%
   );
   background-position: left center;
+}
+
+.footer-text {
+  color: #777777;
+  direction: ltr;
+  font-family: "Permanent Marker", Impact, Charcoal, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 120%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }

@@ -13,7 +13,7 @@ nav {
   height: 5rem;
   max-height: 6rem;
   justify-content: space-between;
-  background: linear-gradient(to left, #000000, #141414);
+  background: black;
   z-index: 1000;
 }
 
