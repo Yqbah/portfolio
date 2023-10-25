@@ -129,9 +129,6 @@
         overflow-wrap: anywhere;
       }
 
-      @media (max-width: 768px) {
-      }
-
       .bee-row-1 .bee-row-content,
       .bee-row-11 .bee-row-content,
       .bee-row-12 .bee-row-content,
@@ -358,6 +355,14 @@
 
       .bee-row-25 .bee-col-1 .bee-block-1 .bee-icon-image {
         padding: 5px 6px 5px 5px;
+      }
+
+      @media (max-width: 768px) {
+        .bee-row-content {
+          flex-flow: column;
+          gap: 3rem;
+          background-color: black;
+        }
       }
 
     </style>

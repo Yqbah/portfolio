@@ -334,6 +334,25 @@
       .bee-row-13 .bee-col-1 .bee-block-1 .bee-icon-image {
         padding: 5px 6px 5px 5px;
       }
+
+      .text-o-mnie {
+        font-size: 20px;
+        text-align: justify;
+        padding: 25px 15px 25px 25px;
+      }
+
+      @media (max-width: 768px) {
+        .bee-row-content {
+          flex-flow: column;
+          gap: 1rem;
+        }
+
+        .text-o-mnie {
+          font-size: 1rem;
+          text-align: justify;
+          padding: 0;
+        }
+      }
     </style>
     <style>
       .guzik-kolor {
@@ -495,16 +514,8 @@
             <div class="bee-col bee-col-2 bee-col-w7">
                 <div class="bee-block bee-block-1 bee-paragraph">
                     <div>
-                        <p
-                                style="
-                    font-size: 20px;
-                    line-height: 24px;
-                    text-align: justify;
-                    padding: 25px 15px 25px 25px; 
-                  "
-                        >
-                  <span style="line-height: 24px"
-                  ><span style="color: #eed9a0; line-height: 200%"
+                        <p class="text-o-mnie">
+                  <span style="color: #eed9a0; line-height: 200%"
                   >Od najmłodszych lat interesuję się szeroko pojętą obróbką
                       graficzną. W szczególności zafascynowana jestem światem
                       mangi i anime oraz ich profesjonalnym tworzeniem
@@ -515,7 +526,6 @@
                       grzyby czy też spacerując z psem. Szukam możliwości
                       rozwoju osobistego jako edytor/grafik oraz ciągłego
                       udoskonalania moich umiejętności.</span
-                  ></span
                   >
                         </p>
                     </div>
@@ -561,7 +571,7 @@
                                     style="color: #eed9a0"
                             >RZYGODA</span
                             >
-                      <span style="color: #eed9a0">Z</span> M<span
+                      <span style="color: #eed9a0"> Z&nbsp</span>M<span
                                         style="color: #eed9a0"
                                 >ANGĄ</span
                                 >:</span
