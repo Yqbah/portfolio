@@ -111,10 +111,10 @@ nav {
   background: transparent;
   border: none;
   float: right;
-  width: 3em;
-  font-size: xx-large;
+  width: 5rem;
   color: white;
   padding: 0;
+  align-content: center;
 }
 
 #sub-menu-toggle:checked + .dropdown-container .sub-menu-button {
