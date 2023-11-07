@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-  <head>
+<head>
     <title></title>
-    <meta content="summary_large_image" name="twitter:card" />
-    <meta content="website" property="og:type" />
-    <meta content="" property="og:description" />
+    <meta content="summary_large_image" name="twitter:card"/>
+    <meta content="website" property="og:type"/>
+    <meta content="" property="og:description"/>
     <meta
-      content="https://bboadj1qf5.preview-postedstuff.com/V2-Gmov-b7Ij-ZZqX4-ET2p/"
-      property="og:url"
+            content="https://bboadj1qf5.preview-postedstuff.com/V2-Gmov-b7Ij-ZZqX4-ET2p/"
+            property="og:url"
     />
     <meta
-      content="https://pro-bee-beepro-thumbnail.getbee.io/messages/791273/775053/1663467/9482944_large.jpg"
-      property="og:image"
+            content="https://pro-bee-beepro-thumbnail.getbee.io/messages/791273/775053/1663467/9482944_large.jpg"
+            property="og:image"
     />
-    <meta content="" property="og:title" />
-    <meta content="" name="description" />
-    <meta charset="utf-8" />
-    <meta content="width=device-width" name="viewport" />
+    <meta content="" property="og:title"/>
+    <meta content="" name="description"/>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width" name="viewport"/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Permanent+Marker:wght@100;200;300;400;500;600;700;800;900"
-      rel="stylesheet"
-      type="text/css"
+            href="https://fonts.googleapis.com/css2?family=Permanent+Marker:wght@100;200;300;400;500;600;700;800;900"
+            rel="stylesheet"
+            type="text/css"
     />
     <style>
       .bee-row,
@@ -56,10 +56,6 @@
         display: flex;
       }
 
-      .bee-row-content .bee-col-w2 {
-        flex-basis: 17%;
-      }
-
       .bee-row-content .bee-col-w4 {
         flex-basis: 33%;
       }
@@ -70,10 +66,6 @@
 
       .bee-row-content .bee-col-w12 {
         flex-basis: 100%;
-      }
-
-      .bee-button .content {
-        text-align: center;
       }
 
       .bee-button a,
@@ -124,13 +116,6 @@
         overflow-wrap: anywhere;
       }
 
-      @media (max-width: 768px) {
-        .bee-row-content:not(.no_stack) {
-          display: block;
-        }
-      }
-
-      .bee-row-1,
       .bee-row-10,
       .bee-row-9 {
         background-color: #000;
@@ -150,8 +135,6 @@
       .bee-row-1 .bee-col-1,
       .bee-row-1 .bee-col-2,
       .bee-row-1 .bee-col-3,
-      .bee-row-1 .bee-col-4,
-      .bee-row-1 .bee-col-5,
       .bee-row-10 .bee-col-1,
       .bee-row-4 .bee-col-1,
       .bee-row-4 .bee-col-2,
@@ -293,22 +276,6 @@
         padding: 5px 6px 5px 5px;
       }
 
-      .bee-row-11
-        .bee-col-1
-        .bee-block-1
-        .bee-icon:not(.bee-icon-first)
-        .bee-content {
-        margin-left: 0;
-      }
-
-      .bee-row-11
-        .bee-col-1
-        .bee-block-1
-        .bee-icon::not(.bee-icon-last)
-        .bee-content {
-        margin-right: 0;
-      }
-
       .bee-row-10 .bee-col-1 .bee-block-2 {
         color: #eee;
         direction: ltr;
@@ -319,170 +286,163 @@
         text-align: center;
       }
 
-      .bee-page-container {
-        background-image: url("./grafiki_na_stronę/sand_background_b.jpg");
-        background-position: top;
-        background-size: contain;
-        background-repeat: repeat-y;
+      @media (max-width: 768px) {
+        .bee-row-content {
+          flex-flow: column;
+          gap: 1rem;
+        }
       }
-
     </style>
     <style>
-      .temat-fg {
-        color: #838383;
-      }
-
-      .temat-bg:hover {
-        background-color: #838383;
+      .guzik-kolor {
+        background-image:  linear-gradient( to right, #222222 0%, #434343 51%, #191919 100% );
       }
     </style>
+    <link href="./moj.css" rel="stylesheet" type="text/css"/>
+    <link href="menu.css" rel="stylesheet"/>
+</head>
 
-    <link href="./moj.css" rel="stylesheet" type="text/css" />
-  </head>
+<body>
+<nav>
+    <a class="logo" href="./index.html" target="_self">
+        <img alt="Joanna Grygiel" src="./grafiki_na_stronę/logo_sz.png"/>
+    </a>
+    <input id="menu-toggle" type="checkbox"/>
+    <label class="menu-button-container" for="menu-toggle">
+        <span class="menu-button"></span>
+    </label>
+    <div class="menu">
+        <ul>
+            <input id="sub-menu-toggle" type="checkbox"/>
+            <li class="dropdown-container">
+                <div class="guzik-menu guzik-kolor">
+                    <a href="./manga.html" target="_self">
+                        <span>Manga</span>
+                    </a>
+                    <label class="sub-menu-button" for="sub-menu-toggle">v</label>
+                </div>
+                <ul>
+                    <li>
+                        <a
+                                class="guzik-menu guzik-kolor"
+                                href="./Akumetsu.html"
+                                target="_self"
+                        ><span class="menu-text">Akumetsu</span></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                                class="guzik-menu guzik-kolor"
+                                href="./Ansatsu_Kyoushitsu.html"
+                                target="_self"
+                        ><span class="menu-text">Ansatsu Kyoushitsu</span></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                                class="guzik-menu guzik-kolor"
+                                href="./Arata_Kangatari.html"
+                                target="_self"
+                        ><span class="menu-text">Arata Kangatari</span></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                                class="guzik-menu guzik-kolor"
+                                href="./Gintama.html"
+                                target="_self"
+                        ><span class="menu-text">Gintama</span></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                                class="guzik-menu guzik-kolor"
+                                href="./Heroine_Shikkaku.html"
+                                target="_self"
+                        ><span class="menu-text">Heroine Shikkaku</span></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                                class="guzik-menu guzik-kolor"
+                                href="./Himitsu_no_Ai-chan.html"
+                                target="_self"
+                        ><span class="menu-text">Himitsu no Ai-chan</span></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                                class="guzik-menu guzik-kolor"
+                                href="./One_Piece.html"
+                                target="_self"
+                        ><span class="menu-text">One Piece</span></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                                class="guzik-menu guzik-kolor"
+                                href="./One-Punch_Man.html"
+                                target="_self"
+                        ><span class="menu-text">One-Punch Man</span></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                                class="guzik-menu guzik-kolor"
+                                href="./pozostale.html"
+                                target="_self"
+                        ><span class="menu-text">Pozostałe tytuły</span></a
+                        >
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a
+                        class="guzik-menu guzik-kolor"
+                        href="./fotografia.html"
+                        target="_self"
+                ><span class="menu-text">Zdjęcia</span></a
+                >
+            </li>
 
-  <body>
-    <div class="bee-row bee-row-1" id="wiersz-menu">
-      <div class="bee-row-content menu">
-        <div class="bee-col bee-col-1 bee-col-w4">
-          <div class="bee-block bee-block-1 bee-image">
-            <a href="./index.html" target="_self"
-              ><img
-                alt="Joanna Grygiel"
-                class="bee-center bee-fixedwidth"
-                src="./grafiki_na_stronę/logo.png"
-                style="max-width: 380px"
-            /></a>
-          </div>
-        </div>
-        <div class="bee-col bee-col-1 bee-col-w6"></div>
-        <div class="bee-col bee-col-2 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button" id="parent">
-            <!-- parent -->
-            <a
-              class="bee-button-content guzik-menu guzik-szary rozwijane-menu"
-              href="./manga.html"
-              target="_self"
-              ><span class="menu-text">Manga</span></a
-            >
-            <div class="hidden-childs-container hidden-child">
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                href="./Akumetsu.html"
-                target="_self"
-                ><span class="menu-text">Akumetsu</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                href="./Ansatsu_Kyoushitsu.html"
-                target="_self"
-                ><span class="menu-text">Ansatsu Kyoushitsu</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                href="./Arata_Kangatari.html"
-                target="_self"
-                ><span class="menu-text">Arata Kangatari</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                href="./Gintama.html"
-                target="_self"
-                ><span class="menu-text">Gintama</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./Heroine_Shikkaku.html"
-                target="_self"
-                ><span class="menu-text">Heroine Shikkaku</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./Himitsu_no_Ai-chan.html"
-                target="_self"
-                ><span class="menu-text">Himitsu no Ai-chan</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./One_Piece.html"
-                target="_self"
-                ><span class="menu-text">One Piece</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./One-Punch_Man.html"
-                target="_self"
-                ><span class="menu-text">One-Punch Man</span></a
-              >
-              <a
-                class="bee-button-content guzik-dziecko guzik-szary guzik-dziecko-szary hidden-child"
-                --
-                ukryte
-                href="./pozostale.html"
-                target="_self"
-                ><span class="menu-text">Pozostałe tytuły</span></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="bee-col bee-col-3 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button">
-            <a
-              class="bee-button-content guzik-menu guzik-szary"
-              href="./fotografia.html"
-              target="_self"
-              ><span class="menu-text">Zdjęcia</span></a
-            >
-          </div>
-        </div>
-        <div class="bee-col bee-col-4 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button">
-            <a
-              class="bee-button-content guzik-menu guzik-szary"
-              href="./grafika.html"
-              target="_self"
-              ><span class="menu-text">Grafika</span></a
-            >
-          </div>
-        </div>
-        <div class="bee-col bee-col-5 bee-col-w2">
-          <div class="bee-block bee-block-1 bee-button">
-            <a
-              class="bee-button-content guzik-menu guzik-szary"
-              href="./o_mnie.html"
-              target="_self"
-              ><span class="menu-text">O mnie</span></a
-            >
-          </div>
-        </div>
-      </div>
+            <li>
+                <a
+                        class="guzik-menu guzik-kolor"
+                        href="./grafika.html"
+                        target="_self"
+                ><span class="menu-text">Grafika</span></a
+                >
+            </li>
+            <li>
+                <a
+                        class="guzik-menu guzik-kolor"
+                        href="./o_mnie.html"
+                        target="_self"
+                ><span class="menu-text">O mnie</span></a
+                >
+            </li>
+        </ul>
     </div>
-    <div class="bee-page-container">
-      <div class="bee-row bee-row-2">
+</nav>
+<div class="bee-page-container">
+    <div class="bee-row bee-row-2">
         <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w12">
-            <div class="bee-block bee-block-1 bee-spacer">
-              <div class="spacer" style="height: 30px"></div>
+            <div class="bee-col bee-col-1 bee-col-w12">
+                <div class="bee-block bee-block-1 bee-spacer">
+                    <div class="spacer" style="height: 30px"></div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="bee-row bee-row-3">
+    </div>
+    <div class="bee-row bee-row-3">
         <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w12">
-            <div class="bee-block bee-block-1 bee-spacer">
-              <div class="spacer" style="height: 10px"></div>
-            </div>
-            <div class="bee-block bee-block-2 bee-heading">
-              <h1
-                style="
+            <div class="bee-col bee-col-1 bee-col-w12">
+                <div class="bee-block bee-block-1 bee-spacer">
+                    <div class="spacer" style="height: 10px"></div>
+                </div>
+                <div class="bee-block bee-block-2 bee-heading">
+                    <h1
+                            style="
                   color: #eeeeee;
                   direction: ltr;
                   font-family: Verdana, Geneva, sans-serif;
@@ -494,182 +454,182 @@
                   margin-top: 0;
                   margin-bottom: 0;
                 "
-              >
+                    >
                 <span class="tinyMce-placeholder"
-                  ><span style="color: #777777">O</span
-                  ><span style="color: #eeeeee">ne</span
-                  ><span style="color: #ffb600"
-                    ><span style="color: #eeeeee">-</span
-                    ><span style="color: #777777">P</span></span
-                  ><span style="color: #eeeeee">unch</span>
+                ><span style="color: #777777">O</span
+                ><span style="color: #eeeeee">ne</span
+                ><span style="color: #ffb600"
+                ><span style="color: #eeeeee">-</span
+                ><span style="color: #777777">P</span></span
+                ><span style="color: #eeeeee">unch</span>
                   <span style="color: #777777">M</span
                   ><span style="color: #eeeeee">an</span></span
                 >
-              </h1>
+                    </h1>
+                </div>
+                <div class="bee-block bee-block-3 bee-spacer">
+                    <div class="spacer" style="height: 10px"></div>
+                </div>
             </div>
-            <div class="bee-block bee-block-3 bee-spacer">
-              <div class="spacer" style="height: 10px"></div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="bee-row bee-row-4">
+    </div>
+    <div class="bee-row bee-row-4">
         <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w6">
-            <div class="bee-block bee-block-1 bee-image">
-              <img
-                alt="One-Punch Man strona z rozdziału 34.8"
-                class="bee-center bee-autowidth"
-                src="./Mangi/One-Punch Man na portfolio/One-Punch Man rozdział 34.8 strona 023.png"
-                style="max-width: 580px"
-              />
+            <div class="bee-col bee-col-1 bee-col-w6">
+                <div class="bee-block bee-block-1 bee-image">
+                    <img
+                            alt="One-Punch Man strona z rozdziału 34.8"
+                            class="bee-center bee-autowidth"
+                            src="./Mangi/One-Punch Man na portfolio/One-Punch Man rozdział 34.8 strona 023.png"
+                            style="max-width: 580px"
+                    />
+                </div>
+                <div class="bee-block bee-block-2 bee-paragraph">
+                    <p>One-Punch Man strona z rozdziału 34.8</p>
+                </div>
             </div>
-            <div class="bee-block bee-block-2 bee-paragraph">
-              <p>One-Punch Man strona z rozdziału 34.8</p>
+            <div class="bee-col bee-col-2 bee-col-w6">
+                <div class="bee-block bee-block-1 bee-image">
+                    <img
+                            alt="One-Punch Man strona z rozdziału 34.8"
+                            class="bee-center bee-autowidth"
+                            src="./Mangi/One-Punch Man na portfolio/One-Punch Man rozdział 34.8 strona 012.png"
+                            style="max-width: 580px"
+                    />
+                </div>
+                <div class="bee-block bee-block-2 bee-paragraph">
+                    <p>One-Punch Man strona z rozdziału 34.8</p>
+                </div>
             </div>
-          </div>
-          <div class="bee-col bee-col-2 bee-col-w6">
-            <div class="bee-block bee-block-1 bee-image">
-              <img
-                alt="One-Punch Man strona z rozdziału 34.8"
-                class="bee-center bee-autowidth"
-                src="./Mangi/One-Punch Man na portfolio/One-Punch Man rozdział 34.8 strona 012.png"
-                style="max-width: 580px"
-              />
-            </div>
-            <div class="bee-block bee-block-2 bee-paragraph">
-              <p>One-Punch Man strona z rozdziału 34.8</p>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="bee-row bee-row-5">
+    </div>
+    <div class="bee-row bee-row-5">
         <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w4">
-            <div class="bee-block bee-block-1 bee-image">
-              <img
-                alt="One-Punch Man strona z rozdziału 34.6"
-                class="bee-center bee-autowidth"
-                src="./Mangi/One-Punch Man na portfolio/One-Punch-Man-rozdział-34.6-strona-018.png"
-                style="max-width: 380px; width: auto;"
-              />
+            <div class="bee-col bee-col-1 bee-col-w4">
+                <div class="bee-block bee-block-1 bee-image">
+                    <img
+                            alt="One-Punch Man strona z rozdziału 34.6"
+                            class="bee-center bee-autowidth"
+                            src="./Mangi/One-Punch Man na portfolio/One-Punch-Man-rozdział-34.6-strona-018.png"
+                            style="max-width: 380px; width: auto;"
+                    />
+                </div>
+                <div class="bee-block bee-block-2 bee-paragraph">
+                    <p>One-Punch Man strona z rozdziału 34.6</p>
+                </div>
             </div>
-            <div class="bee-block bee-block-2 bee-paragraph">
-              <p>One-Punch Man strona z rozdziału 34.6</p>
+            <div class="bee-col bee-col-2 bee-col-w4">
+                <div class="bee-block bee-block-1 bee-image">
+                    <img
+                            alt="One-Punch Man strona z rozdziału 35.1"
+                            class="bee-center bee-autowidth"
+                            src="./Mangi/One-Punch Man na portfolio/One-Punch-Man-rozdział-35.png"
+                            style="max-width: 380px; width: auto;"
+                    />
+                </div>
+                <div class="bee-block bee-block-2 bee-paragraph">
+                    <p>One-Punch Man strona z rozdziału 35.1</p>
+                </div>
             </div>
-          </div>
-          <div class="bee-col bee-col-2 bee-col-w4">
-            <div class="bee-block bee-block-1 bee-image">
-              <img
-                alt="One-Punch Man strona z rozdziału 35.1"
-                class="bee-center bee-autowidth"
-                src="./Mangi/One-Punch Man na portfolio/One-Punch-Man-rozdział-35.png"
-                style="max-width: 380px; width: auto;"
-              />
+            <div class="bee-col bee-col-3 bee-col-w4">
+                <div class="bee-block bee-block-1 bee-image">
+                    <img
+                            alt="One-Punch Man strona z rozdziału 34.5"
+                            class="bee-center bee-autowidth"
+                            src="Mangi/One-Punch Man na portfolio/One-Punch-Man-rozdział-34.5-strona-004.png"
+                            style="max-width: 380px; width: auto;"
+                    />
+                </div>
+                <div class="bee-block bee-block-2 bee-paragraph">
+                    <p>One-Punch Man strona z rozdziału 34.5</p>
+                </div>
             </div>
-            <div class="bee-block bee-block-2 bee-paragraph">
-              <p>One-Punch Man strona z rozdziału 35.1</p>
-            </div>
-          </div>
-          <div class="bee-col bee-col-3 bee-col-w4">
-            <div class="bee-block bee-block-1 bee-image">
-              <img
-                alt="One-Punch Man strona z rozdziału 34.5"
-                class="bee-center bee-autowidth"
-                src="Mangi/One-Punch Man na portfolio/One-Punch-Man-rozdział-34.5-strona-004.png"
-                style="max-width: 380px; width: auto;"
-              />
-            </div>
-            <div class="bee-block bee-block-2 bee-paragraph">
-              <p>One-Punch Man strona z rozdziału 34.5</p>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="bee-row bee-row-6">
+    </div>
+    <div class="bee-row bee-row-6">
         <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w12">
-            <div class="bee-block bee-block-1 bee-image">
-              <img
-                alt="One-Punch Man strona z rozdziału 34.5"
-                class="bee-center bee-autowidth"
-                src="./Mangi/One-Punch Man na portfolio/One-Punch Man rozdział 34.5 strona 012.png"
-                style="max-width: 1180px"
-              />
+            <div class="bee-col bee-col-1 bee-col-w12">
+                <div class="bee-block bee-block-1 bee-image">
+                    <img
+                            alt="One-Punch Man strona z rozdziału 34.5"
+                            class="bee-center bee-autowidth"
+                            src="./Mangi/One-Punch Man na portfolio/One-Punch Man rozdział 34.5 strona 012.png"
+                            style="max-width: 1180px"
+                    />
+                </div>
+                <div class="bee-block bee-block-2 bee-paragraph">
+                    <p>One-Punch Man strona z rozdziału 34.5</p>
+                </div>
             </div>
-            <div class="bee-block bee-block-2 bee-paragraph">
-              <p>One-Punch Man strona z rozdziału 34.5</p>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="bee-row bee-row-7">
+    </div>
+    <div class="bee-row bee-row-7">
         <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w6">
-            <div class="bee-block bee-block-1 bee-image">
-              <img
-                alt="One-Punch Man strona z rozdziału 37"
-                class="bee-center bee-autowidth"
-                src="./Mangi/One-Punch Man na portfolio/One-Punch Man rozdział 37 strona 13.png"
-                style="max-width: 580px"
-              />
+            <div class="bee-col bee-col-1 bee-col-w6">
+                <div class="bee-block bee-block-1 bee-image">
+                    <img
+                            alt="One-Punch Man strona z rozdziału 37"
+                            class="bee-center bee-autowidth"
+                            src="./Mangi/One-Punch Man na portfolio/One-Punch Man rozdział 37 strona 13.png"
+                            style="max-width: 580px"
+                    />
+                </div>
+                <div class="bee-block bee-block-2 bee-paragraph">
+                    <p>One-Punch Man strona z rozdziału 37</p>
+                </div>
             </div>
-            <div class="bee-block bee-block-2 bee-paragraph">
-              <p>One-Punch Man strona z rozdziału 37</p>
+            <div class="bee-col bee-col-2 bee-col-w6">
+                <div class="bee-block bee-block-1 bee-image">
+                    <img
+                            alt="One-Punch Man strona z rozdziału 37"
+                            class="bee-center bee-autowidth"
+                            src="./Mangi/One-Punch Man na portfolio/One-Punch Man rozdział 37 strona 15.png"
+                            style="max-width: 580px"
+                    />
+                </div>
+                <div class="bee-block bee-block-2 bee-paragraph">
+                    <p>One-Punch Man strona z rozdziału 37</p>
+                </div>
             </div>
-          </div>
-          <div class="bee-col bee-col-2 bee-col-w6">
-            <div class="bee-block bee-block-1 bee-image">
-              <img
-                alt="One-Punch Man strona z rozdziału 37"
-                class="bee-center bee-autowidth"
-                src="./Mangi/One-Punch Man na portfolio/One-Punch Man rozdział 37 strona 15.png"
-                style="max-width: 580px"
-              />
-            </div>
-            <div class="bee-block bee-block-2 bee-paragraph">
-              <p>One-Punch Man strona z rozdziału 37</p>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="bee-row bee-row-8">
+    </div>
+    <div class="bee-row bee-row-8">
         <div class="bee-row-content" style="background-color: #000">
-          <div class="bee-col bee-col-1 bee-col-w12">
-            <div class="bee-block bee-block-1 bee-spacer">
-              <div class="spacer" style="height: 10px"></div>
-            </div>
-            <div class="bee-block bee-block-2 bee-button">
-              <a href="./manga.html">
-                <div
-                  class="bee-button-content guzik-dziecko-szary guzik-menu guzik-szeroki"
-                >
+            <div class="bee-col bee-col-1 bee-col-w12">
+                <div class="bee-block bee-block-1 bee-spacer">
+                    <div class="spacer" style="height: 10px"></div>
+                </div>
+                <div class="bee-block bee-block-2 bee-button">
+                    <a href="./manga.html">
+                        <div
+                                class="bee-button-content guzik-dziecko-szary guzik-niewiem half-width"
+                        >
                   <span
-                    style="
+                          style="
                       word-break: break-word;
                       font-size: 18px;
                       line-height: 200%;
                     "
-                    >Sprawdź też inne tytuły ⏭</span
+                  >Sprawdź też inne tytuły ❯❯</span
                   >
+                        </div>
+                    </a>
                 </div>
-              </a>
+                <div class="bee-block bee-block-3 bee-spacer">
+                    <div class="spacer" style="height: 30px"></div>
+                </div>
             </div>
-            <div class="bee-block bee-block-3 bee-spacer">
-              <div class="spacer" style="height: 30px"></div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="bee-block bee-block-3 bee-spacer">
+    </div>
+    <div class="bee-block bee-block-3 bee-spacer">
         <div class="spacer" style="height: 30px"></div>
-      </div>
-      <div class="bee-row bee-row-9">
+    </div>
+    <div class="bee-row bee-row-9">
         <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w12">
-            <div class="bee-block bee-block-1 bee-heading">
-              <h2
-                style="
+            <div class="bee-col bee-col-1 bee-col-w12">
+                <div class="bee-block bee-block-1 bee-heading">
+                    <h2
+                            style="
                   color: #777777;
                   direction: ltr;
                   font-family: 'Permanent Marker', Impact, Charcoal, sans-serif;
@@ -681,24 +641,24 @@
                   margin-top: 0;
                   margin-bottom: 0;
                 "
-              >
+                    >
                 <span class="tinyMce-placeholder" style="color: #d7c9e7"
-                  ><span style="color: #4b3564"
-                    ><span style="color: #777777">Masz pytania?</span
-                    ><br /><span style="color: #777777">Napisz do mnie!</span
-                    ><br /></span
+                ><span style="color: #4b3564"
+                ><span style="color: #777777">Masz pytania?</span
+                ><br/><span style="color: #777777">Napisz do mnie!</span
+                ><br/></span
                 ></span>
-              </h2>
+                    </h2>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="bee-row bee-row-10">
+    </div>
+    <div class="bee-row bee-row-10">
         <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w12">
-            <div class="bee-block bee-block-1 bee-heading">
-              <h2
-                style="
+            <div class="bee-col bee-col-1 bee-col-w12">
+                <div class="bee-block bee-block-1 bee-heading">
+                    <h2
+                            style="
                   color: #eeeeee;
                   direction: ltr;
                   font-family: Verdana, Geneva, sans-serif;
@@ -710,72 +670,72 @@
                   margin-top: 0;
                   margin-bottom: 0;
                 "
-              >
+                    >
                 <span class="tinyMce-placeholder"></span
                 ><span style="color: #eeeeee">Kontakt:</span>
-              </h2>
-            </div>
-            <div class="bee-block bee-block-2 bee-paragraph">
-              <p>Joanna Grygiel</p>
-            </div>
-            <div class="bee-block bee-block-3 bee-social">
-              <div class="content">
-                <span class="icon" style="padding: 0 10px 0 10px"
-                  ><a
-                    href="https://www.facebook.com/donim.diabolos"
-                    target="_self"
-                    ><img
-                      alt="Facebook"
-                      src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/colored/facebook@2x.png"
-                      title="facebook" /></a></span
-                ><span class="icon" style="padding: 0 10px 0 10px"
-                  ><a href="mailto:joanna.grygiel96@gmail.com" target="_blank"
-                    ><img
-                      alt="E-Mail"
-                      src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/colored/mail@2x.png"
-                      title="E-Mail" /></a
-                ></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bee-row bee-row-11">
-        <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w12">
-            <div
-              class="bee-block bee-block-1 bee-icons"
-              id="beepro-locked-footer"
-            >
-              <div class="bee-icon bee-icon-last">
-                <div class="bee-content">
-                  <div class="bee-icon-image">
-                    <a
-                      href="https://www.designedwithbee.com/?utm_source=editor&amp;utm_medium=bee_pro&amp;utm_campaign=free_footer_link"
-                      target="_blank"
-                      title="Designed with BEE"
-                      ><img
-                        alt="Designed with BEE"
-                        height="32px"
-                        src="https://d1oco4z2z1fhwp.cloudfront.net/assets/bee.png"
-                        width="auto"
-                    /></a>
-                  </div>
-                  <div class="bee-icon-label bee-icon-label-right">
-                    <a
-                      href="https://www.designedwithbee.com/?utm_source=editor&amp;utm_medium=bee_pro&amp;utm_campaign=free_footer_link"
-                      target="_blank"
-                      title="Designed with BEE"
-                      >Designed with BEE (Edited by Joanna Grygiel & Szymon
-                      Scholz)</a
-                    >
-                  </div>
+                    </h2>
                 </div>
-              </div>
+                <div class="bee-block bee-block-2 bee-paragraph">
+                    <p>Joanna Grygiel</p>
+                </div>
+                <div class="bee-block bee-block-3 bee-social">
+                    <div class="content">
+                <span class="icon" style="padding: 0 10px 0 10px"
+                ><a
+                        href="https://www.facebook.com/donim.diabolos"
+                        target="_self"
+                ><img
+                        alt="Facebook"
+                        src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/colored/facebook@2x.png"
+                        title="facebook"/></a></span
+                ><span class="icon" style="padding: 0 10px 0 10px"
+                    ><a href="mailto:joanna.grygiel96@gmail.com" target="_blank"
+                    ><img
+                            alt="E-Mail"
+                            src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/colored/mail@2x.png"
+                            title="E-Mail"/></a
+                    ></span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </body>
+    <div class="bee-row bee-row-11">
+        <div class="bee-row-content">
+            <div class="bee-col bee-col-1 bee-col-w12">
+                <div
+                        class="bee-block bee-block-1 bee-icons"
+                        id="beepro-locked-footer"
+                >
+                    <div class="bee-icon bee-icon-last">
+                        <div class="bee-content">
+                            <div class="bee-icon-image">
+                                <a
+                                        href="https://www.designedwithbee.com/?utm_source=editor&amp;utm_medium=bee_pro&amp;utm_campaign=free_footer_link"
+                                        target="_blank"
+                                        title="Designed with BEE"
+                                ><img
+                                        alt="Designed with BEE"
+                                        height="32px"
+                                        src="https://d1oco4z2z1fhwp.cloudfront.net/assets/bee.png"
+                                        width="auto"
+                                /></a>
+                            </div>
+                            <div class="bee-icon-label bee-icon-label-right">
+                                <a
+                                        href="https://www.designedwithbee.com/?utm_source=editor&amp;utm_medium=bee_pro&amp;utm_campaign=free_footer_link"
+                                        target="_blank"
+                                        title="Designed with BEE"
+                                >Designed with BEE (Edited by Joanna Grygiel & Szymon
+                                    Scholz)</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>

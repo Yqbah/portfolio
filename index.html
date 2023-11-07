@@ -1,34 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl-PL">
-  <head>
+<head>
     <title></title>
-    <meta content="summary_large_image" name="twitter:card" />
-    <meta content="website" property="og:type" />
-    <meta content="" property="og:description" />
+    <meta content="summary_large_image" name="twitter:card"/>
+    <meta content="website" property="og:type"/>
+    <meta content="" property="og:description"/>
     <meta
-      content="https://bboadj1qf5.preview-postedstuff.com/V2-Gmov-b7Ij-ZZqX4-9KE1/"
-      property="og:url"
+            content="https://bboadj1qf5.preview-postedstuff.com/V2-Gmov-b7Ij-ZZqX4-9KE1/"
+            property="og:url"
     />
     <meta
-      content="https://pro-bee-beepro-thumbnail.getbee.io/messages/791273/775053/1663467/9444913_large.jpg"
-      property="og:image"
+            content="https://pro-bee-beepro-thumbnail.getbee.io/messages/791273/775053/1663467/9444913_large.jpg"
+            property="og:image"
     />
-    <meta content="" property="og:title" />
-    <meta content="" name="description" />
-    <meta charset="utf-8" />
-    <meta content="width=device-width" name="viewport" />
+    <meta content="" property="og:title"/>
+    <meta content="" name="description"/>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width" name="viewport"/>
     <style>
+      .bee-row,
+      .bee-row-content {
+        position: relative;
+      }
+
+      .bee-page-container,
+      .bee-row-1,
+      .bee-row-1 .bee-row-content {
+        background-repeat: no-repeat;
+      }
+
       body {
+        background-color: #000;
         color: #000;
-        background-image: linear-gradient(45deg, rgb(0, 0, 0) 30%, rgb(25, 25, 25) 70%, rgb(0, 0, 0) 100%);
-        background-position: center;
-        background-size: auto;
-        background-repeat: repeat;
         font-family: Verdana, Geneva, sans-serif;
+      }
+
+      .bee-page-container {
+        background-image: none;
+        background-position: top left;
+        background-size: auto;
       }
 
       a {
         color: #eee;
+        text-shadow: #131313 2px 2px 5px;
+        text-decoration: none;
       }
 
       * {
@@ -36,420 +52,285 @@
       }
 
       body,
+      h1,
+      h2,
+      h3,
       p {
         margin: 0;
       }
 
-      .bee-row {
-        position: relative;
-      }
-
       .bee-row-content {
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
-      }
-
-      .bee-row-content {
         display: flex;
-        position: relative;
-      }
-
-      .bee-row-content .bee-col-w4 {
-        flex-basis: 33%;
+        justify-content: center;
       }
 
       .bee-row-content .bee-col-w12 {
         flex-basis: 100%;
       }
 
-      .bee-icon {
-        vertical-align: middle;
-        display: inline-block;
+      .bee-button {
+        text-align: center;
       }
 
-      .bee-icon .bee-content {
-        align-items: center;
-        display: flex;
-      }
-
+      .bee-button a,
       .bee-icon .bee-icon-label-right a {
         text-decoration: none;
-      }
-
-      .bee-image img {
-        width: 100%;
-        display: block;
-      }
-
-      .bee-image {
-        overflow: auto;
-      }
-
-      .bee-image .bee-center {
-        margin: 0 auto;
       }
 
       .bee-text {
         overflow-wrap: anywhere;
       }
 
-      h1,
-      h2,
-      h3 {
-        margin: 0;
-      }
-
       .bee-row-1 {
-        background-repeat: no-repeat;
-      }
-
-      .bee-row-1 .bee-row-content {
-        color: #000;
-        background-repeat: no-repeat;
-        border-radius: 0;
+        background: url("./grafiki_na_stronę/foto_gl_sz.jpg") center center no-repeat;
+        background-size: cover;
+        width: 100%;
       }
 
       .bee-row-1 .bee-col-1 {
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-bottom: 60px;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .bee-row-1 .bee-col-1 .bee-block-1,
+      .bee-row-2 .bee-col-1 .bee-block-2 {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
       }
 
       .bee-row-1 .bee-col-1 .bee-block-2 {
+        padding: 20px;
         text-align: center;
         width: 100%;
+      }
+
+      .bee-row-1 .bee-col-1 .bee-block-3 {
+        padding: 0.5em 3em;
+      }
+
+      .bee-row-1 .bee-col-1 .bee-block-4 {
         padding: 10px;
+        text-align: right;
       }
 
-      .bee-row-2 {
-        background-repeat: no-repeat;
-        background-size: auto;
-      }
-
-      .bee-row-2 .bee-row-content {
-        background-repeat: no-repeat;
-        background-size: auto;
-      }
-
-      .bee-row-2 .bee-col-1 {
+      .bee-row-3 .bee-col-1,
+      .bee-row-3 .bee-col-2,
+      .bee-row-3 .bee-col-3 {
+        padding: 20px;
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 10px 20px;
-        display: flex;
       }
 
-      .bee-row-2 .bee-col-1 .bee-block-1 {
-        width: 100%;
-      }
-
-      .bee-row-3 {
-        background-repeat: no-repeat;
-      }
-
-      .bee-row-3 .bee-row-content {
-        color: #000;
-        background-repeat: no-repeat;
-        border-radius: 0;
-      }
-
-      .bee-row-3 .bee-col-1 {
-        padding-top: 5px;
-        padding-bottom: 5px;
-      }
-
-      .bee-row-3 .bee-col-1 .bee-block-2 {
+      .bee-row-3 .bee-col-1 .bee-block-1,
+      .bee-row-3 .bee-col-2 .bee-block-1,
+      .bee-row-3 .bee-col-3 .bee-block-1 {
+        padding: 0 20px;
         text-align: center;
+      }
+
+      .wyglad-guzikow {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        font-weight: 900;
+        color: #eee;
+      }
+
+      .wyglad-parent {
+        flex-wrap: wrap;
+        align-items: stretch;
+        place-content: center;
+        gap: 3rem;
+        margin: 0 3.5rem;
+      }
+
+      .wyglad-div {
+        background-size: cover;
+        border-radius: 4px;
+        border: #2a2a2a solid 1px;
+        filter: saturate(0%);
+        transition-duration: 2s;
         width: 100%;
-        padding: 10px;
+        height: 100%;
       }
 
-      .bee-row-3 .bee-col-1 .bee-block-3 {
-        padding: 15px 30px;
+      .wyglad-div:hover {
+        filter: saturate(100%);
+        transition-duration: 2s;
       }
 
-      .bee-row-4 {
-        background-repeat: no-repeat;
+      .guzik-o-mnie {
+        padding: 15px 30px 15px 30px;
+        margin-right: 2em;
+        font-size: 18px;
+        background-color: #9d9d9d00;
+        border-radius: 4px;
+        border: #ffffff solid 2px;
+        color: #ffffff;
+        font-weight: 700;
+        line-height: 200%;
       }
 
-      .bee-row-4 .bee-row-content {
-        color: #000;
-        background-repeat: no-repeat;
-        border-radius: 0;
+      .guzik-o-mnie:hover {
+        background-color: #4c4c4c;
+        border: #4c4c4c solid 2px;
+        color: #ffffff;
+        transition-duration: 2s;
       }
 
-      .bee-row-4 .bee-col-1 {
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px;
-        display: flex;
-      }
-
-      .bee-row-4 .bee-col-1 .bee-block-1 {
-        width: 100%;
-      }
-
-      .bee-row-4 .bee-col-2 {
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px;
-        display: flex;
-      }
-
-      .bee-row-4 .bee-col-2 .bee-block-1 {
-        width: 100%;
-      }
-
-      .bee-row-4 .bee-col-3 {
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px;
-        display: flex;
-      }
-
-      .bee-row-4 .bee-col-3 .bee-block-1 {
-        width: 100%;
-      }
-
-      .bee-row-5 {
-        background-repeat: no-repeat;
-      }
-
-      .bee-row-5 .bee-row-content {
-        color: #000;
-        background-repeat: no-repeat;
-        border-radius: 0;
-      }
-
-      .bee-row-5 .bee-col-1 {
-        padding-top: 5px;
-        padding-bottom: 5px;
-      }
-
-      .bee-row-5 .bee-col-1 .bee-block-2 {
-        text-align: center;
-        width: 100%;
-        padding: 10px;
-      }
-
-  .zoom-zdjecia{
-    overflow: hidden;
-    padding: 0;
-    border: 2px solid #000000;
-    border-radius: 10px;
-  }
-
-  .zoom-zdjecia img {
-    transition-duration: 2s;
-    margin: 0 auto;
-    display: block;
-    filter: brightness(40%);
-
-  }
-
-  .zoom-zdjecia img:hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    z-index: 0;
-    border-radius: 20px;
-    filter: brightness(100%);
-  }
-
-      @media (max-width: 768px) {
-        .bee-row-content:not(.no_stack) {
-          display: block;
-        }
+      .guzik-galeria {
+        min-height: 20rem;
+        max-width: 30rem;
+        flex: 1;
+        aspect-ratio: 1;
+        text-decoration: none;
       }
     </style>
-  </head>
-
-  <body>
-    <div class="bee-page-container">
-      <div class="bee-row bee-row-1">
+</head>
+<body>
+<div class="bee-page-container">
+    <div class="bee-row bee-row-1">
         <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w12">
-            <div class="bee-block bee-block-1 bee-spacer">
-              <div class="spacer" style="height: 30px"></div>
-            </div>
-            <div class="bee-block bee-block-2 bee-heading">
-              <h1
-                style="
-                  color: #eed9a0;
-                  direction: ltr;
-                  font-family: Verdana, Geneva, sans-serif;
-                  font-size: 46px;
-                  font-weight: 700;
-                  letter-spacing: normal;
-                  line-height: 120%;
-                  text-align: center;
-                  margin-top: 0;
-                  margin-bottom: 0;
-                "
-              >
-                <span class="tinyMce-placeholder"
-                  ><span style="color: #ffb600">W</span
-                  ><span style="color: #eed9a0">itaj na moim portfolio</span
-                  ><span style="color: #ffb600">!</span></span
-                >
-              </h1>
-            </div>
-            <div class="bee-block bee-block-3 bee-spacer">
-              <div class="spacer" style="height: 30px"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bee-row bee-row-2">
-        <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w12">
-            <div class="bee-block bee-block-1 bee-image">
-              <img
-                alt=""
-                class="bee-center bee-autowidth"
-                src="https://822046e130.imgdist.com/public/users/Integrators/BeeProAgency/791273_775053/editor_images/9926107b-a96b-4e21-aa6c-ea0ff9deba65.jpg"
-                style="max-width: 1160px; filter: brightness(40%);"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bee-row bee-row-3">
-        <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w12">
-            <div class="bee-block bee-block-1 bee-spacer">
-              <div class="spacer" style="height: 20px"></div>
-            </div>
-            <div class="bee-block bee-block-2 bee-heading">
-              <h3
-                style="
-                  color: #eed9a0;
-                  direction: ltr;
-                  font-family: Verdana, Geneva, sans-serif;
-                  font-size: 24px;
-                  font-weight: 700;
-                  letter-spacing: normal;
-                  line-height: 120%;
-                  text-align: center;
-                  margin-top: 0;
-                  margin-bottom: 0;
-                "
-              >
-                <span class="tinyMce-placeholder"
-                  ><span style="color: #eed9a0">Joanna Grygiel</span></span
-                >
-              </h3>
-            </div>
-            <div class="bee-block bee-block-3 bee-text">
-              <div
-                class="bee-text-content"
-                style="
-                  line-height: 150%;
-                  font-size: 12px;
-                  font-family: inherit;
-                  color: #eed9a0;
-                "
-              >
-                <p
-                  style="
+            <div class="bee-col bee-col-1 bee-col-w12">
+                <div class="bee-block bee-block-1">
+                    <h1 style="color: #ffffff; font-size: 50px">
+                        <span>Witaj na moim portfolio!</span>
+                    </h1>
+                </div>
+                <div class="bee-block bee-block-2">
+                    <h3 style="color: #ffffff; font-size: 30px">
+                        <span>Joanna Grygiel</span>
+                    </h3>
+                </div>
+                <div class="bee-block bee-block-3 bee-text">
+                    <div>
+                        <p
+                                style="
+                    color: #ffffff;
                     font-size: 16px;
-                    line-height: 24px;
+                    line-height: 32px;
                     text-align: justify;
                   "
-                >
-                  <span style="font-size: 16px; line-height: 24px"
-                    ><span style="color: #eed9a0; line-height: 18px"
-                      >Od najmłodszych lat interesuję się szeroko pojętą obróbką
-                      graficzną. W szczególności zafascynowana jestem światem
-                      mangi i anime oraz ich profesjonalnym tworzeniem i
-                      wydawaniem. Posiadam 5 lat doświadczenia na stanowisku
-                      edytora mang online w formie wolontariatu (Typesetter oraz
-                      Cleaner) oraz 3 lata pracy w branży e-commerce. Wolny czas
-                      lubię spędzać aktywnie jeżdżąc na rolkach, chodząc na
-                      grzyby czy też spacerując z psem. Szukam możliwości
-                      rozwoju osobistego jako edytor/grafik oraz ciągłego
-                      udoskonalania moich umiejętności.</span
-                    ></span
-                  >
-                </p>
-              </div>
+                        >
+                  <span>
+                    Od najmłodszych lat interesuję się szeroko pojętą
+                      obróbką graficzną. W szczególności zafascynowana jestem światem
+                    mangi i anime oraz ich profesjonalnym tworzeniem
+                    i wydawaniem. Posiadam 5 lat doświadczenia na stanowisku
+                    edytora mang online w formie wolontariatu (Typesetter oraz
+                    Cleaner) oraz 3 lata pracy w branży e&#8209;commerce. Wolny czas
+                    lubię spędzać aktywnie jeżdżąc na rolkach, chodząc na grzyby
+                    czy też spacerując z psem. Szukam możliwości rozwoju
+                    osobistego jako edytor/grafik oraz ciągłego udoskonalania
+                    moich umiejętności.
+                  </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bee-block bee-block-4 bee-button">
+                    <a class="guzik-o-mnie" href="./o_mnie.html" target="_self">
+                        <span>Czytaj więcej ❯❯</span>
+                    </a>
+                </div>
             </div>
-            <div class="bee-block bee-block-4 bee-spacer">
-              <div class="spacer" style="height: 20px"></div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="bee-row bee-row-4">
-        <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w4">
-            <div class="bee-block bee-block-1 bee-image zoom-zdjecia zdjecia">
-              <a href="./manga.html" target="_self"
-                ><img
-                  alt="manga"
-                  class="bee-center bee-autowidth"
-                  src="./grafiki_na_stronę/Manga.png"
-                  style="max-width: 360px; width: auto;"
-              /></a>
-            </div>
-          </div>
-          <div class="bee-col bee-col-2 bee-col-w4">
-            <div class="bee-block bee-block-1 bee-image zoom-zdjecia zdjecia">
-              <a href="./fotografia.html" target="_self"
-                ><img
-                  alt="zdjęcia"
-                  class="bee-center bee-autowidth"
-                  src="./grafiki_na_stronę/Zdjęcia.png"
-                  style="max-width: 360px; width: auto;"
-              /></a>
-            </div>
-          </div>
-          <div class="bee-col bee-col-3 bee-col-w4">
-            <div class="bee-block bee-block-1 bee-image zoom-zdjecia zdjecia">
-              <a href="./grafika.html" target="_self"
-                ><img
-                  alt="grafika"
-                  class="bee-center bee-autowidth"
-                  src="./grafiki_na_stronę/Grafika.png"
-                  style="max-width: 360px; width: auto;"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bee-row bee-row-5">
-        <div class="bee-row-content">
-          <div class="bee-col bee-col-1 bee-col-w12">
-            <div class="bee-block bee-block-1 bee-spacer">
-              <div class="spacer" style="height: 30px"></div>
-            </div>
-            <div class="bee-block bee-block-2 bee-heading">
-              <h2
-                style="
-                  color: #eed9a0;
-                  direction: ltr;
-                  font-family: Verdana, Geneva, sans-serif;
-                  font-size: 30px;
-                  font-weight: 700;
-                  letter-spacing: normal;
-                  line-height: 120%;
-                  text-align: center;
-                  margin-top: 0;
-                  margin-bottom: 0;
-                "
-              >
-                <span class="tinyMce-placeholder"
-                  ><span style="color: #ffb600">W</span
-                  ><span style="color: #eed9a0"
-                    >ybierz galerię i zapoznaj się z moimi pracami</span
-                  ><span style="color: #ffb600">!</span></span
-                >
-              </h2>
-            </div>
-            <div class="bee-block bee-block-3 bee-spacer">
-              <div class="spacer" style="height: 30px"></div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </body>
+    <div class="bee-row bee-row-2">
+        <div class="bee-row-content">
+            <div class="bee-col bee-col-1 bee-col-w12">
+                <div class="bee-block bee-block-1 bee-spacer">
+                    <div class="spacer" style="height: 30px"></div>
+                </div>
+                <div class="bee-block bee-block-2">
+                    <h2
+                            style="
+                  color: #ffffff;
+                  font-family: Verdana, Geneva, sans-serif;
+                  font-size: 42px;
+                "
+                    >
+                        <span>Wybierz galerię i zapoznaj się z&nbsp;moimi pracami!</span>
+                    </h2>
+                </div>
+                <div class="bee-block bee-block-3 bee-spacer">
+                    <div class="spacer" style="height: 30px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bee-row bee-row-3">
+        <div class="bee-row-content wyglad-parent">
+            <a class="guzik-galeria" href="./manga.html" target="_self">
+                <div
+                        class="bee-col bee-col-1 bee-col-w4 wyglad-div"
+                        style="background-image: url(./grafiki_na_stronę/mini-manga.jpg)"
+                >
+                    <div class="bee-block bee-block-1 bee-button wyglad-guzikow">
+                <span
+                        style="
+                    word-break: break-word;
+                    font-size: 32px;
+                    line-height: 200%;
+                  "
+                >MANGA</span
+                >
+                    </div>
+                </div>
+            </a>
+            <a class="guzik-galeria" href="./grafika.html" target="_self">
+                <div
+                        class="bee-col bee-col-2 bee-col-w4 wyglad-div"
+                        style="
+                background-image: url(./grafiki_na_stronę/mini-grafika.jpg);
+              "
+                >
+                    <div class="bee-block bee-block-1 bee-button wyglad-guzikow">
+                <span
+                        style="
+                    word-break: break-word;
+                    font-size: 32px;
+                    line-height: 200%;
+                  "
+                >GRAFIKA</span
+                >
+                    </div>
+                </div>
+            </a>
+
+            <a class="guzik-galeria" href="./fotografia.html" target="_self">
+                <div
+                        class="bee-col bee-col-3 bee-col-w4 wyglad-div"
+                        style="background-image: url(./grafiki_na_stronę/mini-foto.jpg)"
+                >
+                    <div class="bee-block bee-block-1 bee-button wyglad-guzikow">
+                <span
+                        style="
+                    word-break: break-word;
+                    font-size: 32px;
+                    line-height: 200%;
+                  "
+                >FOTOGRAFIA</span
+                >
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="bee-row bee-row-4">
+        <div class="bee-row-content">
+            <div class="bee-col bee-col-1 bee-col-w12">
+                <div class="bee-block bee-block-1 bee-spacer">
+                    <div class="spacer" style="height: 30px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>
