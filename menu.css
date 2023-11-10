@@ -43,8 +43,7 @@ nav {
 .menu a {
   display: block;
   text-decoration: none;
-  text-transform: uppercase;
-  padding: 0.85rem;
+  padding: 0.80rem;
 }
 
 .menu > ul {
@@ -97,9 +96,7 @@ nav {
   display: flex;
   transition: 0.5s;
   background-size: 200% auto;
-  background-position: right;
   color: white;
-  text-transform: uppercase;
 }
 
 .guzik-menu > a {
@@ -134,7 +131,7 @@ nav {
   }
 
   .menu > ul > li {
-    width: 9em;
+    width: 8.6em;
     text-align: center;
   }
 
@@ -292,5 +289,7 @@ nav {
 
   .menu a {
     padding: 1rem 1.5rem;
+    text-transform: none;
   }
+
 }
