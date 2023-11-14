@@ -19,7 +19,7 @@ body {
   background-image: url("./grafiki_na_stronę/sand_background_b.jpg");
   background-position: top;
   background-size: contain;
-  background-repeat: repeat-y;
+  background-repeat: repeat;
 }
 
 .bee-row-4 .bee-col-1 .bee-block-1 a,
